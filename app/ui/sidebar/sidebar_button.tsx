@@ -1,3 +1,5 @@
+'use client';
+
 import { Link, usePathname } from "@/i18n/navigation"
 
 interface SidebarButtonProps{

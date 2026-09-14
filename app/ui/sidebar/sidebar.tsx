@@ -1,10 +1,19 @@
+'use client';
+
 import SectionLabel from "./section_lable";
 import { useTranslations } from "next-intl";
 import SidebarButton from "./sidebar_button";
 import Divider from "./divider";
+import SidebarSection from "./sidebar_section";
+import { SidebarContainer } from "@/app/scripts/sidebar/generateSidebarContainers";
 
 
-export default function Sidebar(){
+interface SidebarProps{
+
+    containers : SidebarContainer[]
+}
+
+export default function Sidebar({containers} : SidebarProps){
 
     const t = useTranslations("Sidebar");
 
@@ -25,6 +34,8 @@ export default function Sidebar(){
                 <Divider></Divider>
 
                 <SectionLabel name={t("theory")}></SectionLabel>
+
+                <SidebarSection containers={containers}></SidebarSection>
 
             </div>
         </div>

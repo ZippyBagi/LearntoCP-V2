@@ -3,14 +3,16 @@
 import { useState } from "react"
 import Navbar from "../ui/navbar/navbar"
 import Sidebar from "../ui/sidebar/sidebar"
+import { SidebarContainer } from "../scripts/sidebar/generateSidebarContainers"
 
 
 interface LayoutShellProps{
 
-    children: React.ReactNode
+    children: React.ReactNode,
+    containers : SidebarContainer[],
 }
 
-export default function LayoutShell({children} : LayoutShellProps){
+export default function LayoutShell({children,containers} : LayoutShellProps){
 
     const [sidebarActive, setSidebarActive] = useState(false);
     
@@ -21,7 +23,7 @@ export default function LayoutShell({children} : LayoutShellProps){
             
             <div className="relative flex min-h-0 flex-1">
                 
-                <Sidebar></Sidebar>
+                <Sidebar containers={containers}></Sidebar>
 
                 <div className="min-w-0 flex-1 overflow-auto overscroll-contain p-3">
                     {children}

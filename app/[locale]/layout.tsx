@@ -5,6 +5,7 @@ import LayoutShell from "./layoutShell";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import {routing} from '@/i18n/routing';
+import { generateSidebarContainers } from "../scripts/sidebar/generateSidebarContainers";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -37,12 +38,15 @@ export default async function RootLayout({ children,params }: LayoutProps) {
 
   const {locale} = await params;
   const messages = await getMessages();
+
+  const sidebarContainers = generateSidebarContainers(locale);
+
   return (
     <html
       lang={locale}
       className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col"><NextIntlClientProvider messages={messages}><LayoutShell children={children}></LayoutShell></NextIntlClientProvider></body>
+      <body className="min-h-full flex flex-col"><NextIntlClientProvider messages={messages}><LayoutShell children={children} containers={sidebarContainers}></LayoutShell></NextIntlClientProvider></body>
     </html>
   );
 }

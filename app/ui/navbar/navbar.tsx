@@ -1,3 +1,5 @@
+'use client';
+
 import '@/app/globals.css'
 import ToggleSidebarButton from './toggle_sidebar_button'
 import Image from 'next/image';

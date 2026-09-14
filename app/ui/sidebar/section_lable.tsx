@@ -1,3 +1,5 @@
+'use client';
+
 interface SectionLabelProps{
 
     name : string
