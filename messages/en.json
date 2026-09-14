@@ -6,6 +6,15 @@
 
   "Navbar": {
     "language_select_button": "English"
+  },
+
+  "Sidebar": {
+    "navigation" : "Navigation",
+    "home" : "Home",
+    "roadmap" : "Roadmap",
+    "problems" : "Problems",
+    "about_us" : "About Us",
+    "theory" : "Theory"
   }
 
 }
