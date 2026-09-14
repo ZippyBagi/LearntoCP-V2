@@ -37,7 +37,7 @@ export default function LanguageSelector(){
             >
 
                 <MenuItem key='en'>
-                    {({ focus }) => (
+                    
                     <button
                         onClick={() => changeLanguage('en')}
                         className={`relative block w-full text-left px-4 py-2.5 text-sm text-text-primary bg-bg-page cursor-pointer transition-colors duration-100 border-l-2 focus:outline-none
@@ -45,11 +45,11 @@ export default function LanguageSelector(){
                     >
                         English
                     </button>
-                    )}
+                    
                 </MenuItem>
 
                 <MenuItem key='sr'>
-                    {({ focus }) => (
+                   
                     <button
                         onClick={() => changeLanguage('sr')}
                         className={`relative block w-full text-left px-4 py-2.5 text-sm text-text-primary bg-bg-page cursor-pointer transition-colors duration-100 border-l-2 focus:outline-none
@@ -57,7 +57,7 @@ export default function LanguageSelector(){
                     >
                         Srpski
                     </button>
-                    )}
+            
                 </MenuItem>
                 
             </MenuItems>
