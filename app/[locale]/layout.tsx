@@ -4,6 +4,7 @@ import "@/app/globals.css";
 import LayoutShell from "./layoutShell";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import {routing} from '@/i18n/routing';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -21,6 +22,10 @@ export const metadata: Metadata = {
   title: "LearnToCP",
   description: "A 100% free website for learning competitive programming",
 };
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}));
+}
 
 interface LayoutProps {
 

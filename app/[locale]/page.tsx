@@ -1,8 +1,12 @@
 import Image from "next/image";
 import Navbar from "@/app/ui/navbar/navbar";
+import { getTranslations } from "next-intl/server";
 
-export default function Home() {
+export default async function Home() {
+  
+  const t = await getTranslations('HomePage');
+
   return (
-    <h1>Hello World</h1>
+    <h1>{t('title')}</h1>
   );
 }
