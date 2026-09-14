@@ -2,5 +2,10 @@
   "HomePage": {
     "title": "Welcome to our website!",
     "description": "This is an internationalized application."
+  },
+
+  "Navbar": {
+    "language_select_button": "English"
   }
+
 }
