@@ -1,0 +1,1 @@
+This is the open source rewrite of learntocp.com - A free website for learning competitive programming!
