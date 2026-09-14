@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react"
-import Navbar from "./ui/navbar/navbar"
+import Navbar from "../ui/navbar/navbar"
 
 interface LayoutShellProps{
 
