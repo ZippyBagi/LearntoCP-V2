@@ -2,7 +2,6 @@ import { cache } from "react";
 import "server-only"
 import fs from "fs";
 import path from "path";
-import { getLocale } from "next-intl/server";
 
 interface SidebarContainer {
     name: string;
@@ -49,7 +48,7 @@ export const generateSidebarContainers = cache((locale : string) : SidebarContai
         
         const names = mdFiles.map((file) => stripOrderPrefix(path.basename(file, ".md")));
 
-        const hrefs = names.map((name) => `/${locale}/Theory/${encodeURIComponent(displayFolderName)}/${encodeURIComponent(name)}`);
+        const hrefs = names.map((name) => `/Theory/${encodeURIComponent(displayFolderName)}/${encodeURIComponent(name)}`);
 
         return {name : displayFolderName, hrefs : hrefs, names: names};
 
