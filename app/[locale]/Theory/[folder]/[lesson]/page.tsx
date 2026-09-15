@@ -3,7 +3,7 @@ import fs from "fs";
 import { stripOrderPrefix } from "@/app/scripts/sidebar/generateSidebarContainers";
 import { notFound } from "next/navigation";
 import { useLocale } from "next-intl";
-import { locale } from "next/root-params";
+import markdownToHTML from "@/app/scripts/markdown/mdToHTML"
 
 
 interface LessonPageProps{
@@ -60,7 +60,14 @@ async function LessonContent({params, locale} : LessonContentProps){
 
     const markdown = fs.readFileSync(filePath, "utf8");
 
-    return (<h1>{markdown}</h1>);
+    const htmlContent = await markdownToHTML({markdown,fileName:actualFile,includeTitle:true, locale:locale});
+
+    return(
+      <article
+        className="prose prose-slate dark:prose-invert max-w-none"
+        dangerouslySetInnerHTML={{ __html: htmlContent }}
+      />
+    )
 
 
 }
