@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@import "./styles/typography.css";
+@import "./styles/code-blocks.css";
 
 :root {
   color-scheme: dark;

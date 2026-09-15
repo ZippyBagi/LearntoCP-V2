@@ -36,7 +36,7 @@ export default async function markdownToHTML({markdown, fileName, includeTitle, 
         return token;
     });
 
-    content = processObsidianSyntax({markdown,fileName,locale:locale});
+    content = processObsidianSyntax({markdown: content,fileName,locale:locale});
     content = processMathBlocks(content, stash);
 
     //return the code blocks

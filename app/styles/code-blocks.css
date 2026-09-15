@@ -1,0 +1,205 @@
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+}
+
+.prose code {
+  background: rgba(6, 182, 212, 0.09);
+  border: 1px solid rgba(6, 182, 212, 0.22);
+  color: #7dd3fc;
+  padding: 0.2em 0.45em;
+  border-radius: 4px;
+  font-size: 0.875em;
+  font-weight: 500;
+  font-family: var(--font-mono);
+}
+
+.prose code, .shiki-block, .shiki-block code, .shiki-block .line {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
+}
+
+.prose code::before, .prose code::after {
+  content: none;
+}
+
+.prose pre:not([data-shiki]) {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  padding: 1.25em 1.5em;
+  border-radius: 8px;
+  line-height: 1.7;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow-x: auto;
+}
+
+.prose pre:not([data-shiki]) code {
+  background: none;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  display: block;
+  white-space: pre;
+}
+
+.prose pre:not([data-shiki]):not(.example-box) {
+  line-height: 1.45;
+  tab-size: 4;
+  -moz-tab-size: 4;
+}
+
+.code-block-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1.5em 0;
+  font-size: 0.9em;
+  border: 1px solid rgba(124, 158, 248, 0.12);
+}
+
+.prose .code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55em 1.1em;
+  background: #0a1e2e;
+  border-bottom: 1px solid rgba(124, 158, 248, 0.22);
+  border-radius: 8px 8px 0 0;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.8em;
+  user-select: none;
+}
+
+.prose .code-block-title {
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.prose .code-copy-btn {
+  background: rgba(124, 158, 248, 0.1);
+  border: 1px solid rgba(124, 158, 248, 0.4);
+  border-radius: 5px;
+  color: #7c9ef8;
+  font-size: 0.82em;
+  font-family: var(--font-mono, monospace);
+  padding: 0.3em 1em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.prose .code-copy-btn:hover {
+  background: rgba(124, 158, 248, 0.18);
+  color: #ffffff;
+  border-color: rgba(124, 158, 248, 0.7);
+  box-shadow: 0 0 10px rgba(124, 158, 248, 0.2);
+}
+
+.prose .code-copy-btn.copied {
+  color: #50fa7b;
+  border-color: rgba(80, 250, 123, 0.6);
+  background: rgba(80, 250, 123, 0.1);
+  box-shadow: 0 0 12px rgba(80, 250, 123, 0.2);
+  animation: copyFlash 0.25s ease;
+}
+
+@keyframes copyFlash {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.shiki-block {
+  background-color: #081a22 !important;
+  margin: 0;
+  border-radius: 0;
+  padding: 1rem 1.5rem 1rem 0;
+  font-family: var(--font-mono) !important;
+  font-size: 0.875rem;
+  line-height: 1;
+  overflow-x: auto;
+  counter-reset: line;
+}
+
+.shiki-block code, .shiki-block .line, .shiki-block .line::before {
+  font-family: var(--font-mono) !important;
+}
+
+.shiki-block code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1em;
+}
+
+.shiki-block .line {
+  display: block;
+  position: relative;
+  height: 0.5em;
+  line-height: 0.5em;
+  padding-left: 3.5rem;
+}
+
+.shiki-block .line::before {
+  counter-increment: line;
+  content: counter(line);
+  position: absolute;
+  left: 0;
+  width: 2.75rem;
+  height: 0.5em;
+  line-height: 0.5em;
+  text-align: right;
+  padding-right: 0.75rem;
+  color: rgba(124, 158, 248, 0.25);
+  font-size: 0.8em;
+  user-select: none;
+  pointer-events: none;
+}
+
+.example-io + .example-io {
+  margin-top: 0.9em;
+}
+
+.example-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  margin-bottom: 0.4em;
+}
+
+.example-box {
+  margin: 0;
+  padding: 0.85em 1.1em;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.example-output.example-true {
+  color: var(--color-success);
+}
+
+.example-output.example-false {
+  color: var(--color-danger);
+}
