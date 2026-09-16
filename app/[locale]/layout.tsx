@@ -6,6 +6,7 @@ import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import {routing} from '@/i18n/routing';
 import { generateSidebarContainers } from "../scripts/sidebar/generateSidebarContainers";
+import "katex/dist/katex.min.css";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
