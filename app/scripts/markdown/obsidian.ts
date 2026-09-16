@@ -1,10 +1,11 @@
+import processImages from "./images";
 import {markdownToHTMLProps} from "./mdToHTML";
 
 function capitalize(str : string) : string{
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-export function processObsidianSyntax({markdown, fileName, includeTitle, locale} : markdownToHTMLProps) : string {
+export function processObsidianSyntax(markdown : string, IMAGE_ROOT_FOLDER : string, stash : (html : string, block : boolean) => string) : string {
 
     let content = markdown;
 
@@ -20,7 +21,8 @@ export function processObsidianSyntax({markdown, fileName, includeTitle, locale}
         return `<div class="tip-box tip-red"><div class="tip-content">\n\n${bodyContent}\n\n</div></div>\n\n`;
     });
 
-    //Images ============================================================================================================ TODO
+    // Images
+    content = processImages(markdown,IMAGE_ROOT_FOLDER,stash);
 
     //Note embeds, Wikilinks, tags, blocks
     content = content

@@ -15,6 +15,8 @@ export interface markdownToHTMLProps {
     locale? : string;
 }
 
+const IMAGE_ROOT_FOLDER = 'lesson-images';
+
 export default async function markdownToHTML({markdown, fileName, includeTitle, locale} : markdownToHTMLProps){
 
     const rawHtml: string[] = [];
@@ -25,9 +27,9 @@ export default async function markdownToHTML({markdown, fileName, includeTitle, 
         return block ? `\n\n${token}\n\n` : token;
     };
 
-    
-    //1. pre-process non-standard syntaxes & protect code blocks
     let content = markdown;
+
+    //1. pre-process non-standard syntaxes & protect code blocks
     const placeholders: string[] = [];
 
     content = content.replace(/(```[\s\S]*?```|~~~[\s\S]*?~~~|`[^`\n]+`)/g, (match) => {
@@ -36,13 +38,14 @@ export default async function markdownToHTML({markdown, fileName, includeTitle, 
         return token;
     });
 
-    content = processObsidianSyntax({markdown: content,fileName,locale:locale});
+    content = processObsidianSyntax(content, IMAGE_ROOT_FOLDER, stash);
     content = processMathBlocks(content, stash);
 
     //return the code blocks
     content = content.replace(/CODE_PLACEHOLDER_(\d+)/g, (_, i) => placeholders[Number(i)]);
+    
 
-    //2. Remark
+    //3. Remark
     const processed = await remark().use(remarkGfm)
                                     .use(remarkBreaks)
                                     .use(html, { sanitize: false })
@@ -50,7 +53,7 @@ export default async function markdownToHTML({markdown, fileName, includeTitle, 
 
     content = processed.toString();
 
-    //3. Post processing
+    //4. Post processing
     content = restoreRawHtml(content, rawHtml);
     content = stripBreaksInCodeBlocks(content);
     content = transformExampleFences(content);
