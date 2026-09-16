@@ -1,0 +1,490 @@
+{
+  "array.png": {
+    "width": 760,
+    "height": 300
+  },
+  "ascii-table-en.png": {
+    "width": 806,
+    "height": 113
+  },
+  "ascii-table-sr.png": {
+    "width": 806,
+    "height": 113
+  },
+  "atan2-two-legs.png": {
+    "width": 784,
+    "height": 366
+  },
+  "backtracking-undo.png": {
+    "width": 784,
+    "height": 300
+  },
+  "bellman-ford-graph.png": {
+    "width": 1040,
+    "height": 451
+  },
+  "bellman-ford-negative-cycle.png": {
+    "width": 1040,
+    "height": 376
+  },
+  "bfs-rings.png": {
+    "width": 784,
+    "height": 440
+  },
+  "big-o.jpg": {
+    "width": 732,
+    "height": 510
+  },
+  "binary-exponentiation.png": {
+    "width": 784,
+    "height": 424
+  },
+  "binary-place-value.png": {
+    "width": 784,
+    "height": 288
+  },
+  "binary-search.png": {
+    "width": 784,
+    "height": 524
+  },
+  "bitmask-dp-assignment-en.png": {
+    "width": 1040,
+    "height": 408
+  },
+  "bitmask-dp-assignment-sr.png": {
+    "width": 1040,
+    "height": 408
+  },
+  "bitmask-dp-tsp.png": {
+    "width": 1040,
+    "height": 372
+  },
+  "bitmask-set-ops.png": {
+    "width": 784,
+    "height": 296
+  },
+  "bitmask-submask-walk.png": {
+    "width": 784,
+    "height": 404
+  },
+  "bitmask-switches.png": {
+    "width": 784,
+    "height": 312
+  },
+  "bitwise-ops.png": {
+    "width": 784,
+    "height": 430
+  },
+  "circle-circle-cases.png": {
+    "width": 784,
+    "height": 300
+  },
+  "circle-circle-construction.png": {
+    "width": 784,
+    "height": 420
+  },
+  "collinear-overlap.png": {
+    "width": 784,
+    "height": 400
+  },
+  "combinations-from-variations.png": {
+    "width": 784,
+    "height": 420
+  },
+  "combinatoric-objects.png": {
+    "width": 784,
+    "height": 470
+  },
+  "connected-components.png": {
+    "width": 784,
+    "height": 470
+  },
+  "Couning Sort.jpg": {
+    "width": 673,
+    "height": 263
+  },
+  "cross-product-circle.png": {
+    "width": 784,
+    "height": 450
+  },
+  "dfs-vs-bfs-order.png": {
+    "width": 784,
+    "height": 424
+  },
+  "digit-dp-leading-zeros.png": {
+    "width": 1040,
+    "height": 244
+  },
+  "digit-dp-ranges.png": {
+    "width": 1040,
+    "height": 324
+  },
+  "digit-dp-tight.png": {
+    "width": 1040,
+    "height": 348
+  },
+  "dijkstra-final.png": {
+    "width": 1040,
+    "height": 408
+  },
+  "dijkstra-graph.png": {
+    "width": 1040,
+    "height": 316
+  },
+  "dijkstra-negative.png": {
+    "width": 1040,
+    "height": 268
+  },
+  "dijkstra-pick.png": {
+    "width": 1040,
+    "height": 408
+  },
+  "dijkstra-relax.png": {
+    "width": 1040,
+    "height": 408
+  },
+  "distance-triangle.png": {
+    "width": 784,
+    "height": 430
+  },
+  "divide-conquer-cost.png": {
+    "width": 784,
+    "height": 392
+  },
+  "divisor-pairs.png": {
+    "width": 784,
+    "height": 458
+  },
+  "dot-product-normal.png": {
+    "width": 784,
+    "height": 404
+  },
+  "dp-memoization.png": {
+    "width": 784,
+    "height": 455
+  },
+  "fenwick-build-copy.png": {
+    "width": 1040,
+    "height": 236
+  },
+  "fenwick-build-parents.png": {
+    "width": 1040,
+    "height": 216
+  },
+  "fenwick-layout.png": {
+    "width": 1040,
+    "height": 268
+  },
+  "fenwick-prefix-sum.png": {
+    "width": 1040,
+    "height": 296
+  },
+  "fenwick-prefix-walk.png": {
+    "width": 1040,
+    "height": 296
+  },
+  "fenwick-segments.png": {
+    "width": 1040,
+    "height": 268
+  },
+  "fenwick-update.png": {
+    "width": 1040,
+    "height": 316
+  },
+  "floyd-warshall-c0.png": {
+    "width": 1040,
+    "height": 400
+  },
+  "floyd-warshall-c1.png": {
+    "width": 1040,
+    "height": 400
+  },
+  "floyd-warshall-c2.png": {
+    "width": 1040,
+    "height": 400
+  },
+  "floyd-warshall-graph.png": {
+    "width": 1040,
+    "height": 400
+  },
+  "floyd-warshall-matrix.png": {
+    "width": 1040,
+    "height": 400
+  },
+  "gcd-lcm.png": {
+    "width": 784,
+    "height": 412
+  },
+  "generating-one-skeleton.png": {
+    "width": 784,
+    "height": 400
+  },
+  "graham-pop.png": {
+    "width": 784,
+    "height": 400
+  },
+  "graham-scan-steps.png": {
+    "width": 784,
+    "height": 330
+  },
+  "graph-list-vs-matrix.png": {
+    "width": 784,
+    "height": 430
+  },
+  "graph-running-example.png": {
+    "width": 784,
+    "height": 430
+  },
+  "greedy-fails.png": {
+    "width": 784,
+    "height": 308
+  },
+  "hull-rubber-band.png": {
+    "width": 784,
+    "height": 380
+  },
+  "inclusion-exclusion-three-sets.png": {
+    "width": 784,
+    "height": 558
+  },
+  "inclusion-exclusion-two-sets.png": {
+    "width": 784,
+    "height": 420
+  },
+  "kahn-steps.png": {
+    "width": 1040,
+    "height": 404
+  },
+  "line-circle-cases.png": {
+    "width": 784,
+    "height": 330
+  },
+  "line-circle-construction.png": {
+    "width": 784,
+    "height": 400
+  },
+  "lower-upper-bound.png": {
+    "width": 784,
+    "height": 330
+  },
+  "map-default-trap.png": {
+    "width": 784,
+    "height": 380
+  },
+  "map-vs-array.png": {
+    "width": 784,
+    "height": 400
+  },
+  "matrix.png": {
+    "width": 260,
+    "height": 280
+  },
+  "merge-sort-tree.png": {
+    "width": 784,
+    "height": 450
+  },
+  "monotone-predicate.png": {
+    "width": 784,
+    "height": 286
+  },
+  "on-segment-two-checks.png": {
+    "width": 784,
+    "height": 360
+  },
+  "online-gdb.png": {
+    "width": 957,
+    "height": 472
+  },
+  "orientation-sign.png": {
+    "width": 784,
+    "height": 430
+  },
+  "point-line-distance.png": {
+    "width": 784,
+    "height": 380
+  },
+  "polygon-turn-signs.png": {
+    "width": 784,
+    "height": 344
+  },
+  "prefix-sum.png": {
+    "width": 784,
+    "height": 350
+  },
+  "prime-factor-tree.png": {
+    "width": 784,
+    "height": 424
+  },
+  "priority-queue-ropes.png": {
+    "width": 784,
+    "height": 476
+  },
+  "projection-shadow.png": {
+    "width": 784,
+    "height": 380
+  },
+  "queue.png": {
+    "width": 784,
+    "height": 336
+  },
+  "radix-buckets.png": {
+    "width": 784,
+    "height": 430
+  },
+  "ray-casting-parity.png": {
+    "width": 784,
+    "height": 440
+  },
+  "ray-corner-rule.png": {
+    "width": 784,
+    "height": 360
+  },
+  "ray-crossing-test.png": {
+    "width": 784,
+    "height": 330
+  },
+  "recursion-call-stack.png": {
+    "width": 784,
+    "height": 302
+  },
+  "recursion-unwinding.png": {
+    "width": 784,
+    "height": 430
+  },
+  "segment-distance-three-cases.png": {
+    "width": 784,
+    "height": 340
+  },
+  "segment-tree-flat-array.png": {
+    "width": 1040,
+    "height": 168
+  },
+  "segment-tree-query-1.png": {
+    "width": 1040,
+    "height": 372
+  },
+  "segment-tree-query-2.png": {
+    "width": 1040,
+    "height": 372
+  },
+  "segment-tree-query-3.png": {
+    "width": 1040,
+    "height": 372
+  },
+  "segment-tree-shape.png": {
+    "width": 1040,
+    "height": 316
+  },
+  "segment-tree-sums.png": {
+    "width": 1040,
+    "height": 316
+  },
+  "segment-tree-update.png": {
+    "width": 1040,
+    "height": 332
+  },
+  "set-insert.png": {
+    "width": 784,
+    "height": 336
+  },
+  "shoelace-lacing.png": {
+    "width": 784,
+    "height": 382
+  },
+  "sieve-of-eratosthenes.png": {
+    "width": 784,
+    "height": 520
+  },
+  "smallest-prime-factor.png": {
+    "width": 784,
+    "height": 424
+  },
+  "sparse-table-base.png": {
+    "width": 1040,
+    "height": 286
+  },
+  "sparse-table-full.png": {
+    "width": 1040,
+    "height": 286
+  },
+  "sparse-table-layers.png": {
+    "width": 1040,
+    "height": 310
+  },
+  "sparse-table-query.png": {
+    "width": 1040,
+    "height": 330
+  },
+  "sparse-table-step.png": {
+    "width": 1040,
+    "height": 392
+  },
+  "stack.png": {
+    "width": 784,
+    "height": 356
+  },
+  "straddle-both-ways.png": {
+    "width": 784,
+    "height": 500
+  },
+  "subsets-decisions.png": {
+    "width": 784,
+    "height": 430
+  },
+  "Sum of elements.jpg": {
+    "width": 594,
+    "height": 263
+  },
+  "topological-cycle.png": {
+    "width": 1040,
+    "height": 316
+  },
+  "topological-order.png": {
+    "width": 1040,
+    "height": 342
+  },
+  "tree-dp-robber.png": {
+    "width": 1040,
+    "height": 455
+  },
+  "tree-from-graph.png": {
+    "width": 784,
+    "height": 400
+  },
+  "tree-rooted-at-1.png": {
+    "width": 784,
+    "height": 480
+  },
+  "two-pointers.png": {
+    "width": 784,
+    "height": 496
+  },
+  "union-find-chain.png": {
+    "width": 1040,
+    "height": 462
+  },
+  "union-find-forest.png": {
+    "width": 1040,
+    "height": 372
+  },
+  "union-find-path-compression.png": {
+    "width": 1040,
+    "height": 390
+  },
+  "union-find-unite.png": {
+    "width": 1040,
+    "height": 338
+  },
+  "vector-from-points.png": {
+    "width": 784,
+    "height": 442
+  },
+  "vector-no-position.png": {
+    "width": 784,
+    "height": 492
+  },
+  "vector-operations.png": {
+    "width": 784,
+    "height": 430
+  }
+}

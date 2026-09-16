@@ -4,6 +4,7 @@ import { stripOrderPrefix } from "@/app/scripts/sidebar/generateSidebarContainer
 import { notFound } from "next/navigation";
 import { useLocale } from "next-intl";
 import markdownToHTML from "@/app/scripts/markdown/mdToHTML"
+import OptimizedContent from "@/app/scripts/markdown/optimizeContent";
 
 
 interface LessonPageProps{
@@ -63,10 +64,7 @@ async function LessonContent({params, locale} : LessonContentProps){
     const htmlContent = await markdownToHTML({markdown,fileName:actualFile,includeTitle:true, locale:locale});
 
     return(
-      <article
-        className="prose prose-slate dark:prose-invert max-w-none"
-        dangerouslySetInnerHTML={{ __html: htmlContent }}
-      />
+      <OptimizedContent htmlContent={htmlContent}></OptimizedContent>
     )
 
 

@@ -1,10 +1,3 @@
-const COPY_BTN_SCRIPT = `
-    navigator.clipboard.writeText(this.closest('.code-block-wrapper').querySelector('pre code').textContent);
-    this.textContent = 'Copied!';
-    this.classList.add('copied');
-    setTimeout(() => { this.textContent = 'Copy'; this.classList.remove('copied'); }, 1800);
-`.replace(/\s+/g, " ").trim();
-
 export function postProcessHtml(html: string) : string{
 
     let content = html;
@@ -23,7 +16,7 @@ export function postProcessHtml(html: string) : string{
 
             const header = `<div class="code-block-header">`
                 + `<span class="code-block-title">${trimmed}</span>`
-                + `<button class="code-copy-btn" onclick="${COPY_BTN_SCRIPT}">Copy</button>`
+                + `<button class="code-copy-btn">Copy</button>`
                 + `</div>`;
             
             return `${wrapperOpen}${header}`;
