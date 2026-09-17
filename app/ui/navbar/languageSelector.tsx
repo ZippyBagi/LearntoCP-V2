@@ -1,4 +1,5 @@
 'use client'
+import { getSmartRedirect } from '@/app/scripts/smartRedirect/smartRedirect';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { Menu, MenuButton, MenuItem, MenuItems, Select } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -14,7 +15,9 @@ export default function LanguageSelector(){
     const t = useTranslations('Navbar')
 
     function changeLanguage(newLocale : string){
-        router.replace(pathname, {locale: newLocale});
+
+        const newPathname = getSmartRedirect(pathname,locale,newLocale);
+        router.replace(newPathname, {locale: newLocale});
     }
 
     return (

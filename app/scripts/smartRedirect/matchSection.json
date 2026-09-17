@@ -1,0 +1,34 @@
+{
+  "en": {
+    "Contest%20Knowledge": "0",
+    "Basics": "1",
+    "Sorting": "2",
+    "Optimization%20Techniques": "3",
+    "Binary%20Numbers": "4",
+    "Math": "5",
+    "Data%20Structures": "6",
+    "Combinatorics": "7",
+    "Geometry": "8",
+    "Recursion": "9",
+    "Dynamic%20Programming": "10",
+    "Graph%20Theory": "11",
+    "Advanced%20Graph%20Theory": "12",
+    "Advanced%20Data%20Structures": "13"
+  },
+  "sr": {
+    "Takmi%C4%8Darsko%20Znanje": "0",
+    "Osnove": "1",
+    "Sortiranje": "2",
+    "Tehnike%20Optimizacije": "3",
+    "Binarni%20Brojevi": "4",
+    "Matematika": "5",
+    "Strukture%20Podataka": "6",
+    "Kombinatorika": "7",
+    "Geometrija": "8",
+    "Rekurzija": "9",
+    "Dinami%C4%8Dko%20Programiranje": "10",
+    "Teorija%20Grafova": "11",
+    "Napredna%20Teorija%20Grafova": "12",
+    "Napredne%20Strukture%20Podataka": "13"
+  }
+}

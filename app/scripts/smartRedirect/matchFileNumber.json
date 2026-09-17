@@ -1,0 +1,234 @@
+{
+  "en": {
+    "0": {
+      "0": "Selecting%20an%20IDE"
+    },
+    "1": {
+      "0": "Your%20First%20Program",
+      "1": "Data%20types%20and%20IO",
+      "2": "C%2B%2B%20syntax",
+      "3": "Modulo",
+      "4": "Functions",
+      "5": "Vectors",
+      "6": "Matrices",
+      "7": "Time%20Complexity"
+    },
+    "2": {
+      "0": "Sorting",
+      "1": "Counting%20sort",
+      "2": "Radix%20Sort"
+    },
+    "3": {
+      "1": "Two%20Pointers",
+      "2": "Sum%20of%20numbers%201%20to%20n",
+      "3": "Prefix%20sum",
+      "4": "Binary%20Search",
+      "5": "Greedy",
+      "6": "Binary%20Search%20Functions",
+      "7": "Binary%20Search%20by%20Answer",
+      "8": "Divide%20and%20Conquer"
+    },
+    "4": {
+      "0": "Binary%20Numbers",
+      "1": "Numbers%20in%20code",
+      "2": "Bitwise%20Operations",
+      "3": "Bitmasks"
+    },
+    "5": {
+      "0": "Binary%20Exponentiation",
+      "1": "Prime%20Numbers",
+      "2": "Prime%20Factorization",
+      "3": "GCD%20and%20LCM",
+      "4": "Sieve%20of%20Eratosthenes",
+      "5": "Modified%20Sieve"
+    },
+    "6": {
+      "0": "Strings",
+      "1": "Stack",
+      "2": "Queue",
+      "3": "Maps",
+      "4": "Sets",
+      "5": "Priority%20Queue",
+      "6": "Custom%20Criteria%20for%20Functions",
+      "7": "Segment%20Trees",
+      "8": "Fenwick%20Trees",
+      "9": "Sparse%20Tables",
+      "10": "Union%20Find"
+    },
+    "7": {
+      "0": "Addition%20Principle",
+      "1": "Multiplication%20Principle",
+      "2": "Combinatoric%20Objects",
+      "3": "Inclusion%20Exclusion%20Principle"
+    },
+    "8": {
+      "0": "Geometry%20Basics",
+      "1": "Vectors",
+      "2": "Cross%20and%20Dot%20Product",
+      "3": "Lines",
+      "4": "Polygons",
+      "5": "Angles",
+      "7": "Point%20in%20Polygon",
+      "8": "Distances%20and%20Intersection%20Points",
+      "9": "Convex%20Hull",
+      "10": "Circles"
+    },
+    "9": {
+      "0": "Pointers",
+      "1": "Recursion",
+      "2": "Generating%20Combinatoric%20Objects"
+    },
+    "10": {
+      "0": "About%20DP",
+      "2": "Tree%20DP",
+      "3": "Bitmask%20DP",
+      "4": "Digit%20DP"
+    },
+    "11": {
+      "0": "Graphs",
+      "1": "DFS%20and%20BFS",
+      "2": "Shortest%20Paths",
+      "3": "Trees",
+      "4": "Topological%20Sorting",
+      "5": "Dijkstra's%20Algorithm",
+      "6": "Minimum%20Spanning%20Trees",
+      "7": "Shortest%20Path%20Algorithms"
+    },
+    "12": {
+      "0": "Biconnectivity",
+      "1": "Strongly%20Connected%20Components",
+      "2": "Bipartite%20Graph",
+      "3": "Graph%20Flow",
+      "4": "Augmenting%20Paths",
+      "5": "Flow%20-%20Minimum%20Cut%20Duality",
+      "6": "Heavy-Light%20Decomposition",
+      "7": "Centroid%20Decomposition"
+    },
+    "13": {
+      "0": "2D%20and%203D%20Segment%20Trees",
+      "1": "Lazy%20Propagation",
+      "2": "Implicit%20Segment%20Trees",
+      "3": "Persistent%20Segment%20Trees",
+      "4": "Lowest%20Common%20Ancestor",
+      "5": "Trie",
+      "6": "Balanced%20Binary%20Search%20Trees",
+      "7": "Mo's%20Algorithm"
+    }
+  },
+  "sr": {
+    "0": {
+      "0": "Izbor%20Radnog%20Okru%C5%BEenja%20(IDE)"
+    },
+    "1": {
+      "0": "Tvoj%20Prvi%20Program",
+      "1": "Tipovi%20podataka%2C%20Unos%20i%20Izlaz",
+      "2": "C%2B%2B%20sintaksa",
+      "3": "Modulo",
+      "4": "Funkcije",
+      "5": "Vektori",
+      "6": "Matrice",
+      "7": "Vremenska%20Slo%C5%BEenost%20Algoritma"
+    },
+    "2": {
+      "0": "Sortiranje",
+      "1": "Sortiranje%20Prebrojavanjem",
+      "2": "Radix%20Sort"
+    },
+    "3": {
+      "1": "Dva%20Pokaziva%C4%8Da",
+      "2": "Zbir%20brojeva%20od%201%20do%20n",
+      "3": "Zbir%20Prefiksa",
+      "4": "Binarna%20Pretraga",
+      "5": "Pohlepni%20Algoritmi",
+      "6": "Funkcije%20Binarne%20Pretrage",
+      "7": "Binarna%20Pretraga%20po%20Re%C5%A1enju",
+      "8": "Podeli%2C%20pa%20Vladaj"
+    },
+    "4": {
+      "0": "Binarni%20Brojevi",
+      "1": "Brojevi%20u%20kodu",
+      "2": "Operacije%20nad%20Bitovima",
+      "3": "Bitmaske"
+    },
+    "5": {
+      "0": "Binarno%20Stepenovanje",
+      "1": "Prosti%20Brojevi",
+      "2": "Rastavljanje%20na%20proste%20%C4%8Dinioce",
+      "3": "NZD%20i%20NZS",
+      "4": "Eratostenovo%20Sito",
+      "5": "Modifikovano%20Sito"
+    },
+    "6": {
+      "0": "Niske%20(Stringovi)",
+      "1": "Stek",
+      "2": "Red",
+      "3": "Mape",
+      "4": "Skupovi%20(Set)",
+      "5": "Red%20sa%20Prioritetom",
+      "6": "Kori%C5%A1%C4%87enje%20Proizvoljnih%20Kriterijuma",
+      "7": "Segmentna%20Stabla",
+      "8": "Fenvikova%20Stabla",
+      "9": "Sparse%20Tabele",
+      "10": "Disjunktni%20Skupovi"
+    },
+    "7": {
+      "0": "Pravilo%20Sabiranja",
+      "1": "Pravilo%20Mno%C5%BEenja",
+      "2": "Kombinatorni%20Objekti",
+      "3": "Princip%20Uklju%C4%8Denja%20Isklju%C4%8Denja"
+    },
+    "8": {
+      "0": "Osnove%20Geometrije",
+      "1": "Vektori",
+      "2": "Vektorski%20i%20Skalarni%20Proizvod",
+      "3": "Linije",
+      "4": "Poligoni",
+      "5": "Uglovi",
+      "7": "Ta%C4%8Dka%20u%20Poligonu",
+      "8": "Rastojanja%20i%20Ta%C4%8Dke%20Preseka",
+      "9": "Konveksni%20Omota%C4%8D",
+      "10": "Krugovi"
+    },
+    "9": {
+      "0": "Pokaziva%C4%8Di",
+      "1": "Rekurzija",
+      "2": "Generisanje%20Kombinatornih%20Objekata"
+    },
+    "10": {
+      "0": "O%20DP-u",
+      "2": "DP%20nad%20Stablima",
+      "3": "DP%20nad%20Bitmaskama",
+      "4": "DP%20nad%20brojevima"
+    },
+    "11": {
+      "0": "Grafovi",
+      "1": "DFS%20i%20BFS",
+      "2": "Najkra%C4%87i%20Putevi",
+      "3": "Stabla",
+      "4": "Topolo%C5%A1ko%20Sortiranje",
+      "5": "Dajkstrin%20Algoritam",
+      "6": "Minimalna%20Razapinju%C4%87a%20Stabla",
+      "7": "Algoritmi%20Najkra%C4%87ih%20Puteva"
+    },
+    "12": {
+      "0": "Dvostruka%20Povezanost",
+      "1": "Jako%20Povezane%20Komponente",
+      "2": "Bipartitni%20Graf",
+      "3": "Maksimalni%20Protok%20u%20Grafu",
+      "4": "Ford-Fulkersonov%20Algoritam",
+      "5": "Dualnost%20Protoka%20i%20Minimalnog%20Preseka",
+      "6": "Te%C5%A1ko-Laka%20Dekompozicija",
+      "7": "Centroidna%20Dekompozicija"
+    },
+    "13": {
+      "0": "2D%20i%203D%20Segmentna%20Stabla",
+      "1": "Lenjo%20Propagiranje",
+      "2": "Implicitna%20Segmentna%20Stabla",
+      "3": "Perzistentna%20Segmentna%20Stabla",
+      "4": "Najbli%C5%BEi%20Zajedni%C4%8Dki%20Predak",
+      "5": "Trie",
+      "6": "Balansirana%20Binarna%20Stabla%20Pretrage",
+      "7": "Moov%20Algoritam"
+    }
+  }
+}

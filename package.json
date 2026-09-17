@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "generate:image-metadata": "tsx build-time-scripts/generate-image-metadata.ts",
-    "dev": "pnpm generate:image-metadata && next dev",
-    "build": "pnpm generate:image-metadata && next build",
+    "generate:smart-redirect" : "tsx build-time-scripts/generate-smart-redirects.ts",
+    "dev": "pnpm generate:image-metadata && pnpm generate:smart-redirect && next dev",
+    "build": "pnpm generate:image-metadata && pnpm generate:smart-redirect && next build",
     "start": "next start",
     "lint": "eslint"
   },
