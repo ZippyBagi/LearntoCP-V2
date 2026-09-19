@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "generate:image-metadata": "tsx build-time-scripts/generate-image-metadata.ts",
-    "generate:smart-redirect" : "tsx build-time-scripts/generate-smart-redirects.ts",
+    "generate:smart-redirect": "tsx build-time-scripts/generate-smart-redirects.ts",
     "dev": "pnpm generate:image-metadata && pnpm generate:smart-redirect && next dev",
     "build": "pnpm generate:image-metadata && pnpm generate:smart-redirect && next build",
     "start": "next start",
@@ -13,6 +13,8 @@
   "dependencies": {
     "@headlessui/react": "^2.2.10",
     "@heroicons/react": "^2.2.0",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.116.0",
     "headlessui": "^0.0.0",
     "html-react-parser": "^6.1.7",
     "image-size": "^2.0.4",
