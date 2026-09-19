@@ -4,13 +4,6 @@ import { createClient } from '@/app/scripts/supabase/server';
 
 export default async function LoginPage() {
 
-  //Temporary to test if Oauth works
-  const supabase = await createClient();
-  const { data } = await supabase.auth.getClaims();
-  if (data?.claims) {
-    redirect({href: '/', locale: 'en'});
-  }
-
   return (
     <div className="flex flex-col items-center justify-center min-h-screen gap-4">
       <h1 className="text-xl font-bold">Sign In</h1>

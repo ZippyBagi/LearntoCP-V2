@@ -15,5 +15,10 @@
     "problems" : "Problemi",
     "about_us" : "O Nama",
     "theory" : "Teorija"
+  },
+
+  "AuthButton" : {
+    "sign_in" : "Prijavi se",
+    "sign_out" : "Odjavi se"
   }
 }

@@ -15,6 +15,11 @@
     "problems" : "Problems",
     "about_us" : "About Us",
     "theory" : "Theory"
+  },
+
+  "AuthButton" : {
+    "sign_in" : "Sign in",
+    "sign_out" : "Sign out"
   }
 
 }

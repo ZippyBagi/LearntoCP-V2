@@ -12,7 +12,7 @@ export default function LanguageSelector(){
 
     const locale = useLocale();
 
-    const t = useTranslations('Navbar')
+    const t = useTranslations('Navbar');
 
     function changeLanguage(newLocale : string){
 
