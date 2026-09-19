@@ -1,5 +1,5 @@
 import createMiddleware from 'next-intl/middleware';
-import {routing} from './app/i18n/routing';
+import {routing} from './app/scripts/i18n/routing';
 import { NextRequest, NextResponse } from 'next/server';
 import { updateSession } from './app/scripts/supabase/updateSession';
 

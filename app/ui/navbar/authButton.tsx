@@ -1,11 +1,11 @@
 'use client';
 
-import { usePathname } from "@/app/i18n/navigation";
+import { usePathname } from "@/app/scripts/i18n/navigation";
 import { createClient } from "@/app/scripts/supabase/client";
 import { useEffect, useState } from "react";
 import type { User } from "@supabase/supabase-js";
 import { useLocale, useTranslations } from "next-intl";
-import { Link } from "@/app/i18n/navigation";
+import { Link } from "@/app/scripts/i18n/navigation";
 import signOut from "@/app/scripts/login/signOut";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import Image from "next/image";

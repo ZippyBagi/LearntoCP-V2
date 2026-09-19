@@ -1,6 +1,6 @@
 'use client';
 
-import { Link, usePathname } from "@/app/i18n/navigation"
+import { Link, usePathname } from "@/app/scripts/i18n/navigation"
 
 interface SidebarButtonProps{
     name : string,

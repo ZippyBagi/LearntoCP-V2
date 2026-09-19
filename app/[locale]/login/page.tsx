@@ -1,5 +1,5 @@
 import { signInWithGoogle } from '@/app/scripts/login/actions'
-import { redirect } from '@/app/i18n/navigation';
+import { redirect } from '@/app/scripts/i18n/navigation';
 import { createClient } from '@/app/scripts/supabase/server';
 
 export default async function LoginPage() {
