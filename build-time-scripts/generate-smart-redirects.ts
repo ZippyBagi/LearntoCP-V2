@@ -3,11 +3,11 @@ import path from "path";
 
 const rootPath = path.join(process.cwd(), 'content');
 
-const outputPathMatchSection = path.join(process.cwd(), "app", "scripts", "theory", "matchSection.json");
-const outputPathMatchFile = path.join(process.cwd(), "app", "scripts", "theory", "matchFile.json");
+const outputPathMatchSection = path.join(process.cwd(), "app", "scripts", "smartRedirect", "matchSection.json");
+const outputPathMatchFile = path.join(process.cwd(), "app", "scripts", "smartRedirect", "matchFile.json");
 
-const outputPathMatchSectionNumber = path.join(process.cwd(), "app", "scripts", "theory", "matchSectionNumber.json");
-const outputPathMatchFileNumber = path.join(process.cwd(), "app", "scripts", "theory", "matchFileNumber.json");
+const outputPathMatchSectionNumber = path.join(process.cwd(), "app", "scripts", "smartRedirect", "matchSectionNumber.json");
+const outputPathMatchFileNumber = path.join(process.cwd(), "app", "scripts", "smartRedirect", "matchFileNumber.json");
 
 const languages = ['en', 'sr'];
 
