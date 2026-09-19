@@ -1,6 +1,6 @@
 'use client'
 
-import { Link, usePathname, useRouter } from "@/i18n/navigation"
+import { Link, usePathname, useRouter } from "@/app/i18n/navigation"
 
 interface SidebarContainerItemProps{
 

@@ -1,6 +1,6 @@
 'use client'
 import { getSmartRedirect } from '@/app/scripts/smartRedirect/smartRedirect';
-import { usePathname, useRouter } from '@/i18n/navigation';
+import { usePathname, useRouter } from '@/app/i18n/navigation';
 import { Menu, MenuButton, MenuItem, MenuItems, Select } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { useLocale, useTranslations } from 'next-intl';

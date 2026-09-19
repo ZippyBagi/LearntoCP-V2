@@ -1,6 +1,6 @@
 'use client'
 
-import { usePathname } from "@/i18n/navigation";
+import { usePathname } from "@/app/i18n/navigation";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import SidebarContainerItem from "./sidebar_container_item"
