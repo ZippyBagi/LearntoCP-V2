@@ -4,7 +4,7 @@ import { usePathname } from "@/app/scripts/i18n/navigation";
 import { createClient } from "@/app/scripts/supabase/client";
 import { useEffect, useState } from "react";
 import type { User } from "@supabase/supabase-js";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link } from "@/app/scripts/i18n/navigation";
 import signOut from "@/app/scripts/login/signOut";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
@@ -13,7 +13,6 @@ import { LogOut } from "lucide-react";
 
 export default function AuthButton(){
 
-    const locale = useLocale();
     const pathname = usePathname();
     const [user, setUser] = useState<User | null>(null);
     const [loaded, setLoaded] = useState(false);
