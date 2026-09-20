@@ -4,11 +4,14 @@ import { usePathname, useRouter } from '@/app/scripts/i18n/navigation';
 import { Menu, MenuButton, MenuItem, MenuItems, Select } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { useLocale, useTranslations } from 'next-intl';
+import { useSearchParams } from 'next/navigation';
 
 export default function LanguageSelector(){
 
     const router = useRouter();
     const pathname = usePathname();
+    const searchParams = useSearchParams();
+    const query = searchParams.toString();
 
     const locale = useLocale();
 
@@ -17,7 +20,7 @@ export default function LanguageSelector(){
     function changeLanguage(newLocale : string){
 
         const newPathname = getSmartRedirect(pathname,locale,newLocale);
-        router.replace(newPathname, {locale: newLocale});
+        router.replace(`${newPathname}${query ? `?${query}` : ""}`, {locale: newLocale});
     }
 
     return (

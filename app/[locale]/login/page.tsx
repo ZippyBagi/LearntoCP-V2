@@ -1,19 +1,28 @@
-import { signInWithGoogle } from '@/app/scripts/login/actions'
+import { redirect } from '@/app/scripts/i18n/navigation';
+import { createClient } from '@/app/scripts/supabase/server';
+import DefaultBG from '@/app/ui/utils/defaultBG';
+import { getLocale } from 'next-intl/server';
+import LoginPanel from '@/app/ui/login/loginPane';
 
 export default async function LoginPage({searchParams} : { searchParams: Promise<{ next?: string }>; }) {
 
-  const { next = "/" } = await searchParams;
+	const { next = "/" } = await searchParams;
 
-  const signInWithGoogleWithNext = signInWithGoogle.bind(null, next);
+	const supabase = await createClient();
+	const { data } = await supabase.auth.getClaims();
 
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-4">
-        <h1 className="text-xl font-bold">Sign In</h1>
-            <form action={signInWithGoogleWithNext}>
-                <button type="submit" className="px-4 py-2 border rounded shadow">
-                    Sign in with Google
-                </button>
-            </form>
-    </div>
-  )
+	const locale = await getLocale();
+
+	if(data?.claims){
+		const safeNext = next && next.startsWith("/") && !next.startsWith("//") ? next : `/`;
+		redirect({href: safeNext, locale:locale});
+	} 
+
+	return (
+		<DefaultBG>
+			<div className="absolute left-1/2 top-1/2 w-[min(440px,calc(100%-2rem))] -translate-x-1/2 -translate-y-1/2">
+				<LoginPanel></LoginPanel>
+			</div>
+		</DefaultBG>
+	)
 }

@@ -20,5 +20,19 @@
   "AuthButton" : {
     "sign_in" : "Prijavi se",
     "sign_out" : "Odjavi se"
+  },
+
+  "Login" : {
+    "page_roadmap" : "road-mapi",
+    "page_problems" : "problemima",
+    "page_generic" : "ovoj stranici",
+    "signInRequired" : "Da biste pristupili {page}, morate da se prijavite.",
+    "eyebrow" : "PRIJAVA",
+    "welcomePrefix" : "Dobrošli na",
+    "description" : "Prijavite se kako bi pratili napredak na road-mapi i kako bi rešavali probleme!",
+    "connecting" : "Povezivanje sa Google-om…",
+    "continueGoogle" : "Nastavite sa Google-om",
+    "privacy" : "Koristimo vaš Google nalog samo za identifikaciju. Nećeti dobijati mejlove, niti spam.",
+    "errorStart" : "Nije moguće započeti prijavu. Pokušajte ponovo."
   }
 }

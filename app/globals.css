@@ -3,6 +3,7 @@
 
 @import "./styles/typography.css";
 @import "./styles/code-blocks.css";
+@import "./styles/animations.css";
 
 :root {
   color-scheme: dark;

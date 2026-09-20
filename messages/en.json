@@ -20,6 +20,21 @@
   "AuthButton" : {
     "sign_in" : "Sign in",
     "sign_out" : "Sign out"
+  },
+
+  "Login" : {
+    "page_roadmap" : "the roadmap",
+    "page_problems" : "the problems",
+    "page_generic" : "this page",
+    "signInRequired" : "To access {page}, you need to sign in first.",
+    "eyebrow" : "SIGN IN",
+    "welcomePrefix" : "Welcome to",
+    "description" : "Sign in to track your progress through the roadmap, lectures, and problems.",
+    "connecting" : "Connecting to Google…",
+    "continueGoogle" : "Continue with Google",
+    "privacy" : "We only use your Google account to identify you. No emails, no spam.",
+    "errorStart" : "Could not start sign-in. Please try again."
+    
   }
 
 }
