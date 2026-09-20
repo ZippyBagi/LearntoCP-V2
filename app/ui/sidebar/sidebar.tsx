@@ -10,15 +10,15 @@ import { SidebarContainer } from "@/app/scripts/sidebar/generateSidebarContainer
 
 interface SidebarProps{
 
+    toggled : boolean;
     containers : SidebarContainer[]
 }
 
-export default function Sidebar({containers} : SidebarProps){
+export default function Sidebar({toggled, containers} : SidebarProps){
 
     const t = useTranslations("Sidebar");
-
-    return <nav className="fixed top-[52px] bottom-0 left-0 z-40 w-56 md:static md:top-auto md:bottom-auto md:z-auto md:h-full flex flex-col shrink-0 overflow-hidden md:translate-x-0
-                            bg-bg-sidebar border-r border-r-border-subtle">
+    return <nav className={`${toggled ? "translate-x-0 md:w-56 md:opacity-100" : "-translate-x-full md:w-0 md:opacity-0"} fixed top-[52px] bottom-0 left-0 z-40 w-56 md:static md:top-auto md:bottom-auto md:z-auto md:h-full flex flex-col shrink-0 overflow-hidden md:translate-x-0
+                            bg-bg-sidebar border-r border-r-border-subtle`}>
 
 
         <div className="overflow-y-auto overscroll-contain flex-1 min-h-0 w-full">

@@ -14,7 +14,7 @@ interface LayoutShellProps{
 
 export default function LayoutShell({children,containers} : LayoutShellProps){
 
-    const [sidebarActive, setSidebarActive] = useState(false);
+    const [sidebarActive, setSidebarActive] = useState(true);
     
     return(
         <div className="flex h-dvh w-screen flex-col overflow-hidden">
@@ -23,7 +23,7 @@ export default function LayoutShell({children,containers} : LayoutShellProps){
             
             <div className="relative flex min-h-0 flex-1">
                 
-                <Sidebar containers={containers}></Sidebar>
+                <Sidebar containers={containers} toggled={sidebarActive}></Sidebar>
 
                 <div className="min-w-0 flex-1 overflow-auto overscroll-contain p-3">
                     {children}
