@@ -1,0 +1,3 @@
+sr-name: Binarna Pretraga
+id: binary-search
+href: /Theory/Optimization Techniques/Binary Search

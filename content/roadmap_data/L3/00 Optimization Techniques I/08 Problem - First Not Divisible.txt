@@ -1,0 +1,4 @@
+sr-name: Problem - Prvi koji nije deljiv
+id: first-not-divisible
+href: /Problems/first-not-divisible
+type: problem

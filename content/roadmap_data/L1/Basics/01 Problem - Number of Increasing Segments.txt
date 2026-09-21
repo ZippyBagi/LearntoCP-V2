@@ -1,0 +1,4 @@
+sr-name: Problem - Broj rastućih segmenata
+id: increasing-segments
+href: /Problems/increasing-segments
+type: problem

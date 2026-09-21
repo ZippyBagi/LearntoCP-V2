@@ -1,0 +1,4 @@
+sr-name: Problem - Deljivi rasporedi cifara
+id: divisible-rearrangements
+href: /Problems/divisible-rearrangements
+type: problem

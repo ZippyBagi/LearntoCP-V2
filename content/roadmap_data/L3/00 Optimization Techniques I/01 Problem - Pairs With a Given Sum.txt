@@ -1,0 +1,4 @@
+sr-name: Problem - Broj parova datog zbira
+id: pairs-with-given-sum
+href: /Problems/pairs-with-given-sum
+type: problem

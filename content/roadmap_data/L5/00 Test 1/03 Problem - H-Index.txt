@@ -1,0 +1,4 @@
+sr-name: Problem - Hiršov h-indeks
+id: h-index
+href: /Problems/h-index
+type: problem

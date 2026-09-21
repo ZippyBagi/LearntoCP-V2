@@ -1,0 +1,4 @@
+sr-name: Problem - Monopol
+id: monopoly
+href: /Problems/monopoly
+type: problem

@@ -1,0 +1,4 @@
+sr-name: Problem - Inverzije nakon izbacivanja segmenata
+id: inversions-after-removal
+href: /Problems/inversions-after-removal
+type: problem

@@ -1,0 +1,3 @@
+sr-name: Zbir Prefiksa
+id: prefix-sum
+href: /Theory/Optimization Techniques/Prefix sum

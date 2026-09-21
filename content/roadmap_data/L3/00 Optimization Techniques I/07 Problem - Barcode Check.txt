@@ -1,0 +1,4 @@
+sr-name: Problem - Provera bar-kodova
+id: barcodes
+href: /Problems/barcodes
+type: problem

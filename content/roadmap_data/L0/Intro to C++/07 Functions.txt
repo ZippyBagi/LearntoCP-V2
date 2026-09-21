@@ -1,0 +1,3 @@
+sr-name: Funkcije
+id: functions
+href: /Theory/Basics/Functions

@@ -1,0 +1,4 @@
+sr-name: Problem - Zbir dva Broja
+id: sum-two-numbers
+href: /Problems/sum-two-numbers
+type: problem

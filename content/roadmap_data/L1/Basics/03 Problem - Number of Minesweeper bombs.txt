@@ -1,0 +1,4 @@
+sr-name: Problem - Broj bombi u igrici Minesweeper
+id: number-of-minesweeper-bombs
+href: /Problems/number-of-minesweeper-bombs
+type: problem

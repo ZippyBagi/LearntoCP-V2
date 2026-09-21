@@ -1,0 +1,3 @@
+sr-name: Modulo
+id: modulo
+href: /Theory/Basics/Modulo

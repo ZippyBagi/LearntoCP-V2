@@ -1,0 +1,3 @@
+sr-name: Vektori
+id: vectors
+href: /Theory/Basics/Vectors

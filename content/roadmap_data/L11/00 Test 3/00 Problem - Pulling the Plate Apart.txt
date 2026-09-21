@@ -1,0 +1,4 @@
+sr-name: Problem - Rastavljanje ploče
+id: plate-apart
+href: /Problems/plate-apart
+type: problem

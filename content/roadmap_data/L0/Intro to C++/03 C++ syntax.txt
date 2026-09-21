@@ -1,0 +1,3 @@
+sr-name: C++ sintaksa
+id: cpp-syntax
+href: /Theory/Basics/C%2B%2B%20syntax

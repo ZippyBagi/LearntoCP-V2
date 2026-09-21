@@ -1,0 +1,4 @@
+sr-name: Problem - Zbirovi segmenata
+id: segment-sums
+href: /Problems/segment-sums
+type: problem

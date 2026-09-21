@@ -1,0 +1,4 @@
+sr-name: Problem - Gužva na bazenu
+id: crowded-pool
+href: /Problems/crowded-pool
+type: problem

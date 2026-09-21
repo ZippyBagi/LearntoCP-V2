@@ -1,0 +1,4 @@
+sr-name: Problem - Idealni izbori
+id: ideal-elections
+href: /Problems/ideal-elections
+type: problem

@@ -1,0 +1,4 @@
+sr-name: Problem - Jaki parovi
+id: strong-pairs
+href: /Problems/strong-pairs
+type: problem

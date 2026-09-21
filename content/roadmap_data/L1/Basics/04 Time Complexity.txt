@@ -1,0 +1,3 @@
+sr-name: Vremenska Složenost Algoritma
+id: time-complexity
+href: /Theory/Basics/Time Complexity

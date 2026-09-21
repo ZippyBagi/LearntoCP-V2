@@ -1,0 +1,3 @@
+sr-name: Izbor Radnog Okruženja (IDE)
+id: selecting-an-ide
+href: /Theory/Contest Knowledge/Selecting an IDE

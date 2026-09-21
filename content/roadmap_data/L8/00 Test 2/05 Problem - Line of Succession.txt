@@ -1,0 +1,4 @@
+sr-name: Problem - Prestolonaslednici
+id: line-of-succession
+href: /Problems/line-of-succession
+type: problem

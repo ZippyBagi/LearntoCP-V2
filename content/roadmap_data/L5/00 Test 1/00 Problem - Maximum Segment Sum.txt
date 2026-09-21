@@ -1,0 +1,4 @@
+sr-name: Problem - Maksimalni zbir segmenta
+id: max-segment-sum
+href: /Problems/max-segment-sum
+type: problem

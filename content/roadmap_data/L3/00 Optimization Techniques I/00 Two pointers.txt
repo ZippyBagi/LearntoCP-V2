@@ -1,0 +1,3 @@
+sr-name: Dva Pokazivača
+id: two-pointers
+href: /Theory/Optimization Techniques/Two Pointers

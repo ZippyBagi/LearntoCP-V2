@@ -1,0 +1,4 @@
+sr-name: Problem - Trojke datog zbira
+id: three-sum
+href: /Problems/three-sum
+type: problem
