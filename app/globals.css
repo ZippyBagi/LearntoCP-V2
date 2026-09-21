@@ -4,6 +4,7 @@
 @import "./styles/typography.css";
 @import "./styles/code-blocks.css";
 @import "./styles/animations.css";
+@import "./styles/components.css";
 
 :root {
   color-scheme: dark;

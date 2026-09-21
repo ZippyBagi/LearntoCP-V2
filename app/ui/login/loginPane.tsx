@@ -52,7 +52,7 @@ export default function LoginPanel({}){
 
     return (
 
-        <div className="relative w-[min(440px,100%)] scale-[1.1]">
+        <div className="relative w-[min(440px,100%)] scale-[1.1] pop">
 
             {noticePage && (
                 <div role="status" className="absolute bottom-[calc(100%+14px)] left-0 right-0 flex items-start gap-[10px] px-4 py-3 rounded-xl text-sm leading-[1.55] text-[var(--color-text-muted)] bg-[#0a1c2e] border border-[rgba(124,158,248,0.30)] shadow-[0_4px_20px_rgba(0,0,0,0.35)]">

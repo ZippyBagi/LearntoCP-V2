@@ -1,0 +1,7 @@
+
+@layer components {
+  .pop {
+    animation: ltcp-pop 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+    animation-delay: var(--pop-delay, 0ms);
+  }
+}
