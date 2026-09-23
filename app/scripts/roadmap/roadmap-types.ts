@@ -14,3 +14,7 @@ export interface RoadmapNode{
 }
 
 export type RoadmapMatrix = RoadmapNode[][];
+
+export function itemKey(nodeId: string, itemId: string): string {
+  return `${nodeId}/${itemId}`;
+}

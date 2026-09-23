@@ -1,12 +1,13 @@
-import Image from "next/image";
-import Navbar from "@/app/ui/navbar/navbar";
+'use client'
+
 import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-export default async function Home() {
+export default function Home() {
   
-  const t = await getTranslations('HomePage');
+    const t = useTranslations('HomePage');
 
-  return (
-    <h1>{t('title')}</h1>
-  );
+	return (
+		<h1>{t('title')}</h1>
+	);
 }

@@ -4,4 +4,9 @@
     animation: ltcp-pop 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
     animation-delay: var(--pop-delay, 0ms);
   }
+
+  .edges-revealing .connector-pop {
+    opacity: 0;
+    animation: ltcp-connector-pop 220ms ease-out both;
+  }
 }
