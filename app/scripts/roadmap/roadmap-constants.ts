@@ -25,7 +25,7 @@ export const POP_DURATION = 420;
 export const LAYER_STAGGER = 60;
 export const EDGE_DRAW_DURATION = 300;  
 
-export const EDGE_HIT_TIME = 140;      
+export const EDGE_HIT_TIME = 30;      
 export const EDGE_CONTINUE_DELAY = 0;  
 
 export const EDGE_STEP = EDGE_HIT_TIME + EDGE_CONTINUE_DELAY;

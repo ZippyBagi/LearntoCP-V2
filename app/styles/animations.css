@@ -17,3 +17,8 @@
   70%  { opacity: 1; transform: scale(1.25); }
   100% { opacity: 1; transform: scale(1); }
 }
+
+@keyframes ltcp-edge-draw {
+  from { stroke-dashoffset: var(--ltcp-edge-len, 400); }
+  to   { stroke-dashoffset: 0; stroke-dasharray: none;}
+}

@@ -5,8 +5,19 @@
     animation-delay: var(--pop-delay, 0ms);
   }
 
-  .edges-revealing .connector-pop {
+  .connector-pop {
     opacity: 0;
     animation: ltcp-connector-pop 220ms ease-out both;
+    animation-delay: var(--pop-delay, 0ms);
+  }
+
+  .edges-revealing{
+    stroke-dasharray: var(--ltcp-edge-len, 400);
+    animation: ltcp-edge-draw 300ms ease-out both;
+  }
+
+  .react-flow__edge-path{
+    stroke-dasharray: var(--ltcp-edge-len, 400);
+    animation: ltcp-edge-draw 300ms ease-out both;
   }
 }

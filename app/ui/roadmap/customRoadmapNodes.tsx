@@ -4,11 +4,12 @@ import { RoadmapNodeCard } from '@/app/ui/roadmap/rodampNodeCard'
 import { ConnectorNode } from '@/app/ui/roadmap/roadmapNodeConnector'
 
 export function RoadmapCustomNode({ data }: NodeProps) {
-    return (
+    
+  return (
     <>
         {data.hideTopNode === false? <Handle type="target" position={Position.Top} isConnectable={false} style={{ opacity: 0 }}/> : '' }
         
-        <div className={`pop [--pop-delay:${data.popDelay as number ?? 0}ms]`} >
+        <div className="pop" style={{ "--pop-delay": `${data.popDelay ?? 0}ms` } as React.CSSProperties}>
             <RoadmapNodeCard
                 title={(data.label as string).replace(/^[0-9]+/, '')}
                 progress={data.progress as number ?? 1}
@@ -27,7 +28,7 @@ export function RoadmapConnectorNode({data} : NodeProps){
     <>
       {data.hideTopNode === false? <Handle type="target" position={Position.Top} isConnectable={false} style={{ opacity: 0 }}/> : ''}
       
-      <div className={`connector-pop [--pop-delay:${data.popDelay as number ?? 0}ms]`}>
+      <div className="connector-pop" style={{ "--pop-delay": `${data.popDelay ?? 0}ms` } as React.CSSProperties}>
         <ConnectorNode />
       </div>
 
