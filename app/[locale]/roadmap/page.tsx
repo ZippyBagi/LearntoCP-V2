@@ -26,5 +26,3 @@ export default async function Home() {
 		
 	);
 }
-
-//TODO : FIX HOVER EFFECT WRONG COLOR,FIX CHECKMARK, REFACTOR ROADMAPMODAL

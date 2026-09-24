@@ -31,7 +31,7 @@ function edgeStyle(delay: number, dx: number): CSSProperties {
   } as CSSProperties;
 }
 
-export function getRoadmapNodes(matrix : RoadmapMatrix, getProgress : (i : number, j : number) => number, isComplete: (i: number, j: number) => boolean,
+export function useRoadmapNodes(matrix : RoadmapMatrix, getProgress : (i : number, j : number) => number, isComplete: (i: number, j: number) => boolean,
                                 setModal: (val: { layerIndex: number; nodeIndex: number } | null) => void, loggedIn: boolean = false, fitLayers: number = INITIAL_FIT_LAYERS
 ){
     return useMemo(() => {

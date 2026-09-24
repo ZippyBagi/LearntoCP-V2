@@ -20,15 +20,11 @@ export function RoadmapNodeCard({title, progress, isComplete, onClick} : Roadmap
         <div className="group relative w-full">
             <button onClick={onClick} aria-label={`Open ${title}`} className={[ "relative flex w-full cursor-pointer flex-col overflow-hidden rounded-xl text-left",
                                                                                     "border-2",
-                                                                                    "bg-[linear-gradient(135deg,#0d2137_0%,#0a1c2e_100%)]",
-                                                                                    isComplete && "bg-[linear-gradient(135deg,#0d2137_0%,#0b2a1a_100%)]",
+                                                                                    isComplete ? "bg-[linear-gradient(135deg,#0d2137_0%,#0b2a1a_100%)]" : "bg-[linear-gradient(135deg,#0d2137_0%,#0a1c2e_100%)]",
                                                                                     "border-[var(--border-color)]",
                                                                                     "shadow-[0_0_0_1px_var(--glow-color),0_2px_12px_rgba(0,0,0,0.4)]",
                                                                                     "transition-[box-shadow,border-color] duration-200 ease-out",
-                                                                                    "hover:border-[rgba(124,158,248,0.65)]",
-                                                                                    "hover:shadow-[0_0_0_1px_rgba(124,158,248,0.1),0_0_18px_rgba(124,158,248,0.18)]",
-                                                                                    isComplete &&
-                                                                                    "hover:border-[rgba(80,250,123,0.75)] hover:shadow-[0_0_0_1px_rgba(80,250,123,0.12),0_0_18px_rgba(80,250,123,0.18)]",
+                                                                                    isComplete ? "hover:border-[rgba(80,250,123,0.75)] hover:shadow-[0_0_0_1px_rgba(80,250,123,0.12),0_0_18px_rgba(80,250,123,0.18)]" : "hover:border-[rgba(124,158,248,0.65)] hover:shadow-[0_0_0_1px_rgba(124,158,248,0.1),0_0_18px_rgba(124,158,248,0.18)]",
                                                                                     "active:brightness-90",
                                                                                     "focus-visible:outline-none focus-visible:ring-2",
                                                                                     "focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2",

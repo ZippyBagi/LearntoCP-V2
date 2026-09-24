@@ -6,7 +6,7 @@ import { RoadmapModal } from "./roadmapModal";
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import {INITIAL_FIT_LAYERS_MOBILE, INITIAL_FIT_LAYERS, FIT_MIN_ZOOM_MOBILE, FIT_MAX_ZOOM_MOBILE, MIN_ZOOM_MOBILE,MAX_ZOOM, MIN_ZOOM} from '@/app/scripts/roadmap/roadmap-constants'
 import { getRoadmapParams } from "@/app/scripts/roadmap/getRoadmapParams";
-import { getRoadmapNodes } from "@/app/scripts/roadmap/getRoadmapNodes";
+import { useRoadmapNodes } from "@/app/scripts/roadmap/getRoadmapNodes";
 import { RoadmapConnectorNode, RoadmapCustomNode } from "@/app/ui/roadmap/customRoadmapNodes";
 
 export interface RoadmapCanvasProps{
@@ -28,7 +28,7 @@ export function RoadmapCanvas({matrix, initialCompleted, solvedSlugs, loginUrl} 
 
     const { modal, setModal, modalNode, modalChecked, getProgress, isComplete, handleToggle } = getRoadmapParams(matrix, initialCompleted, solvedSlugs, loginUrl);
 
-    const { nodeValues, edgeValues, fitNodeIds, entranceDuration } = getRoadmapNodes(matrix, getProgress, isComplete, setModal, 
+    const { nodeValues, edgeValues, fitNodeIds, entranceDuration } = useRoadmapNodes(matrix, getProgress, isComplete, setModal, 
         loginUrl === null, //loginURL === null means logged in
         isMobile ? INITIAL_FIT_LAYERS_MOBILE : INITIAL_FIT_LAYERS,
     );

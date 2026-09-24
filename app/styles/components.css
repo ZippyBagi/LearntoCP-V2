@@ -11,12 +11,7 @@
     animation-delay: var(--pop-delay, 0ms);
   }
 
-  .edges-revealing{
-    stroke-dasharray: var(--ltcp-edge-len, 400);
-    animation: ltcp-edge-draw 300ms ease-out both;
-  }
-
-  .react-flow__edge-path{
+  .edges-revealing .react-flow__edge-path{
     stroke-dasharray: var(--ltcp-edge-len, 400);
     animation: ltcp-edge-draw 300ms ease-out both;
   }
