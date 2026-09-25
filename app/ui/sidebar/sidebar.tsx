@@ -25,6 +25,8 @@ export default function Sidebar({toggled, containers, isMobile, setClosed} : Sid
     const [startX, setStartX] = useState(0);
 
     const handlePointerDown = (e : React.PointerEvent) => {
+        if(!isMobile) return;
+
         setStartX(e.clientX);
         setDragX(0);
     }
@@ -32,6 +34,7 @@ export default function Sidebar({toggled, containers, isMobile, setClosed} : Sid
     const AXIS_LOCK_THRESHOLD = 8;
 
     function handlePointerMove(e: React.PointerEvent) {
+        if(!isMobile) return;
 
         const delta = e.clientX - startX;
 
@@ -41,6 +44,8 @@ export default function Sidebar({toggled, containers, isMobile, setClosed} : Sid
     }
 
     const handlePointerUp = () => {
+        if(!isMobile) return;
+        
         if(dragX == null){
             return;
         }
