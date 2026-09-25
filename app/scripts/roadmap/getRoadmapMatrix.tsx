@@ -41,10 +41,16 @@ function readItemFile(raw : string) : Record <string, string> {
 
 function localeHref(rawHref : string, locale : string) : string{
     
+    if(rawHref.includes('Problems') || rawHref.includes('Hidden')){
+        return rawHref;
+    }
+
     if(locale == 'en'){
         return rawHref;
     }
-    return getSmartRedirect(encodeURIComponent(rawHref), 'en', locale);
+
+    const href = '/Theory/' + rawHref.replace(/^\/Theory\//, '').split('/').map(encodeURIComponent).join('/');
+    return getSmartRedirect(href, 'en', locale);
 }
 
 export const getRoadmapMatrix = cache((locale : string) : RoadmapMatrix => {
