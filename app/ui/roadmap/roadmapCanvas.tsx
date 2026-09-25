@@ -109,11 +109,20 @@ export function RoadmapCanvas({matrix, initialCompleted, solvedSlugs, loginUrl} 
         [],
     );
 
+    const [initialized, setInitialized] = useState(false);
+
     return(
         <div ref={containerRef} className="-m-3 h-[calc(100%+1.5rem)] w-[calc(100%+1.5rem)]">
             <div className={`h-full w-full overflow-hidden rounded-xl border-1 border-accent-border shadow-[inset_0_0_80px_rgba(124,158,248,0.03)] ${edgesRevealed ? "" : "edges-revealing"}`}>
-                <ReactFlow className="bg-transparent" nodeTypes={nodeTypes} fitView fitViewOptions={fitViewOptions} minZoom={isMobile ? MIN_ZOOM_MOBILE : MIN_ZOOM}
+                <ReactFlow className="bg-transparent" nodeTypes={nodeTypes} fitView fitViewOptions={fitViewOptions}  minZoom={isMobile ? MIN_ZOOM_MOBILE : MIN_ZOOM}
                     maxZoom={MAX_ZOOM} nodes={nodes} edges={edges} onNodesChange={onNodesChange} nodesDraggable={!isMobile} panOnScroll={false} zoomOnDoubleClick={!isMobile}
+                    onInit={(instance) => {
+                        instance.fitView(fitViewOptions);
+                        setInitialized(true);
+                    }}
+                    style={{
+                        opacity: initialized ? 1 : 0
+                    }}
                 >
                     
                     <Background color="rgba(124,158,248,0.35)" gap={isMobile ? 32 : 24} size={1.5}></Background>
