@@ -23,6 +23,26 @@ export default function LayoutShell({children,containers} : LayoutShellProps){
 
     const [sidebarActive, setSidebarActive] = useState(true);
 
+    const [isMobile, setIsMobile] = useState(false);
+    
+    useEffect(() => {
+
+        const query = window.matchMedia("(max-width: 767px)");
+
+        const apply = (matches: boolean) => {
+            setIsMobile(matches);
+            setSidebarActive(!matches);
+        };
+
+        apply(query.matches);
+
+        const onChange = (e: MediaQueryListEvent) => apply(e.matches);
+        query.addEventListener("change", onChange);
+
+        return () => query.removeEventListener("change", onChange);
+    }, []);
+
+
     const pathname = usePathname();
     const [pendingHref, setPendingHref] = useState<string | null>(null);
     
@@ -55,7 +75,7 @@ export default function LayoutShell({children,containers} : LayoutShellProps){
                 
                 <div className="relative flex min-h-0 flex-1">
                     
-                    <Sidebar containers={containers} toggled={sidebarActive}></Sidebar>
+                    <Sidebar containers={containers} toggled={sidebarActive} isMobile={isMobile} setClosed={() => setSidebarActive(false)}></Sidebar>
 
                     <div className="min-w-0 flex-1 overflow-auto overscroll-contain p-3">
                         {showingLessonSkeleton ? <LessonSkeleton></LessonSkeleton> : children}

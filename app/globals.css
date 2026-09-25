@@ -23,6 +23,7 @@
 
   --color-bg-navbar:           rgba(0,10,20,0.75);
   --color-bg-sidebar:          rgba(0,8,16,0.6);
+  --color-bg-sidebar-full:     rgba(0,8,16,1);
 
   --color-border-subtle:       rgba(124, 158, 248, 0.12);
   --color-highlite-subtle:     rgba(124,158,248,0.08);
