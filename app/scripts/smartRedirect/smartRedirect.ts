@@ -9,6 +9,9 @@ const matchSection : Record<string, Record<string, string>> = matchSectionData;
 const matchFileNumber : Record<string, Record<string, Record<string, string>>> = matchFileNumberData;
 const matchSectionNumber : Record<string, Record<string, string>> = matchSectionNumberData;
 
+/**
+ * `url` must be in the form of /Theory/ENCODED(section)/ENCODED(lesson) for the system to work
+ */
 export function getSmartRedirect(url : string, oldLocale : string, newLocale : string){
 
     if (!url.includes("/Theory/")) {
