@@ -44,8 +44,7 @@ function localeHref(rawHref : string, locale : string) : string{
     if(locale == 'en'){
         return rawHref;
     }
-
-    return getSmartRedirect(rawHref, 'en', locale);
+    return getSmartRedirect(encodeURIComponent(rawHref), 'en', locale);
 }
 
 export const getRoadmapMatrix = cache((locale : string) : RoadmapMatrix => {
