@@ -18,7 +18,6 @@ export default function LanguageSelector(){
     const t = useTranslations('Navbar');
 
     function changeLanguage(newLocale : string){
-
         const newPathname = getSmartRedirect(pathname,locale,newLocale);
         router.replace(`${newPathname}${query ? `?${query}` : ""}`, {locale: newLocale});
     }

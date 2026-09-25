@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { useLocale } from "next-intl";
 import markdownToHTML from "@/app/scripts/markdown/mdToHTML"
 import OptimizedContent from "@/app/scripts/markdown/optimizeContent";
+import { Suspense } from "react";
+import LessonSkeleton from "@/app/ui/Lessons/lessonSkeleton";
 
 
 interface LessonPageProps{
@@ -15,8 +17,11 @@ export default function LessonPage({params} : LessonPageProps){
 
     const locale = useLocale();
 
-    return(<LessonContent params={params} locale={locale}></LessonContent>)
-
+    return(
+		<Suspense fallback={<LessonSkeleton></LessonSkeleton>}>
+			<LessonContent params={params} locale={locale}></LessonContent>
+		</Suspense>
+	)
 }
 
 function safeDecode(s: string): string {
@@ -64,7 +69,7 @@ async function LessonContent({params, locale} : LessonContentProps){
     const htmlContent = await markdownToHTML({markdown,fileName:actualFile,includeTitle:true, locale:locale});
 
     return(
-      <OptimizedContent htmlContent={htmlContent}></OptimizedContent>
+    	<OptimizedContent htmlContent={htmlContent}></OptimizedContent>
     )
 
 
