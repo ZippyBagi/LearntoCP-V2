@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Marbles",
+    "sr": "Klikeri"
+  },
+  "timeLimit": 4,
+  "memoryLimit": 65536,
+  "difficulty": "Hard",
+  "number": 74,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["bitmask-dp", "dp", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "There are at most 20 colours, and the row can only be sorted one way once you have decided the order of the colours.",
+    "sr": "Boja ima najviše 20, a niz je određen čim se odluči redosled samih boja."
+  }
+}

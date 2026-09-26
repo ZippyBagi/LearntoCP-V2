@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Morse Sequence",
+    "sr": "Morzeov niz"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 48,
+  "topic": {
+    "en": "Recursion",
+    "sr": "Rekurzija"
+  },
+  "tags": ["recursion"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "You never have to write the signal down. Every digit is decided by exactly one digit that came before it.",
+    "sr": "Signal nikada ne moraš da ispišeš. Svaku cifru odlučuje tačno jedna cifra pre nje."
+  }
+}

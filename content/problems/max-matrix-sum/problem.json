@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Max Matrix Sum",
+    "sr": "Najveći zbir kroz matricu"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 3,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["dp", "matrix"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "A great first DP problem. Think about the only two ways a path can enter a field.",
+    "sr": "Odličan prvi DP zadatak. Razmisli o tome iz koja dva polja se može doći do svakog polja."
+  }
+}

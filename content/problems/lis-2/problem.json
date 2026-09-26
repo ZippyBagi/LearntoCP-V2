@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Longest Increasing Subsequence II",
+    "sr": "Najduži rastući podniz II"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 7,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["dp", "binary-search"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Same problem as LIS, but with constraints where the O(n²) solution is too slow. Something smarter is needed.",
+    "sr": "Isti problem kao LIS, ali sa ograničenjima gde je O(n²) rešenje presporo. Potrebno je nešto pametnije."
+  }
+}

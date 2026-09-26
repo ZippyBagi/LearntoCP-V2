@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Maximum of a Changing Segment",
+    "sr": "Maksimum promenljivog segmenta"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 62,
+  "topic": {
+    "en": "Segment Trees",
+    "sr": "Segmentna stabla"
+  },
+  "tags": ["segment-tree", "data-structures"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "",
+    "sr": ""
+  }
+}

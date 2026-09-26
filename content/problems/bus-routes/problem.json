@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Bus Routes",
+    "sr": "Autobuske rute"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 53,
+  "topic": {
+    "en": "Graph Theory",
+    "sr": "Teorija grafova"
+  },
+  "tags": ["graphs", "bfs"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Joining every pair of stops that share a line is too many pairs. Count how many.",
+    "sr": "Spajanje svakog para stanica sa iste linije daje previše parova. Prebroj koliko."
+  }
+}

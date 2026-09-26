@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Prime Check",
+    "sr": "Prost broj"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 22,
+  "topic": {
+    "en": "Math",
+    "sr": "Matematika"
+  },
+  "tags": ["math"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "",
+    "sr": ""
+  }
+}

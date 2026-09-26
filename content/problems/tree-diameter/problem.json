@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Tree Diameter",
+    "sr": "Prečnik stabla"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 70,
+  "topic": {
+    "en": "Graph Theory",
+    "sr": "Teorija grafova"
+  },
+  "tags": ["trees", "graphs", "bfs", "tree-dp"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "One search from outpost 1 measures how far things are from outpost 1, which is not the same question.",
+    "sr": "Jedna pretraga iz ispostave 1 meri koliko je šta daleko od ispostave 1, a to nije isto pitanje."
+  }
+}

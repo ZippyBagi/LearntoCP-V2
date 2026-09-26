@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Ideal Elections",
+    "sr": "Idealni izbori"
+  },
+  "timeLimit": 2,
+  "memoryLimit": 65536,
+  "difficulty": "Hard",
+  "number": 34,
+  "topic": {
+    "en": "Math",
+    "sr": "Matematika"
+  },
+  "tags": ["number-theory", "math", "combinatorics", "sieve"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Work one prime at a time, and remember the answer can be enormous - keep it modulo 10^9 + 7.",
+    "sr": "Radi prost po prost, i zapamti da odgovor može biti ogroman - drži ga po modulu 10^9 + 7."
+  }
+}

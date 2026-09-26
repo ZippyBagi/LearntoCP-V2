@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Towers of Hanoi",
+    "sr": "Hanojske kule"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 50,
+  "topic": {
+    "en": "Recursion",
+    "sr": "Rekurzija"
+  },
+  "tags": ["recursion"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Moving the biggest disc is the easy part - ask yourself what has to happen before it can move.",
+    "sr": "Premestiti najveći disk je lak deo - pitaj se šta mora da se desi pre nego što on uopšte može da se pomeri."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Number of Inversions",
+    "sr": "Broj inverzija"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 60,
+  "topic": {
+    "en": "Divide and Conquer",
+    "sr": "Podeli, pa vladaj"
+  },
+  "tags": ["divide-and-conquer", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Counting the pairs one by one is too slow. Watch the size of the answer.",
+    "sr": "Brojanje parova jednog po jednog je presporo. Pazi na veličinu rezultata."
+  }
+}

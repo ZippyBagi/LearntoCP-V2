@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Barcode Check",
+    "sr": "Provera bar-kodova"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Super Easy",
+  "number": 17,
+  "topic": {
+    "en": "Binary Search",
+    "sr": "Binarna pretraga"
+  },
+  "tags": ["binary-search"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The store list is already sorted - use that.",
+    "sr": "Prodavnički spisak je već sortiran - iskoristi to."
+  }
+}

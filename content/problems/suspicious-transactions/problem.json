@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Suspicious Transactions",
+    "sr": "Sumnjive transakcije"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Hard",
+  "number": 39,
+  "topic": {
+    "en": "Data Structures",
+    "sr": "Strukture podataka"
+  },
+  "tags": ["multiset", "sliding-window", "data-structures"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Finding the middle of the window again after every step is already too slow.",
+    "sr": "Ponovno traženje sredine prozora posle svakog koraka je već presporo."
+  }
+}

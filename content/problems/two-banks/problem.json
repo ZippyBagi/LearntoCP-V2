@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Two Banks",
+    "sr": "Dve obale"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Super Easy",
+  "number": 42,
+  "topic": {
+    "en": "Geometry",
+    "sr": "Geometrija"
+  },
+  "tags": ["geometry"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "There are three answers, not two - a house can stand on the river itself.",
+    "sr": "Odgovora ima tri, a ne dva - kuća može da stoji i na samoj reci."
+  }
+}

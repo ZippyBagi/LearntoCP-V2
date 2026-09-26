@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Josephus Problem",
+    "sr": "Josifov problem"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 27,
+  "topic": {
+    "en": "Data Structures",
+    "sr": "Strukture podataka"
+  },
+  "tags": ["queue"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "",
+    "sr": ""
+  }
+}

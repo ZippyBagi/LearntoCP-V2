@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Pulling the Plate Apart",
+    "sr": "Rastavljanje ploče"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Hard",
+  "number": 47,
+  "topic": {
+    "en": "Geometry",
+    "sr": "Geometrija"
+  },
+  "tags": ["geometry", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Look at the directions the cut travels in, not at where it is.",
+    "sr": "Gledaj smerove u kojima rez putuje, a ne gde se nalazi."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Caves",
+    "sr": "Pećine"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 54,
+  "topic": {
+    "en": "Graph Theory",
+    "sr": "Teorija grafova"
+  },
+  "tags": ["graphs", "trees"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Do not forget that the entrance hall is a place the cavers can be.",
+    "sr": "Ne zaboravi da je i ulazna dvorana mesto na kom speleolozi mogu da budu."
+  }
+}

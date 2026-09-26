@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Smallest Concatenation",
+    "sr": "Najmanji broj nadovezivanjem"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 29,
+  "topic": {
+    "en": "Greedy",
+    "sr": "Pohlepni algoritmi"
+  },
+  "tags": ["greedy", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The result is too long to fit in any number type.",
+    "sr": "Rezultat je predugačak za bilo koji brojevni tip."
+  }
+}

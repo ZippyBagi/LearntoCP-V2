@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "AND Until Zero",
+    "sr": "AND do nule"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 36,
+  "topic": {
+    "en": "Binary Numbers",
+    "sr": "Binarni brojevi"
+  },
+  "tags": ["bitwise"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "One single bit of n decides the whole answer - which one?",
+    "sr": "Ceo odgovor odlučuje jedan jedini bit broja n - koji?"
+  }
+}

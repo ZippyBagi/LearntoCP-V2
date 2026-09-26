@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Above the Threshold",
+    "sr": "Broj takmičara iznad praga"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 30,
+  "topic": {
+    "en": "Binary Search",
+    "sr": "Binarna pretraga"
+  },
+  "tags": ["binary-search"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Mind the direction in which the scores are sorted.",
+    "sr": "Obrati pažnju na smer u kom su poeni sortirani."
+  }
+}

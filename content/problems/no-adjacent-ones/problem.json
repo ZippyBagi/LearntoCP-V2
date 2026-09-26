@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "No Adjacent Ones",
+    "sr": "Bez susednih jedinica"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 49,
+  "topic": {
+    "en": "Recursion",
+    "sr": "Rekurzija"
+  },
+  "tags": ["recursion"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Don't worry about Time Complexity for this problem",
+    "sr": "Ne brini se o Vremenskoj Složenosti za ovaj problem"
+  }
+}

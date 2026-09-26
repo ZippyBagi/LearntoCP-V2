@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Sum of Two Numbers",
+    "sr": "Zbir dva broja"
+  },
+  "timeLimit": 0.1,
+  "memoryLimit": 262144,
+  "difficulty": "Super Easy",
+  "number": 1,
+  "topic": {
+    "en": "Implementation",
+    "sr": "Implementacija"
+  },
+  "tags": ["math"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "This task is provided to practice reading input and writing output. Aim for a clean, single pass.",
+    "sr": "Ovaj zadatak služi za vežbanje čitanja sa ulaza i ispis podataka."
+  }
+}

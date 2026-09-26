@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Job Order",
+    "sr": "Redosled poslova"
+  },
+  "timeLimit": 0.5,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 66,
+  "topic": {
+    "en": "Topological Sorting",
+    "sr": "Topološko sortiranje"
+  },
+  "tags": ["topological-sort", "graphs"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Read the direction of each pair carefully, and mind which job the arrow should point at.",
+    "sr": "Pažljivo pročitaj smer svakog para, i pazi na koji posao strelica treba da pokazuje."
+  }
+}

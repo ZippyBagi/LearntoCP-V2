@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Robber Problem",
+    "sr": "Problem lopova"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 4,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["dp"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Watch out for the size of the answer.",
+    "sr": "Obrati pažnju na veličinu rezultata."
+  }
+}

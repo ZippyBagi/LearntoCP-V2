@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Cycle Check",
+    "sr": "Provera ciklusa"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 67,
+  "topic": {
+    "en": "Topological Sorting",
+    "sr": "Topološko sortiranje"
+  },
+  "tags": ["topological-sort", "graphs"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "You do not need a separate cycle search. Kahn's algorithm already tells you.",
+    "sr": "Ne treba ti posebna potraga za ciklusom. Kanov algoritam ti to već kaže."
+  }
+}

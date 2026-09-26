@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Knapsack Problem",
+    "sr": "Problem ranca"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 8,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["dp"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "One of the most famous DP problems. The state depends on two things: which items we considered, and how much capacity is left.",
+    "sr": "Jedan od najpoznatijih DP problema. Stanje zavisi od dve stvari: koje predmete smo razmotrili i koliko je kapaciteta ostalo."
+  }
+}

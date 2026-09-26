@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "The Most Popular Site",
+    "sr": "Najpopularniji sajt"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Super Easy",
+  "number": 51,
+  "topic": {
+    "en": "Graph Theory",
+    "sr": "Teorija grafova"
+  },
+  "tags": ["graphs"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "You never actually have to store the graph.",
+    "sr": "Graf zapravo nikada ne moraš ni da sačuvaš."
+  }
+}

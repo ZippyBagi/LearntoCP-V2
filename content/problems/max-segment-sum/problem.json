@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Maximum Segment Sum",
+    "sr": "Maksimalni zbir segmenta"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 19,
+  "topic": {
+    "en": "Arrays",
+    "sr": "Nizovi"
+  },
+  "tags": ["arrays"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The best segment can include negative elements",
+    "sr": "Najbolji segment može sadržati negativne brojeve."
+  }
+}

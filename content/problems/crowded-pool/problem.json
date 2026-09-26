@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "The Crowded Pool",
+    "sr": "Gužva na bazenu"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 33,
+  "topic": {
+    "en": "Arrays",
+    "sr": "Nizovi"
+  },
+  "tags": ["arrays"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "A visitor who leaves at some moment is not at the pool in that moment.",
+    "sr": "Posetilac koji ode u nekom trenutku nije na bazenu u tom trenutku."
+  }
+}

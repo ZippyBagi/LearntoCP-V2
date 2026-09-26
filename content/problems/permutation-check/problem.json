@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Permutation Check",
+    "sr": "Provera permutacija"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Super Easy",
+  "number": 40,
+  "topic": {
+    "en": "Data Structures",
+    "sr": "Strukture podataka"
+  },
+  "tags": ["map", "data-structures"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Look at how big the values can get before you choose the type of the key.",
+    "sr": "Pogledaj koliko vrednosti mogu da narastu pre nego što izabereš tip ključa."
+  }
+}

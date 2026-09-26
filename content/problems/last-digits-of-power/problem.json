@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Last Digits of a Power",
+    "sr": "Poslednjih k cifara stepena"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 31,
+  "topic": {
+    "en": "Math",
+    "sr": "Matematika"
+  },
+  "tags": ["math"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Print exactly k digits - watch the leading zeros.",
+    "sr": "Ispiši tačno k cifara - pazi na vodeće nule."
+  }
+}

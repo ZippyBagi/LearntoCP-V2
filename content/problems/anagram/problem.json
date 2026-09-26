@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Anagram",
+    "sr": "Anagram"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 28,
+  "topic": {
+    "en": "Strings",
+    "sr": "Niske"
+  },
+  "tags": ["strings"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Only the letters matter.",
+    "sr": "Samo su slova bitna."
+  }
+}

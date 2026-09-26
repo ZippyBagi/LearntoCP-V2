@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Merge Two Sorted Arrays",
+    "sr": "Objedinjavanje sortiranih nizova"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 59,
+  "topic": {
+    "en": "Two Pointers",
+    "sr": "Dva pokazivača"
+  },
+  "tags": ["two-pointers", "arrays"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Both lists arrive already sorted - you should not have to sort anything.",
+    "sr": "Oba spiska stižu već sortirana - ne bi trebalo ništa da sortiraš."
+  }
+}

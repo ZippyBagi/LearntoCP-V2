@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Height Difference",
+    "sr": "Razlika visina"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 20,
+  "topic": {
+    "en": "Arrays",
+    "sr": "Nizovi"
+  },
+  "tags": ["arrays"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Watch out for the size of the answer.",
+    "sr": "Pazi na veličinu rezultata."
+  }
+}

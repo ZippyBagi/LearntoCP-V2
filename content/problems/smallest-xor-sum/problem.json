@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Smallest XOR Sum",
+    "sr": "Najmanji XOR zbir"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Super Easy",
+  "number": 35,
+  "topic": {
+    "en": "Binary Numbers",
+    "sr": "Binarni brojevi"
+  },
+  "tags": ["bitwise"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Look at the two numbers one bit at a time - the choice for each bit is independent of all the others.",
+    "sr": "Posmatraj brojeve bit po bit - odluka za svaki bit je nezavisna od svih ostalih."
+  }
+}

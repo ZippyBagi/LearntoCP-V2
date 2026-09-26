@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Snakes and Ladders",
+    "sr": "Zmije i lestve"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 55,
+  "topic": {
+    "en": "Graph Theory",
+    "sr": "Teorija grafova"
+  },
+  "tags": ["graphs", "bfs"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Decide which squares are safe before you start counting throws.",
+    "sr": "Odluči koja su polja bezbedna pre nego što počneš da brojiš bacanja."
+  }
+}

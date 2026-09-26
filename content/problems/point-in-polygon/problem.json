@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Inside the Reserve",
+    "sr": "Unutar rezervata"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 44,
+  "topic": {
+    "en": "Geometry",
+    "sr": "Geometrija"
+  },
+  "tags": ["geometry"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The fence itself counts as inside.",
+    "sr": "I sama ograda se računa kao unutrašnjost."
+  }
+}

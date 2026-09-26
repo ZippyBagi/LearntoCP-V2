@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Signal Delay",
+    "sr": "Kašnjenje signala"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 68,
+  "topic": {
+    "en": "Graph Theory",
+    "sr": "Teorija grafova"
+  },
+  "tags": ["dijkstra", "shortest-paths", "graphs"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The channels are one-way. And the signal has arrived everywhere once the last computer has it.",
+    "sr": "Kanali su jednosmerni. A signal je stigao svuda tek kad ga primi i poslednji računar."
+  }
+}

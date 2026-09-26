@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Counting Districts",
+    "sr": "Brojanje oblasti"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Hard",
+  "number": 69,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["dp", "tree-dp", "trees", "graphs"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Watch the size of a product before you reduce it modulo 10^9 + 7.",
+    "sr": "Pazi na veličinu proizvoda pre nego što ga smanjiš po modulu 10^9 + 7."
+  }
+}

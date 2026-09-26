@@ -1,0 +1,24 @@
+{
+  "title": {
+    "en": "Pairs With a Given Sum",
+    "sr": "Broj parova datog zbira"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 15,
+  "topic": {
+    "en": "Two Pointers",
+    "sr": "Dva pokazivača"
+  },
+  "tags": [
+    "two-pointers",
+    "sorting"
+  ],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "",
+    "sr": ""
+  }
+}

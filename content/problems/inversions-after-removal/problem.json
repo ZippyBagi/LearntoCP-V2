@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Inversions After Removing a Segment",
+    "sr": "Inverzije nakon izbacivanja segmenata"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Hard",
+  "number": 64,
+  "topic": {
+    "en": "Fenwick Trees",
+    "sr": "Fenvikova stabla"
+  },
+  "tags": ["fenwick-tree", "two-pointers", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Cutting out more can never create an inversion. What does that tell you about the pairs that work?",
+    "sr": "Izbacivanje viška nikad ne može da stvori inverziju. Šta ti to govori o parovima koji prolaze?"
+  }
+}

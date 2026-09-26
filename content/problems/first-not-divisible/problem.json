@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "First Not Divisible",
+    "sr": "Prvi koji nije deljiv"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 18,
+  "topic": {
+    "en": "Binary Search",
+    "sr": "Binarna pretraga"
+  },
+  "tags": ["binary-search"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The numbers are too big for an int.",
+    "sr": "Brojevi su preveliki za int."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "First Crossing",
+    "sr": "Prvi put kroz matricu"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 75,
+  "topic": {
+    "en": "Union Find",
+    "sr": "Union find"
+  },
+  "tags": ["union-find", "data-structures", "grids"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Cells are only ever added, never removed - and the question is asked after every single one.",
+    "sr": "Polja se samo dodaju, nikad ne uklanjaju - a pitanje se postavlja posle svakog od njih."
+  }
+}

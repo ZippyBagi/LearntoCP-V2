@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Prime Factorization",
+    "sr": "Rastavljanje na proste činioce"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 23,
+  "topic": {
+    "en": "Math",
+    "sr": "Matematika"
+  },
+  "tags": ["math"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The numbers do not fit in an int.",
+    "sr": "Brojevi ne staju u int."
+  }
+}

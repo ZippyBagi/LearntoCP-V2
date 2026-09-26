@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "H-Index",
+    "sr": "Hiršov h-indeks"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 32,
+  "topic": {
+    "en": "Arrays",
+    "sr": "Nizovi"
+  },
+  "tags": ["arrays"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "",
+    "sr": ""
+  }
+}

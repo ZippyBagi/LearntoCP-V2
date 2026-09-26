@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "The Third Traversal",
+    "sr": "Treći obilazak"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 61,
+  "topic": {
+    "en": "Divide and Conquer",
+    "sr": "Podeli, pa vladaj"
+  },
+  "tags": ["divide-and-conquer", "trees", "recursion"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "You never have to build the tree. Find the root, then ask where the inorder string splits.",
+    "sr": "Stablo uopšte ne moraš da gradiš. Nađi koren, pa se pitaj gde se LKD niska deli."
+  }
+}

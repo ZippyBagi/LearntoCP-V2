@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Tasting Menu",
+    "sr": "Degustacioni meni"
+  },
+  "timeLimit": 2,
+  "memoryLimit": 131072,
+  "difficulty": "Medium",
+  "number": 71,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["bitmask-dp", "dp"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "A bonus depends on which dish came immediately before, so the set of dishes eaten is not enough on its own.",
+    "sr": "Bonus zavisi od toga koje je jelo bilo neposredno pre, pa skup pojedenih jela sam po sebi nije dovoljan."
+  }
+}

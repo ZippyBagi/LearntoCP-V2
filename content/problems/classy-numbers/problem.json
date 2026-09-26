@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Classy Numbers",
+    "sr": "Otmeni brojevi"
+  },
+  "timeLimit": 2,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 72,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["digit-dp", "dp", "combinatorics"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Counting up to a bound is easier than counting inside a segment.",
+    "sr": "Lakše je brojati do granice nego unutar segmenta."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Updating the Median",
+    "sr": "Ažuriranje medijane"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 38,
+  "topic": {
+    "en": "Data Structures",
+    "sr": "Strukture podataka"
+  },
+  "tags": ["priority-queue", "data-structures"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "You never need the whole sorted list - only what sits in the middle of it.",
+    "sr": "Nikada ti ne treba ceo sortiran niz - samo ono što se nalazi na njegovoj sredini."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Line of Succession",
+    "sr": "Prestolonaslednici"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 56,
+  "topic": {
+    "en": "Graph Theory",
+    "sr": "Teorija grafova"
+  },
+  "tags": ["graphs", "trees", "map", "data-structures"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Nobody tells you who the king is.",
+    "sr": "Niko ti ne kaže ko je kralj."
+  }
+}

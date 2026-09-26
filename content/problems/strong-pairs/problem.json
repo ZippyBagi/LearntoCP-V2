@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Strong Pairs",
+    "sr": "Jaki parovi"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 37,
+  "topic": {
+    "en": "Binary Numbers",
+    "sr": "Binarni brojevi"
+  },
+  "tags": ["bitwise", "math"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "",
+    "sr": ""
+  }
+}

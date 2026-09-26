@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Longest Common Subsequence (LCS)",
+    "sr": "Najduži zajednički podniz (LCS)"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 5,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["dp", "strings"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "A classic 2D DP problem. Try to define what dp[i][j] should mean before writing any code.",
+    "sr": "Klasičan 2D DP zadatak. Pokušaj prvo da definišeš šta dp[i][j] treba da znači pre pisanja koda."
+  }
+}

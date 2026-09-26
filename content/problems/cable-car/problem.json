@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "The Cable Car",
+    "sr": "Žičara"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 45,
+  "topic": {
+    "en": "Geometry",
+    "sr": "Geometrija"
+  },
+  "tags": ["geometry", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Sorting by the x coordinate looks right until the line stands straight up.",
+    "sr": "Sortiranje po x koordinati izgleda ispravno sve dok prava ne stane uspravno."
+  }
+}

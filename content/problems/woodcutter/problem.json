@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Woodcutter",
+    "sr": "Drvoseča"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 57,
+  "topic": {
+    "en": "Binary Search",
+    "sr": "Binarna pretraga"
+  },
+  "tags": ["binary-search"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Once the saw is too high to give enough wood, raising it further will not help either.",
+    "sr": "Kada je testera previsoko da bi dala dovoljno drveta, ni dizanje još više neće pomoći."
+  }
+}

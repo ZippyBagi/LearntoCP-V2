@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Three Sum",
+    "sr": "Trojke datog zbira"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 21,
+  "topic": {
+    "en": "Arrays",
+    "sr": "Nizovi"
+  },
+  "tags": ["arrays"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Watch out for overflow when adding elements. Look at the constraints for n",
+    "sr": "Pazi na prekoračenje pri sabiranju elemenata. Pogledaj ograničenje za n"
+  }
+}

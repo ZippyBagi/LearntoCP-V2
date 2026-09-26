@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Do the Segments Cross",
+    "sr": "Da li se duži seku"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 43,
+  "topic": {
+    "en": "Geometry",
+    "sr": "Geometrija"
+  },
+  "tags": ["geometry"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Two segments can meet without crossing - touching at a single endpoint already counts.",
+    "sr": "Duži mogu da se sretnu a da se ne ukrste - dodir u jednoj tački se već računa."
+  }
+}

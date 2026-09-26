@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Postfix Expression",
+    "sr": "Vrednost postfiksnog izraza"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 26,
+  "topic": {
+    "en": "Data Structures",
+    "sr": "Strukture podataka"
+  },
+  "tags": ["stack", "strings"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The values fit in a long long, but not in an int.",
+    "sr": "Vrednosti staju u long long, ali ne u int."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Islands",
+    "sr": "Ostrva"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 52,
+  "topic": {
+    "en": "Graph Theory",
+    "sr": "Teorija grafova"
+  },
+  "tags": ["graphs", "matrix"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "There is a graph here, even though nobody gave you a single edge.",
+    "sr": "Ovde postoji graf, iako ti niko nije dao nijednu granu."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Segment Sums",
+    "sr": "Zbirovi segmenata"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Super Easy",
+  "number": 16,
+  "topic": {
+    "en": "Prefix Sums",
+    "sr": "Prefiksni zbirovi"
+  },
+  "tags": ["prefix-sum"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The total earnings can be bigger than the largest int.",
+    "sr": "Ukupna zarada može biti veća od najvećeg int-a."
+  }
+}

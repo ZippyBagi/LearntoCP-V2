@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Longest Increasing Subsequence (LIS)",
+    "sr": "Najduži rastući podniz (LIS)"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 6,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["dp"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Besides finding the best value, this problem asks you to reconstruct the answer - a very useful DP skill.",
+    "sr": "Pored nalaženja najbolje vrednosti, ovaj zadatak traži i rekonstrukciju rešenja - veoma korisna DP veština."
+  }
+}

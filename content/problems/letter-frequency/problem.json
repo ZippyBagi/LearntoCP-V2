@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Letter Frequency",
+    "sr": "Učestalost Slova"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Super Easy",
+  "number": 11,
+  "topic": {
+    "en": "Strings",
+    "sr": "Niske"
+  },
+  "tags": ["strings"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The alphabet has only 26 letters.",
+    "sr": "Abeceda ima samo 26 slova."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Balanced Brackets",
+    "sr": "Balansirane Zagrade"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 10,
+  "topic": {
+    "en": "Data Structures",
+    "sr": "Strukture podataka"
+  },
+  "tags": ["stack", "strings"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Which opening bracket does a closing bracket have to close?",
+    "sr": "Koju otvorenu zagradu mora da zatvori zatvarajuća zagrada?"
+  }
+}

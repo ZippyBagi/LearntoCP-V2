@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Street Lamp",
+    "sr": "Svetiljka"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 14,
+  "topic": {
+    "en": "Two Pointers",
+    "sr": "Dva pokazivača"
+  },
+  "tags": ["two-pointers", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "",
+    "sr": ""
+  }
+}

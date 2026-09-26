@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Primes in an Interval",
+    "sr": "Prosti brojevi u intervalu"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 25,
+  "topic": {
+    "en": "Math",
+    "sr": "Matematika"
+  },
+  "tags": ["math"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The sum of primes is bigger than the largest int.",
+    "sr": "Zbir prostih brojeva je veći od najvećeg int-a."
+  }
+}

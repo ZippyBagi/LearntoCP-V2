@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Divisible Rearrangements",
+    "sr": "Deljivi rasporedi cifara"
+  },
+  "timeLimit": 4,
+  "memoryLimit": 262144,
+  "difficulty": "Hard",
+  "number": 73,
+  "topic": {
+    "en": "Dynamic Programming",
+    "sr": "Dinamičko programiranje"
+  },
+  "tags": ["bitmask-dp", "dp", "combinatorics"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Two different rearrangements that spell the same number are the same number.",
+    "sr": "Dva rasporeda cifara koja daju isti broj računaju se kao jedan."
+  }
+}

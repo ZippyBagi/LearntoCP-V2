@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "The Triangle and the Quadrants",
+    "sr": "Trougao i kvadranti"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 46,
+  "topic": {
+    "en": "Geometry",
+    "sr": "Geometrija"
+  },
+  "tags": ["geometry"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Crossing the x axis and crossing the y axis does not mean reaching the quadrant between them.",
+    "sr": "Preći preko x ose i preći preko y ose ne znači stići u kvadrant između njih."
+  }
+}

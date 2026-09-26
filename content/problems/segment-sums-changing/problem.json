@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Segment Sums of a Changing Array",
+    "sr": "Sume segmenata promenljivog niza"
+  },
+  "timeLimit": 0.5,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 63,
+  "topic": {
+    "en": "Fenwick Trees",
+    "sr": "Fenvikova stabla"
+  },
+  "tags": ["fenwick-tree", "data-structures"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "",
+    "sr": ""
+  }
+}

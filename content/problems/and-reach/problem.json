@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "How Far the AND Holds",
+    "sr": "Dokle AND izdrži"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 76,
+  "topic": {
+    "en": "Sparse Tables",
+    "sr": "Sparse tabele"
+  },
+  "tags": ["sparse-table", "binary-search", "bitwise"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Stretching the segment to the right can only ever switch bits off.",
+    "sr": "Kada se segment produži udesno, bitovi mogu samo da se gase."
+  }
+}

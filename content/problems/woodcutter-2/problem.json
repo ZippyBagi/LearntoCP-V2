@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Woodcutter II",
+    "sr": "Drvoseča II"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 58,
+  "topic": {
+    "en": "Binary Search",
+    "sr": "Binarna pretraga"
+  },
+  "tags": ["binary-search", "prefix-sum", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Same problem as Woodcutter, but counting the wood tree by tree is now too slow. The forest never changes between orders.",
+    "sr": "Isti zadatak kao Drvoseča, ali je sabiranje drvo po drvo sada presporo. Šuma se između porudžbina ne menja."
+  }
+}

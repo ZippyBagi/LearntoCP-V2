@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "The Strongest Magician",
+    "sr": "Najjači mađioničar"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 41,
+  "topic": {
+    "en": "Data Structures",
+    "sr": "Strukture podataka"
+  },
+  "tags": ["multiset", "data-structures"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Two magicians can be equally strong, and only one of them is leaving.",
+    "sr": "Dva mađioničara mogu biti jednako jaka, a odlazi samo jedan od njih."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Number of Minesweeper bombs",
+    "sr": "Broj bombi u igrici Minesweeper"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Super Easy",
+  "number": 2,
+  "topic": {
+    "en": "Implementation",
+    "sr": "Implementacija"
+  },
+  "tags": ["matrix"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "This problem aims to test your understanding of matrices. Don't worry about the time complexity",
+    "sr": "Ovaj problem služi da proveri znaje pristupanja elemenata matrice. Ne treba brinuti o vremenskoj složenosti"
+  }
+}

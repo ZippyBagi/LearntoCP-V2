@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Monopoly",
+    "sr": "Monopol"
+  },
+  "timeLimit": 0.1,
+  "memoryLimit": 65536,
+  "difficulty": "Super Easy",
+  "number": 12,
+  "topic": {
+    "en": "Implementation",
+    "sr": "Implementacija"
+  },
+  "tags": ["modulo", "math"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "",
+    "sr": ""
+  }
+}

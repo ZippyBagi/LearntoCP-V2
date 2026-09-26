@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Movie Marathon",
+    "sr": "Filmski Maraton"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Easy",
+  "number": 9,
+  "topic": {
+    "en": "Greedy",
+    "sr": "Pohlepni algoritmi"
+  },
+  "tags": ["greedy", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "Think about which movie is the safest one to watch first.",
+    "sr": "Razmisli koji film je najsigurnije odgledati prvi."
+  }
+}

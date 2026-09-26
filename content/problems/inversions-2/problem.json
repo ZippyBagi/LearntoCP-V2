@@ -1,0 +1,21 @@
+{
+  "title": {
+    "en": "Number of Inversions II",
+    "sr": "Broj inverzija II"
+  },
+  "timeLimit": 1,
+  "memoryLimit": 65536,
+  "difficulty": "Medium",
+  "number": 65,
+  "topic": {
+    "en": "Fenwick Trees",
+    "sr": "Fenvikova stabla"
+  },
+  "tags": ["fenwick-tree", "sorting"],
+  "inputSource": "stdin",
+  "outputSource": "stdout",
+  "note": {
+    "en": "The same problem as before, but solve it with a Fenwick tree this time. For each element, how many of the ones already behind it are bigger?",
+    "sr": "Isti zadatak kao ranije, ali ga ovaj put reši Fenvikovim stablom. Za svaki element - koliko je onih pre njega veće od njega?"
+  }
+}
