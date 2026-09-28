@@ -1,5 +1,6 @@
 import { isAuthenticated } from "@/app/scripts/login/isAutheticated";
 import { getProblemsPageProblems } from "@/app/scripts/problems/getProblems";
+import ProblemExplorer from "@/app/ui/problems/problemExplorer";
 import { getLocale, getTranslations } from "next-intl/server";
 
 export default async function ProblemsPage() {
@@ -11,9 +12,7 @@ export default async function ProblemsPage() {
 
 	const problems = getProblemsPageProblems(locale);
 
-	console.log(problems);
-
 	return (
-		<h1></h1>
+		<ProblemExplorer problems={problems}></ProblemExplorer>
 	);
 }

@@ -4,6 +4,7 @@ import path from "path";
 import { ProblemsPageProblem } from "./problem-types";
 import { cache } from "react";
 import fs from 'fs';
+import { Difficulty, DIFFICULTIES } from "./problem-types";
 
 const PROBLEMS_ROOT = path.join(process.cwd(), "content", "problems");
 
@@ -28,7 +29,13 @@ export const getProblemsPageProblems = cache((locale : string) : ProblemsPagePro
         const topic = meta.topic[locale];
         const title = meta.title[locale];
 
-        problemsPageProblems.push({slug:problem, title:title, number:meta.number, topic:topic, tags:meta.tags});
+        const difficulty = meta.difficulty as Difficulty;
+        
+        if(!DIFFICULTIES.includes(difficulty)){
+            console.error(`[getProblems] Problem ${PROBLEMS_ROOT + '/' + problem} doesn't have correct difficulty`);
+        }
+        
+        problemsPageProblems.push({slug:problem, title:title, number:meta.number, topic:topic, tags:meta.tags, difficulty: difficulty});
 
     }
     
