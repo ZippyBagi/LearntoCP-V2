@@ -1,13 +1,19 @@
-'use client'
+import { isAuthenticated } from "@/app/scripts/login/isAutheticated";
+import { getProblemsPageProblems } from "@/app/scripts/problems/getProblems";
+import { getLocale, getTranslations } from "next-intl/server";
 
-import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
-
-export default function Home() {
+export default async function ProblemsPage() {
   
-    const t = useTranslations('HomePage');
+    const t = await getTranslations('Problems');
+	const isAuthed = await isAuthenticated();
+
+	const locale = await getLocale();
+
+	const problems = getProblemsPageProblems(locale);
+
+	console.log(problems);
 
 	return (
-		<h1>{t('title')}</h1>
+		<h1></h1>
 	);
 }

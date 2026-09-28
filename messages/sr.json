@@ -34,5 +34,9 @@
     "continueGoogle" : "Nastavite sa Google-om",
     "privacy" : "Koristimo vaš Google nalog samo za identifikaciju. Nećeti dobijati mejlove, niti spam.",
     "errorStart" : "Nije moguće započeti prijavu. Pokušajte ponovo."
+  },
+
+   "Problems":{
+    
   }
 }
