@@ -37,6 +37,15 @@
   },
 
    "Problems":{
-    
-  }
+      "title" : "Problemi",
+      "subtitle" : "Provežbaj {problemCount} odabranih problema",
+      "solvedSuffix" : "rešeno",
+      "signInToTrack" : "Prijavi se da pratiš svoj naperdak",
+      "searchPlaceholder" : "Pretraži probleme, teme ili tagove...",
+      "statusAny" : "Svi",
+      "statusSolved" : "Rešeni",
+      "statusUnsolved" : "Nerešeni",
+      "clear" : "Poništi",
+      "difficultyAll" : "Sve težine"
+    }
 }

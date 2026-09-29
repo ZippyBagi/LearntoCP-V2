@@ -37,7 +37,17 @@
   },
 
   "Problems":{
-    
+    "title" : "Problems",
+    "subtitle" : "Sharpen your skills on {problemCount} curated problems",
+    "solvedSuffix" : "solved",
+    "signInToTrack" : "Sign in to track your progress",
+    "searchPlaceholder" : "Search problems, topics or tags...",
+    "statusAny" : "Any",
+    "statusSolved" : "Solved",
+    "statusUnsolved" : "Unsolved",
+    "clear" : "Clear",
+    "difficultyAll" : "All"
+
   }
 
 }

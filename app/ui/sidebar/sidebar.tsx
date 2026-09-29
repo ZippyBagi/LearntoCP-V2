@@ -74,7 +74,7 @@ export default function Sidebar({toggled, containers, isMobile, setClosed} : Sid
 
                 <SidebarButton name={t('home')} href="/"></SidebarButton>
                 <SidebarButton name={t("roadmap")} href="/roadmap"></SidebarButton>
-                <SidebarButton name={t('problems')} href="/problems"></SidebarButton>
+                <SidebarButton name={t('problems')} href="/Problems"></SidebarButton>
                 <SidebarButton name={t("about_us")} href="/about-us"></SidebarButton>
 
                 <Divider></Divider>
