@@ -17,15 +17,13 @@ export default function ProblemExplorer({problems, isAuthed} : ProblemExplorerPr
     
     const t = useTranslations('Problems');
 
-    const problemCount = 10;
+    const problemCount = problems.length;
     const solvedCount = 3;
 
     const [difficulty, setDifficulty] = useState('all');
-    const [status, setStatus] = useState('any');
+    const [status, setStatus] = useState('All');
+
     const difficultyOptions = [{value : 'All', label:t('difficultyAll')}, ...DIFFICULTIES.map((e) => {return {value:e, label:e}})];
-
-    console.log(difficultyOptions);
-
     const anyFilter = true;
 
     return (
