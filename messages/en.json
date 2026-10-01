@@ -46,8 +46,21 @@
     "statusSolved" : "Solved",
     "statusUnsolved" : "Unsolved",
     "clear" : "Clear",
-    "difficultyAll" : "All difficulties"
+    "difficultyAll" : "All difficulties",
+    "colProblem" : "PROBLEM",
+    "colTags" : "TAGS",
+    "colLevel" : "LEVEL",
+    "colAc" : "AC",
+    "acceptanceTooltip" : "Solved rate (users who solved / users who attempted)",
+    "noAttemptsTooltip" : "No submissions yet",
+    "solvedTooltip" : "Solved",
+    "unsolvedTooltip" : "Not solved",
+    "range" : "{start}-{end} of {total}",
+    "pageOf" : "Page {current} / {total}",
+    "prev" : "Prev",
+    "next" : "Next"
 
+    
   }
 
 }

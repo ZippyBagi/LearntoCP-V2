@@ -15,4 +15,20 @@
     stroke-dasharray: var(--ltcp-edge-len, 400);
     animation: ltcp-edge-draw 300ms ease-out both;
   }
+
+  .difficulty-badge {
+    display: inline-block;
+    padding: 0.15em 0.65em;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    border: 1px solid transparent;
+  }
+
+  .SuperEasy { color: #86efac; background: rgba(134, 239, 172, 0.12); border-color: rgba(134, 239, 172, 0.35); }
+  .Easy   { color: #50fa7b; background: rgba(80, 250, 123, 0.12); border-color: rgba(80, 250, 123, 0.35); }
+  .Medium { color: #f59e0b; background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.35); }
+  .Hard   { color: #ef4444; background: rgba(239,  68, 68, 0.12); border-color: rgba(239,  68, 68, 0.35); }
+  .SuperHard { color: #f43f5e; background: rgba(244, 63, 94, 0.14); border-color: rgba(244, 63, 94, 0.45); }
 }

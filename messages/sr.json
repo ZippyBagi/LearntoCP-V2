@@ -46,6 +46,18 @@
       "statusSolved" : "Rešeni",
       "statusUnsolved" : "Nerešeni",
       "clear" : "Poništi",
-      "difficultyAll" : "Sve težine"
+      "difficultyAll" : "Sve težine",
+      "colProblem" : "PROBLEM",
+      "colTags" : "TAGOVI",
+      "colLevel" : "TEŽINA",
+      "colAc" : "AC",
+      "acceptanceTooltip" : "Stopa rešenosti (rešili / pokušali)",
+      "noAttemptsTooltip" : "Još nema pokušaja",
+      "solvedTooltip" : "Rešeno",
+      "unsolvedTooltip" : "Nerešeno",
+      "range" : "{start}-{end} od {total}",
+      "pageOf" : "Strana {current} / {total}",
+      "prev" : "Nazad",
+      "next" : "Dalje"
     }
 }

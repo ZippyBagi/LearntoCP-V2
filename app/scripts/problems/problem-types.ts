@@ -3,9 +3,11 @@ export interface ProblemsPageProblem{
     slug: string;
     title : string;
     number: string;
-    topic : Record<string, string> | string;
+    topic : string;
     tags: string[];
     difficulty: string;
+    solved : boolean;
+    acceptance:number;
 }
 
 export const DIFFICULTIES = [

@@ -35,7 +35,7 @@ export const getProblemsPageProblems = cache((locale : string) : ProblemsPagePro
             console.error(`[getProblems] Problem ${PROBLEMS_ROOT + '/' + problem} doesn't have correct difficulty`);
         }
         
-        problemsPageProblems.push({slug:problem, title:title, number:meta.number, topic:topic, tags:meta.tags, difficulty: difficulty});
+        problemsPageProblems.push({slug:problem, title:title, number:meta.number, topic:topic, tags:meta.tags, difficulty: difficulty, solved:false, acceptance:1});
 
     }
     
