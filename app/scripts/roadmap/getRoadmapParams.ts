@@ -9,7 +9,7 @@ interface ModalTarget{
     nodeIndex : number;
 }
 
-export function getRoadmapParams(matrix : RoadmapMatrix, initialCompleted: string[],solvedSlugs: string[],loginUrl: string | null = null){
+export function getRoadmapParams(matrix : RoadmapMatrix, initialCompleted: string[],solvedSlugs: Set<string>,loginUrl: string | null = null){
 
     const supabase = useMemo(() => createClient(), []);
     
