@@ -1,17 +1,22 @@
 import { isAuthenticated } from "@/app/scripts/login/isAutheticated";
-import { getProblemsPageProblems } from "@/app/scripts/problems/getProblems";
+import { getProblemSlugs, getProblemsPageProblems } from "@/app/scripts/problems/getProblems";
+import { getAcceptanceRate, getSolvedProblemSlugs } from "@/app/scripts/problems/getProgress";
 import ProblemExplorer from "@/app/ui/problems/problemExplorer";
 import { getLocale } from "next-intl/server";
 
 export default async function ProblemsPage() {
 
 	const isAuthed = await isAuthenticated();
-
 	const locale = await getLocale();
+	
 
-	const problems = getProblemsPageProblems(locale);
+	const slugs = getProblemSlugs();
 
+	const solved = await getSolvedProblemSlugs();
+	const acceptanceRate = await getAcceptanceRate(slugs);
+	const problems = getProblemsPageProblems(locale,solved,slugs,acceptanceRate);
+	
 	return (
-		<ProblemExplorer problems={problems} isAuthed={isAuthed}></ProblemExplorer>
+		<ProblemExplorer problems={problems} isAuthed={isAuthed} solved={solved}></ProblemExplorer>
 	);
 }

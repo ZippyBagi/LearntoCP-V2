@@ -1,26 +1,30 @@
 import "server-only"
 
 import path from "path";
-import { ProblemsPageProblem } from "./problem-types";
+import { AcceptanceStat, ProblemsPageProblem } from "./problem-types";
 import { cache } from "react";
 import fs from 'fs';
 import { Difficulty, DIFFICULTIES } from "./problem-types";
 
 const PROBLEMS_ROOT = path.join(process.cwd(), "content", "problems");
 
-export const getProblemsPageProblems = cache((locale : string) : ProblemsPageProblem[] => {
-   
-    if(!fs.existsSync(PROBLEMS_ROOT)){
-        return [];
-    }
-
-    let problemsPageProblems : ProblemsPageProblem[] = [];
+export function getProblemSlugs() : string[] {
 
     const problems = fs.readdirSync(PROBLEMS_ROOT, {withFileTypes:true}).filter((entry) => entry.isDirectory())
                                                                               .filter((entry) => (fs.existsSync(path.join(PROBLEMS_ROOT, entry.name, "problem.json"))))
                                                                               .map((entry) => entry.name)
                                                                               .sort();
-                                                                             
+
+    return problems;
+}
+
+export const getProblemsPageProblems = cache((locale : string, solved : Set<string>, problems : string[], acceptance : Map<string,AcceptanceStat>) : ProblemsPageProblem[] => {
+   
+    if(!fs.existsSync(PROBLEMS_ROOT)){
+        return [];
+    }
+
+    let problemsPageProblems : ProblemsPageProblem[] = [];                                                                             
 
     for(const problem of problems){
 
@@ -34,8 +38,9 @@ export const getProblemsPageProblems = cache((locale : string) : ProblemsPagePro
         if(!DIFFICULTIES.includes(difficulty)){
             console.error(`[getProblems] Problem ${PROBLEMS_ROOT + '/' + problem} doesn't have correct difficulty`);
         }
-        
-        problemsPageProblems.push({slug:problem, title:title, number:meta.number, topic:topic, tags:meta.tags, difficulty: difficulty, solved:false, acceptance:1});
+
+        const rate = acceptance.get(problem)?.rate;
+        problemsPageProblems.push({slug:problem, title:title, number:meta.number, topic:topic, tags:meta.tags, difficulty: difficulty, solved:solved.has(problem), acceptance:rate});
 
     }
     

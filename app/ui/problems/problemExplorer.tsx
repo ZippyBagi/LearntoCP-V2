@@ -16,14 +16,15 @@ const PAGE_SIZE = 5;
 interface ProblemExplorerProps{
     problems : ProblemsPageProblem[];
     isAuthed : boolean;
+    solved : Set<string>;
 }
 
-export default function ProblemExplorer({problems, isAuthed} : ProblemExplorerProps){
+export default function ProblemExplorer({problems, isAuthed, solved} : ProblemExplorerProps){
     
     const t = useTranslations('Problems');
 
     const problemCount = problems.length;
-    const solvedCount = 3;
+    const solvedCount = solved.size;
 
     const [query, setQuery] = useState(""); 
     const [difficulty, setDifficulty] = useState('all');
@@ -60,8 +61,6 @@ export default function ProblemExplorer({problems, isAuthed} : ProblemExplorerPr
         };
 
         window.addEventListener('beforeunload', handleBeforeUnload);
-
-        // Cleanup the event listener on unmount
         return () => {
             window.removeEventListener('beforeunload', handleBeforeUnload);
         };

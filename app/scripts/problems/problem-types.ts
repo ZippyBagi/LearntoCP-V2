@@ -7,7 +7,7 @@ export interface ProblemsPageProblem{
     tags: string[];
     difficulty: string;
     solved : boolean;
-    acceptance:number;
+    acceptance:number | null | undefined;
 }
 
 export const DIFFICULTIES = [
@@ -19,3 +19,9 @@ export const DIFFICULTIES = [
 ] as const;
 
 export type Difficulty = (typeof DIFFICULTIES)[number];
+
+export interface AcceptanceStat {
+  accepted: number;
+  total: number;
+  rate: number | null;
+}
