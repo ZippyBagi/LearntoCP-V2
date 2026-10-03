@@ -1,3 +1,5 @@
+"use client"
+
 import { Link } from "@/app/scripts/i18n/navigation";
 import { DIFFICULTIES, ProblemsPageProblem } from "@/app/scripts/problems/problem-types";
 import { CheckIcon } from "@heroicons/react/24/outline";
@@ -89,7 +91,7 @@ export default function ProblemRow({problem, index, last, acceptanceTooltip, noA
                 title={problem.acceptance === null ? noAttemptsTooltip : acceptanceTooltip}
                 className="justify-self-center text-center font-mono text-sm text-text-muted tabular-nums"
             >
-                {problem.acceptance === null ? "—" : `${Math.round(problem.acceptance * 100)}%`}
+                {problem.acceptance === null ? "—" : `${Math.round((problem.acceptance ?? 0) * 100)}%`}
             </span>
 
         </Link>

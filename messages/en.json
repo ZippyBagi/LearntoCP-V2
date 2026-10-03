@@ -59,8 +59,30 @@
     "pageOf" : "Page {current} / {total}",
     "prev" : "Prev",
     "next" : "Next"
+  },
 
-    
+  "Problem" : {
+    "tabStatement" : "Problem",
+    "tabSolution" : "Solution",
+    "problemNumber" : "Problem #{number}",
+    "thTime" : "Time Limit",
+    "thMemory" : "Memory",
+    "thInput" : "Input",
+    "thOutput" : "Output",
+    "noStatement" : "The statement for this problem has not been written yet",
+    "submitTitle" : "Submit your solution",
+    "signInPrompt" : "Sign in to submit your solution and track your progress.",
+    "signInAction" : "Sign in",
+    "editorialTitle" : "Solution - {title}",
+    "noSolutionTitle" : "No solution published yet",
+    "noSolutionBody" : "The solution for this problem hasn't been written. Check back later.",
+    "tags" : "TAGS"
+  },
+
+  "RevealSolution" : {
+    "revealTitle" : "Reveal the solution?",
+    "revealBody" : "You haven't solved this problem yet. Viewing the solution will spoil the solution. Are you sure you want to continue?",
+    "keepTrying" : "Keep trying",
+    "revealConfirm" : "Reveal solution"
   }
-
 }

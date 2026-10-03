@@ -2,6 +2,7 @@ import { isAuthenticated } from "@/app/scripts/login/isAutheticated";
 import markdownToHTML from "@/app/scripts/markdown/mdToHTML";
 import { getProblem, getProblemMd } from "@/app/scripts/problems/getProblems";
 import { hasSolvedProblem } from "@/app/scripts/problems/getProgress";
+import ProblemView from "@/app/ui/problems/problemView";
 import { getLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
@@ -38,5 +39,6 @@ export default async function ProblemPage({params} : ProblemPageProps){
 
     const solved = isAuthed ? await hasSolvedProblem(slug) : false;
 
-    return <h1>Hi</h1>
+    return <ProblemView problem={problem} statement={statementHTML} solution={solutionHTML} solved={solved} isAuthed={isAuthed} slug={slug} locale={locale}></ProblemView>
 }
+

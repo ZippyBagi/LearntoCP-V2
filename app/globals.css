@@ -5,6 +5,7 @@
 @import "./styles/code-blocks.css";
 @import "./styles/animations.css";
 @import "./styles/components.css";
+@import "./styles/problemPage.css";
 
 :root {
   color-scheme: dark;

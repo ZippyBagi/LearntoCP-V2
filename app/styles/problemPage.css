@@ -1,0 +1,42 @@
+.problem-note {
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin: 0 0 2rem;
+  line-height: 1.6;
+}
+
+.problem-article h2 {
+  border-bottom: 1px solid var(--color-border-subtle);
+  padding-bottom: 0.35em;
+  margin-top: 2em;
+}
+
+.examples {
+  margin: 1.25em 0 2em;
+}
+.example-case {
+  margin-bottom: 1.5em;
+}
+.example-io + .example-io { margin-top: 0.9em; }
+.example-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  margin-bottom: 0.4em;
+}
+.example-box {
+  margin: 0;
+  padding: 0.85em 1.1em;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.example-output.example-true  { color: var(--color-success); }
+.example-output.example-false { color: var(--color-danger); }

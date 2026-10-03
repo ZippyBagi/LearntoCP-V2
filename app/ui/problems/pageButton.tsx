@@ -1,3 +1,4 @@
+"use client"
 
 interface PageButtonProps{
     disabled: boolean;

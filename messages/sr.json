@@ -59,5 +59,31 @@
       "pageOf" : "Strana {current} / {total}",
       "prev" : "Nazad",
       "next" : "Dalje"
-    }
+    },
+
+    "Problem":{
+      "tabStatement" : "Problem",
+      "tabSolution" : "Rešenje",
+      "problemNumber" : "Problem #{number}",
+      "thTime" : "Vreme",
+      "thMemory" : "Memorija",
+      "thInput" : "Input",
+      "thOutput" : "Output",
+      "noStatement" : "Tekst ovog problema još nije napisan",
+      "submitTitle" : "Pošalji svoje rešenje",
+      "signInPrompt" : "Prijavi se da pošalješ rešenje i pratiš svoj napredak.",
+      "signInAction" : "Prijavi se",
+      "editorialTitle" : "Rešenje - {title}",
+      "noSolutionTitle" : "Rešenje još nije objavljeno",
+      "noSolutionBody" : "Rešenje za ovaj zadatak još nije napisano. Pogledajte kasnije.",
+      "tags" : "TAGOVI"
+    },
+
+  "RevealSolution" : {
+    "revealTitle" : "Otkri rešenje?",
+    "revealBody" : "Još uvek niste rešili ovaj zadatak. Otvaranje rešenja će otkriti odgovor. Da li ste sigurni da želite da nastavite?",
+    "keepTrying" : "Nazad",
+    "revealConfirm" : "Otkri rešenje"
+
+  }
 }

@@ -49,6 +49,15 @@ export const getProblemsPageProblems = cache((locale : string, solved : Set<stri
     
 });
 
+function formatTime(seconds: number): string {
+  return `${parseFloat(String(seconds))} s`;
+}
+
+function formatMemory(kb: number): string {
+  const mb = kb / 1024;
+  return `${Number.isInteger(mb) ? mb : mb.toFixed(0)} MB`;
+}
+
 export function getProblem(slug : string, locale : string) : Problem | null{
 
     const DEFAULT_TIME_LIMIT_S = 2.0;
@@ -61,14 +70,14 @@ export function getProblem(slug : string, locale : string) : Problem | null{
     const meta = JSON.parse(fs.readFileSync(path.join(PROBLEMS_ROOT, slug, "problem.json"),"utf-8"));
 
     const title = meta.title[locale];
-    const timeLimit = meta.timeLimit ?? DEFAULT_TIME_LIMIT_S;
-    const memoryLimit = meta.memoryLimit ?? DEFAULT_MEMORY_LIMIT_KB;
+    const timeLimit = formatTime(meta.timeLimit) ?? formatTime(DEFAULT_TIME_LIMIT_S);
+    const memoryLimit = formatMemory(meta.memoryLimit) ?? formatMemory(DEFAULT_MEMORY_LIMIT_KB);
     const difficulty = meta.difficulty;
     const number = meta.number;
     const tags = meta.tags;
     const inputSource = meta.inputSource;
     const outputSource = meta.outputSource;
-    const note = meta.note;
+    const note = meta.note[locale];
     
     return {title,timeLimit,memoryLimit,difficulty,number,tags,inputSource,outputSource,note};
 }
