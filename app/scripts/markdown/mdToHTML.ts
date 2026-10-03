@@ -12,12 +12,11 @@ export interface markdownToHTMLProps {
     markdown : string;
     fileName : string;
     includeTitle? : boolean;
-    locale? : string;
 }
 
 const IMAGE_ROOT_FOLDER = 'lesson-images';
 
-export default async function markdownToHTML({markdown, fileName, includeTitle, locale} : markdownToHTMLProps){
+export default async function markdownToHTML({markdown, fileName, includeTitle} : markdownToHTMLProps){
 
     const rawHtml: string[] = [];
 

@@ -66,7 +66,7 @@ async function LessonContent({params, locale} : LessonContentProps){
 
     const markdown = fs.readFileSync(filePath, "utf8");
 
-    const htmlContent = await markdownToHTML({markdown,fileName:actualFile,includeTitle:true, locale:locale});
+    const htmlContent = await markdownToHTML({markdown,fileName:actualFile,includeTitle:true});
 
     return(
     	<OptimizedContent htmlContent={htmlContent}></OptimizedContent>

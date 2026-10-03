@@ -1,4 +1,5 @@
 import { isAuthenticated } from "@/app/scripts/login/isAutheticated";
+import markdownToHTML from "@/app/scripts/markdown/mdToHTML";
 import { getProblem, getProblemMd } from "@/app/scripts/problems/getProblems";
 import { hasSolvedProblem } from "@/app/scripts/problems/getProgress";
 import { getLocale } from "next-intl/server";
@@ -32,14 +33,10 @@ export default async function ProblemPage({params} : ProblemPageProps){
 
     const {statementMd, solutionMd} = getProblemMd(slug,locale); 
 
-    const statementHTML = statementMd ? await markdownToHtml(statementMd, problem.title, { includeTitle: false, locale }) : null;
-    const solutionHTML = solutionMd ? await markdownToHtml(solutionMd, problem.title, { includeTitle: false, locale }) : null;
+    const statementHTML = statementMd ? await markdownToHTML({markdown : statementMd, fileName : problem.title, includeTitle : false}) : null;
+    const solutionHTML = solutionMd ? await markdownToHTML({markdown : solutionMd, fileName : problem.title, includeTitle : false}) : null;
 
     const solved = isAuthed ? await hasSolvedProblem(slug) : false;
 
     return <h1>Hi</h1>
-}
-
-function markdownToHtml(statementMd: string, title: any, arg2: { includeTitle: boolean; locale: string; }) {
-    throw new Error("Function not implemented.");
 }
