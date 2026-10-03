@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import { RoadmapNode } from "@/app/scripts/roadmap/roadmap-types";
+import { Link } from "@/app/scripts/i18n/navigation";
+import { useNavigation } from "@/app/scripts/sidebar/navigationContext";
 
 interface RoadmapModalProps {
     node: RoadmapNode;
@@ -69,6 +71,7 @@ function ModalItem({
     onToggle: () => void;
 }) {
     const isProblem = item.isProblem;
+    const { startNavigation } = useNavigation();
 
     return (
         <li
@@ -99,8 +102,10 @@ function ModalItem({
                 </button>
             )}
 
-            <a
+            <Link
                 href={item.href}
+                prefetch={true}
+                onClick={() => startNavigation(item.href)}
                 className={`relative flex min-w-0 flex-1 text-sm transition-colors duration-150 before:absolute before:-inset-y-3 before:-left-3 before:-right-3 before:content-[''] sm:before:-inset-y-2.5 ${
                     checked
                         ? "text-[rgba(80,250,123,0.4)] line-through decoration-[rgba(80,250,123,0.25)]"
@@ -108,7 +113,7 @@ function ModalItem({
                 }`}
             >
                 {item.label}
-            </a>
+            </Link>
         </li>
     );
 }
