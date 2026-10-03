@@ -12,7 +12,7 @@ import { RoadmapConnectorNode, RoadmapCustomNode } from "@/app/ui/roadmap/custom
 export interface RoadmapCanvasProps{
     matrix : RoadmapMatrix;
     initialCompleted: string[];
-    solvedSlugs: string[];
+    solvedSlugs: Set<string>;
     loginUrl : string | null;
 }
 

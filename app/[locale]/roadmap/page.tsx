@@ -5,6 +5,7 @@ import '@xyflow/react/dist/style.css'
 import { isAuthenticated } from "@/app/scripts/login/isAutheticated";
 import getRoadmapProgress from "@/app/scripts/roadmap/getRoadmapProgress";
 import { ReactFlowProvider } from "@xyflow/react";
+import { getSolvedProblemSlugs } from "@/app/scripts/problems/getProgress";
 
 export default async function Home() {
   
@@ -13,7 +14,8 @@ export default async function Home() {
 
 	const isAuthed = await isAuthenticated();
 
-	const [completedIds, solvedSlugs] = isAuthed ? await Promise.all([getRoadmapProgress(), []]) : [[], []]; //TODO GETSOLVEDPROBLEMS()!!!
+	const solved = await getSolvedProblemSlugs();
+	const [completedIds, solvedSlugs] = isAuthed ? await Promise.all([getRoadmapProgress(), solved]) : [[], solved];
 	
 	return (
 		<main className="min-h-fill bg-[var(--color-bg-page)] px-1 py-1 md:px-4 md:py-4">
