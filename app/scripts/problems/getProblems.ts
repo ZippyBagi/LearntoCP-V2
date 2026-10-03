@@ -1,10 +1,9 @@
 import "server-only"
 
 import path from "path";
-import { AcceptanceStat, ProblemsPageProblem } from "./problem-types";
+import { AcceptanceStat, Problem, ProblemsPageProblem, Difficulty, DIFFICULTIES } from "./problem-types";
 import { cache } from "react";
 import fs from 'fs';
-import { Difficulty, DIFFICULTIES } from "./problem-types";
 
 const PROBLEMS_ROOT = path.join(process.cwd(), "content", "problems");
 
@@ -49,3 +48,46 @@ export const getProblemsPageProblems = cache((locale : string, solved : Set<stri
     return problemsPageProblems;
     
 });
+
+export function getProblem(slug : string, locale : string) : Problem | null{
+
+    const DEFAULT_TIME_LIMIT_S = 2.0;
+    const DEFAULT_MEMORY_LIMIT_KB = 262144;
+
+    if(!fs.existsSync(path.join(PROBLEMS_ROOT, slug))){
+        return null;
+    }
+
+    const meta = JSON.parse(fs.readFileSync(path.join(PROBLEMS_ROOT, slug, "problem.json"),"utf-8"));
+
+    const title = meta.title[locale];
+    const timeLimit = meta.timeLimit ?? DEFAULT_TIME_LIMIT_S;
+    const memoryLimit = meta.memoryLimit ?? DEFAULT_MEMORY_LIMIT_KB;
+    const difficulty = meta.difficulty;
+    const number = meta.number;
+    const tags = meta.tags;
+    const inputSource = meta.inputSource;
+    const outputSource = meta.outputSource;
+    const note = meta.note;
+    
+    return {title,timeLimit,memoryLimit,difficulty,number,tags,inputSource,outputSource,note};
+}
+
+export function getProblemMd(slug : string, locale : string) : {statementMd : string | null, solutionMd : string | null}{
+
+    const statementPath = path.join(PROBLEMS_ROOT, slug, `description-${locale}.md`);
+    const solutionPath = path.join(PROBLEMS_ROOT, slug, `solution-${locale}.md`);
+
+    let statement = null;
+    let solution = null;
+
+    if(fs.existsSync(statementPath)){
+        statement = fs.readFileSync(statementPath, "utf-8");
+    }
+
+    if(fs.existsSync(solutionPath)){
+        solution = fs.readFileSync(solutionPath, "utf-8");
+    }
+
+    return {statementMd : statement, solutionMd : solution};
+}

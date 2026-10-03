@@ -43,3 +43,12 @@ export async function getAcceptanceRate(slugs : string[]) : Promise<Map<string, 
     return stats;
 
 }
+
+export async function hasSolvedProblem(slug : string){
+
+    const supabase = await createClient();
+    const { count, error } = await supabase.from("submissions").select("id", { count: "exact", head: true }).eq("problem_slug", slug).eq("verdict", "AC");
+
+    return !error && (count ?? 0) > 0;
+    
+}

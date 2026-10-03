@@ -25,3 +25,15 @@ export interface AcceptanceStat {
   total: number;
   rate: number | null;
 }
+
+export interface Problem{
+	title: string;
+	timeLimit? : string;
+	memoryLimit? : string;
+	difficulty : Difficulty;
+	number : number;
+	tags: string[];
+	inputSource? : string;
+	outputSource? : string;
+	note? : string;
+}
