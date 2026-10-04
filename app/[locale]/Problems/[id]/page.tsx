@@ -2,7 +2,7 @@ import { isAuthenticated } from "@/app/scripts/login/isAutheticated";
 import markdownToHTML from "@/app/scripts/markdown/mdToHTML";
 import { getProblem, getProblemMd } from "@/app/scripts/problems/getProblems";
 import { hasSolvedProblem } from "@/app/scripts/problems/getProgress";
-import ProblemView from "@/app/ui/problems/problemView";
+import ProblemView from "@/app/ui/problems/problem-specific/problemView";
 import { getLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
