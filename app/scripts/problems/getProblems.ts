@@ -1,11 +1,14 @@
 import "server-only"
 
 import path from "path";
-import { AcceptanceStat, Problem, ProblemsPageProblem, Difficulty, DIFFICULTIES } from "./problem-types";
+import { AcceptanceStat, Problem, ProblemsPageProblem, Difficulty, DIFFICULTIES, Testcase } from "./problem-types";
 import { cache } from "react";
 import fs from 'fs';
 
 const PROBLEMS_ROOT = path.join(process.cwd(), "content", "problems");
+
+const DEFAULT_TIME_LIMIT_S = 2.0;
+const DEFAULT_MEMORY_LIMIT_KB = 262144;
 
 export function getProblemSlugs() : string[] {
 
@@ -60,9 +63,6 @@ function formatMemory(kb: number): string {
 
 export function getProblem(slug : string, locale : string) : Problem | null{
 
-    const DEFAULT_TIME_LIMIT_S = 2.0;
-    const DEFAULT_MEMORY_LIMIT_KB = 262144;
-
     if(!fs.existsSync(path.join(PROBLEMS_ROOT, slug))){
         return null;
     }
@@ -99,4 +99,35 @@ export function getProblemMd(slug : string, locale : string) : {statementMd : st
     }
 
     return {statementMd : statement, solutionMd : solution};
+}
+
+function isValidSlug(slug: string): boolean {
+    return /^[a-zA-Z0-9][a-zA-Z0-9._-]*$/.test(slug) && !slug.includes("..");
+}
+
+export function getTestcases(slug : string) : Testcase[]{    
+
+    if(!isValidSlug(slug)){
+        return [];
+    }
+
+    const testsDir = path.join(PROBLEMS_ROOT, slug, "tests");
+    
+    if(!fs.existsSync(testsDir)){
+        return [];
+    }
+
+    return fs.readdirSync(testsDir).filter((f) => f.endsWith(".in")).map((f) => f.slice(0, -".in".length)).filter((name) => fs.existsSync(path.join(testsDir, `${name}.out`))).sort()
+        .map((name) => ({
+            name : name, input : fs.readFileSync(path.join(testsDir, `${name}.in`), "utf-8"), 
+            expectedOutput: fs.readFileSync(path.join(testsDir, `${name}.out`), "utf-8")
+        })
+    );
+}
+
+export function getProblemLimits(problem : Problem) : {timeLimit : number, memoryLimit : number}{
+    return {
+        timeLimit: problem.timeLimit ? parseFloat(problem.timeLimit) : DEFAULT_TIME_LIMIT_S,
+        memoryLimit: problem.memoryLimit ? parseFloat(problem.memoryLimit) : DEFAULT_MEMORY_LIMIT_KB,
+    };
 }

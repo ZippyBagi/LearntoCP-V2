@@ -1,4 +1,3 @@
-
 export interface ProblemsPageProblem{
     slug: string;
     title : string;
@@ -11,19 +10,19 @@ export interface ProblemsPageProblem{
 }
 
 export const DIFFICULTIES = [
-  "Super Easy",
-  "Easy",
-  "Medium",
-  "Hard",
-  "Super Hard",
+	"Super Easy",
+	"Easy",
+	"Medium",
+	"Hard",
+	"Super Hard",
 ] as const;
 
 export type Difficulty = (typeof DIFFICULTIES)[number];
 
 export interface AcceptanceStat {
-  accepted: number;
-  total: number;
-  rate: number | null;
+	accepted: number;
+	total: number;
+	rate: number | null;
 }
 
 export interface Problem{
@@ -36,4 +35,10 @@ export interface Problem{
 	inputSource? : string;
 	outputSource? : string;
 	note? : string;
+}
+
+export interface Testcase {
+	name: string;
+	input: string;
+	expectedOutput: string;
 }
