@@ -10,6 +10,7 @@ import { useState } from "react";
 import RevealSolutionDialog from "./revealSolutionDialogue";
 import SubmitPanel from "./submitPanel";
 import { TagsList } from "./tagsList";
+import OptimizedContent from "@/app/scripts/markdown/optimizeContent";
 
 interface ProblemViewProps{
     problem : Problem;
@@ -149,10 +150,7 @@ export default function ProblemView({problem, statement, solution, solved, isAut
                     {problem.note && <p className="italic text-text-muted mb-8 leading-[1.6]">{problem.note}</p>}
 
                     {statement ? (
-                        <article
-                            className="prose prose-slate dark:prose-invert max-w-none problem-article"
-                            dangerouslySetInnerHTML={{ __html: statement }}
-                        />
+                        <article className="prose prose-slate dark:prose-invert max-w-none problem-article"><OptimizedContent htmlContent={statement}></OptimizedContent></article>
                     ) : (
                         <p className="text-text-muted">{t('noStatement')}</p>
                     )}
@@ -184,10 +182,7 @@ export default function ProblemView({problem, statement, solution, solved, isAut
                     </h1>
 
                     {solution ? (
-                        <article
-                            className="prose prose-slate dark:prose-invert max-w-none problem-article"
-                            dangerouslySetInnerHTML={{ __html: solution }}
-                        />
+                        <article className="prose prose-slate dark:prose-invert max-w-none problem-article"><OptimizedContent htmlContent={solution}></OptimizedContent></article>
                     ) : (
                         <div className="flex flex-col items-center text-center p-12 px-4 border border-dashed border-border-subtle rounded-xl bg-[rgba(255,255,255,0.015)]">
                             <LightBulbIcon className="size-8 text-text-muted mb-3" />
