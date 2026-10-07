@@ -84,5 +84,22 @@
     "revealBody" : "You haven't solved this problem yet. Viewing the solution will spoil the solution. Are you sure you want to continue?",
     "keepTrying" : "Keep trying",
     "revealConfirm" : "Reveal solution"
+  },
+
+  "SubmitPanel" : {
+    "submitTitle" : "Submit your solution",
+    "judgingProgress" : "Judging... {passed}/{total} testcases passed so far",
+    "verdictResult" : "{label} - {passed}/{total} testcases passed",
+    "AC": "Accepted",
+    "WA": "Wrong Answer",
+    "TLE": "Time Limit Exceeded",
+    "RE": "Runtime Error",
+    "CE": "Compilation Error",
+    "IE": "Judge Error — something went wrong on our side, try again",
+    "verdictPlaceholder": "Your verdict appears here after submitting.",
+    "submissionFailed" : "Submission failed",
+    "networkError" : "Network error - please try again.",
+    "judging": "Judging...",
+    "submit": "Submit"
   }
 }

@@ -84,6 +84,22 @@
     "revealBody" : "Još uvek niste rešili ovaj zadatak. Otvaranje rešenja će otkriti odgovor. Da li ste sigurni da želite da nastavite?",
     "keepTrying" : "Nazad",
     "revealConfirm" : "Otkri rešenje"
+  },
 
+  "SubmitPanel" : {
+    "submitTitle" : "Pošalji svoje rešenje",
+    "judgingProgress" : "Ocenjivanje... {passed}/{total} test-primera do sada prošlo",
+    "verdictResult" : "{label} - {passed}/{total} test-primera prošlo",
+    "AC": "Accepted",
+    "WA": "Wrong Answer",
+    "TLE": "Time Limit Exceeded",
+    "RE": "Runtime Error",
+    "CE": "Compilation Error",
+    "IE": "Judge Error — something went wrong on our side, try again",
+    "verdictPlaceholder" : "Tvoj rezultat se pojavljuje ovde nakon slanja.",
+    "submissionFailed" : "Slanje nije uspelo",
+    "networkError" : "Greška u mreži - pokušaj ponovo.",
+    "judging": "Ocenjivanje…",
+    "submit": "Pošalji"
   }
 }

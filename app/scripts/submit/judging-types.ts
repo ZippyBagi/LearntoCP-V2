@@ -41,6 +41,9 @@ export interface PublicSubmission {
     total: number;
     compileOutput: string | null;
     createdAt: string;
+    runtime?: number | null;
+    memory?: number | null;
+    code?: string;
 }
 
 export interface CppLanguage {

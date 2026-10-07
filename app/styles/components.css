@@ -35,4 +35,26 @@
   .codeModalFade {
     animation: codeModalFade 0.15s ease;
   }
+
+  .submit-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 9px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-success);
+    background: rgba(80, 250, 123, 0.1);
+    border: 1px solid rgba(80, 250, 123, 0.4);
+    box-shadow: 0 0 0 1px rgba(80, 250, 123, 0.08);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, background 0.15s ease;
+  }
+  .submit-button:hover:not(:disabled) {
+    background: rgba(80, 250, 123, 0.18);
+    border-color: rgba(80, 250, 123, 0.7);
+    box-shadow: 0 0 0 1px rgba(80, 250, 123, 0.12), 0 0 8px rgba(80, 250, 123, 0.14);
+  }
+  .submit-button:disabled { opacity: 0.45; cursor: not-allowed; }
 }
