@@ -106,5 +106,24 @@
   "CodeEditor" : {
     "pasteLabel" : "Paste-uj svoj kod ispod",
     "editorPlaceholder" : "// Paste-uj svoje kompletno C++ rešenje ovde"
+  },
+
+  "SubmissionHistory" : {
+    "submissionsTitle" : "Tvoji pokušaji",
+    "attemptsCount" : "{count} pokušaja",
+    "AC": "Accepted",
+    "WA": "Wrong Answer",
+    "TLE": "Time Limit Exceeded",
+    "RE": "Runtime Error",
+    "CE": "Compilation Error",
+    "IE": "Judge Error — something went wrong on our side, try again",
+    "noSubmissions" : "Još nema pokušaja",
+    "judging" : "Ocenjivanje…",
+    "testcasesPassed" : "{passed} / {total} test-primera prošlo",
+    "runtimeLabel" : "vreme",
+    "memoryLabel" : "memorija",
+    "justNow" : "upravo sada",
+    "viewCodeTitle" : "Kod",
+    "codeLabel" : "Kod"
   }
 }

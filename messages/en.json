@@ -106,5 +106,24 @@
   "CodeEditor" : {
     "pasteLabel" : "Paste your code below",
     "editorPlaceholder" : "// Paste your full C++ solution here..."
+  },
+  
+  "SubmissionHistory" :{
+    "submissionsTitle" : "Your submissions",
+    "attemptsCount" : "{count} attempts",
+    "noSubmissions" : "No submissions yet",
+    "AC": "Accepted",
+    "WA": "Wrong Answer",
+    "TLE": "Time Limit Exceeded",
+    "RE": "Runtime Error",
+    "CE": "Compilation Error",
+    "IE": "Judge Error — something went wrong on our side, try again",
+    "judging" : "Judging...",
+    "testcasesPassed" : "{passed} / {total} testcases passed",
+    "runtimeLabel" : "runtime",
+    "memoryLabel" : "memory",
+    "justNow" : "just now",
+    "viewCodeTitle" : "Code",
+    "codeLabel" : "Code"
   }
 }

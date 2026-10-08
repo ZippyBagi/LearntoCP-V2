@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import VersionSelect from "./versionSelect";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { DEFAULT_LANGUAGE_ID, PublicSubmission } from "@/app/scripts/submit/judging-types";
 import CodeEditor from "./codeEditor";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
@@ -31,6 +31,8 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
     
     const [code, setCode] = useState("");
     const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+    const [viewing, setViewing] = useState<PublicSubmission | null>(null);
     
 
     const stopPolling = useCallback(() => {
@@ -45,7 +47,6 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
             const res = await fetch(
                 `/api/submissions?problemId=${encodeURIComponent(slug)}`,
             );
-
             if (!res.ok) return;
             
             const data = await res.json();
@@ -81,6 +82,11 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
             pollRef.current = setInterval(poll, POLL_INTERVAL_MS);
         }, [loadHistory, onSolved, stopPolling]
     );
+
+    useEffect(() => {
+        loadHistory();
+        return stopPolling;
+    }, [loadHistory, stopPolling]);
 
     const handleSubmit = async () => {
 
@@ -156,7 +162,7 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
                 )
             }
 
-            <SubmissionHistory></SubmissionHistory>
+            <SubmissionHistory history={history} verdictTone={verdictTone} time_limit={time_limit} memory_limit={memory_limit} locale={locale} setViewing={setViewing}></SubmissionHistory>
 
         </section>
     )
