@@ -101,5 +101,10 @@
     "networkError" : "Greška u mreži - pokušaj ponovo.",
     "judging": "Ocenjivanje…",
     "submit": "Pošalji"
+  },
+
+  "CodeEditor" : {
+    "pasteLabel" : "Paste-uj svoj kod ispod",
+    "editorPlaceholder" : "// Paste-uj svoje kompletno C++ rešenje ovde"
   }
 }

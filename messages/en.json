@@ -101,5 +101,10 @@
     "networkError" : "Network error - please try again.",
     "judging": "Judging...",
     "submit": "Submit"
+  },
+
+  "CodeEditor" : {
+    "pasteLabel" : "Paste your code below",
+    "editorPlaceholder" : "// Paste your full C++ solution here..."
   }
 }

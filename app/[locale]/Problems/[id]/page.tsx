@@ -5,6 +5,7 @@ import { hasSolvedProblem } from "@/app/scripts/problems/getProgress";
 import ProblemView from "@/app/ui/problems/problem-specific/problemView";
 import { getLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import "shiki"
 
 function safeDecode(s: string): string {
     try {

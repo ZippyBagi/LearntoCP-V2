@@ -91,6 +91,7 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
         try {
             const res = await fetch("/api/submit", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ slug, code, languageId })});
             const data = await res.json();
+            console.log(data);
 
             if (!res.ok) {
                 // 429 - human-readable cooldown / daily-limit message
@@ -117,7 +118,7 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
             
             </div>
         
-            <CodeEditor></CodeEditor>
+            <CodeEditor code={code} setCode={setCode}></CodeEditor>
 
             <div className="flex items-center justify-between gap-4 mt-4">
                 <div className="text-sm text-text-muted">
@@ -158,7 +159,6 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
             <SubmissionHistory></SubmissionHistory>
 
         </section>
-
     )
 }
 
