@@ -128,6 +128,6 @@ export function getTestcases(slug : string) : Testcase[]{
 export function getProblemLimits(problem : Problem) : {timeLimit : number, memoryLimit : number}{
     return {
         timeLimit: problem.timeLimit ? parseFloat(problem.timeLimit) : DEFAULT_TIME_LIMIT_S,
-        memoryLimit: problem.memoryLimit ? parseFloat(problem.memoryLimit) : DEFAULT_MEMORY_LIMIT_KB,
+        memoryLimit: problem.memoryLimit ? parseFloat(problem.memoryLimit)*1024 : DEFAULT_MEMORY_LIMIT_KB //*1024 because problem.memoryLimit is always in MB
     };
 }

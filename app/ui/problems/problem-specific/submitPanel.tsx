@@ -89,7 +89,7 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
         setSubmitting(true);
 
         try {
-            const res = await fetch("/api/submit", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ slug, code, languageId })});
+            const res = await fetch("/api/submit", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ problemId:slug, code, languageId })});
             const data = await res.json();
             console.log(data);
 
