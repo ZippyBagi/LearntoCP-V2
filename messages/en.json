@@ -131,5 +131,24 @@
     "close" : "close",
     "copy" : "Copy",
     "copied" : "Copied"
+  },
+
+  "AboutUs":{
+    "eyebrow" : "About Us",
+    "title" : "About LearnToCP",
+    "lede" : "LearnToCP is a free way to learn Competitive Programming, that focuses more on intuition and logic than pure math. It is made with the goal of teaching high school students how to go from beginners, to serious contestants by providing both the theory and the problems in one platform! ",
+    "goalLabel" : "Goals",
+    "goal1": "Free theory lessons",
+    "goalDescription1": "Long-form lessons on algorithms, data structures and ways of thinking.",
+    "goal2": "A structured roadmap",
+    "goalDescription2": "An ordered roadmap that clearly tells you what to focus on, and when.",
+    "goal3": "Hand-picked problems",
+    "goalDescription3": "Curated problems that both teach basics, and test logic the harder they get.",
+    "goal4": "100% free, forever",
+    "goalDescription4": "No paywalls, no locked chapters, no ads. Learning shouldn't cost anything.",
+    "developerLabel" : "The Developer",
+    "developerName" : "Dušan Kovačević",
+    "developerHandle" : "@ZippyBagi",
+    "developerNote" : "My name is Dušan Kovačević and I'm a 17 year old high school student from Serbia. I built this website for two reasons. The first is to share my knowledge and inspire more people to get into competitive programming. And the second is to prepare for future competitions. My future goals are to improve this website, get to an Olympiad level competiton (SIO, maybe even IIO if I train hard enough), and get into MIT."
   }
 }

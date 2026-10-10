@@ -131,5 +131,24 @@
     "close" : "zatvori",
     "copy" : "Copy",
     "copied" : "Copied"
+  },
+
+  "AboutUs":{
+    "eyebrow" : "O Name",
+    "title" : "O LearnToCP-u",
+    "lede" : "LearnToCP je besplatana platforma za učenje takmičarskog programiranja, koja stavlja fokus na razvijanje intuicije i logičkog razmišljanja više nego na čistu matematiku. Sajt je napravljen sa ciljem da srednjoškolcima pomogne da od potpunih početnika postanu kandidati za uspeh na takmičenjima, pružajući na jednom mestu i teoriju i probleme.",
+    "goalLabel" : "Ciljevi",
+    "goal1": "Besplatne lekcije iz teorije",
+    "goalDescription1": "Detaljne lekcije o algoritmima, strukturama podataka i načinima razmišljanja.",
+    "goal2": "Jasno organizovan put učenja",
+    "goalDescription2": "Road-mapa koja ti jasno pokazuje tačno šta treba da učiš i kada.",
+    "goal3": "Pažljivo odabrani zadaci",
+    "goalDescription3": "Pažljivo odabrani zadaci koji te uče osnovama, a zatim sve više testiraju tvoju logiku kako postaju teži.",
+    "goal4": "100% besplatno, zauvek",
+    "goalDescription4": "Bez paywall-ova, zaključanih poglavlja i reklama. Znanje bi trebalo da bude besplatno.",
+    "developerLabel" : "Autor",
+    "developerName" : "Dušan Kovačević",
+    "developerHandle" : "@ZippyBagi",
+    "developerNote" : "Ja sam Dušan Kovačević, imam 17 godina i napravio sam ovaj sajt iz dva razloga. Prvi je da zainteresujem više ljudi da se bave takmičarskim programiranjem. A drugi da vežbam teoriju i zadatke za buduća takmičenja. Moji ciljevi su da nastavim da unapređujem ovaj sajt, dođem do SIO-a (možda i dalje ako budem imao sreće) i da upišem MIT fakultet u Americi."
   }
 }
