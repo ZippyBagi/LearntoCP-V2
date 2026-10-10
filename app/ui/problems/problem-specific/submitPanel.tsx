@@ -7,6 +7,7 @@ import { DEFAULT_LANGUAGE_ID, PublicSubmission } from "@/app/scripts/submit/judg
 import CodeEditor from "./codeEditor";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import SubmissionHistory from "./submissionHistory";
+import CodeViewer from "./codeViewer";
 
 const POLL_INTERVAL_MS = 1500;
 
@@ -114,6 +115,18 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
         }
     };
 
+    useEffect(() => {
+        if (!viewing) return;
+
+        const onKey = (e: KeyboardEvent) => {
+            if (e.key === "Escape") setViewing(null);
+        };
+
+        window.addEventListener("keydown", onKey);
+        
+        return () => window.removeEventListener("keydown", onKey);
+    }, [viewing]);
+
     return (
         <section className="mt-12">
             <div className="flex items-center justify-between mb-4">
@@ -162,13 +175,17 @@ export default function SubmitPanel({slug,locale,time_limit,memory_limit,onSolve
                 )
             }
 
-            <SubmissionHistory history={history} verdictTone={verdictTone} time_limit={time_limit} memory_limit={memory_limit} locale={locale} setViewing={setViewing}></SubmissionHistory>
+            <SubmissionHistory history={history} time_limit={time_limit} memory_limit={memory_limit} locale={locale} setViewing={setViewing}></SubmissionHistory>
+
+            {viewing && (
+                <CodeViewer submission={viewing} onClose={() => setViewing(null)} />
+            )}
 
         </section>
     )
 }
 
-function verdictTone(verdict: string | null): "ok" | "bad" | "pending" {
+export function verdictTone(verdict: string | null): "ok" | "bad" | "pending" {
     if (!verdict) return "pending";
 
     return verdict === "AC" ? "ok" : "bad";

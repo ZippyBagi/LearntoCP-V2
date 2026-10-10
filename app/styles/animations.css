@@ -28,3 +28,8 @@
   42%, 58% { transform: translateX(var(--scroll-amount)); }
   95%, 100% { transform: translateX(0); }
 }
+
+@keyframes codeModalFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

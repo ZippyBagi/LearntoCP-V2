@@ -39,18 +39,14 @@ export function RoadmapModal({ node, checked, onToggle, onClose}: RoadmapModalPr
             role="dialog"
             aria-modal="true"
             aria-label={node.title.replace(/^[0-9]+/, "")}
-            className="fixed inset-0 z-50 flex items-end justify-center p-3 sm:items-center sm:p-4"
+            className="fixed inset-0 z-50 flex items-end justify-center p-3 sm:items-center sm:p-4 animate-[codeModalFade_0.15s_ease] absolute inset-0 bg-[rgba(0,10,20,0.80)] backdrop-blur-[6px]"
             onClick={(e) => {
                 if (e.target === e.currentTarget) onClose();
             }}
         >
-            <div
-                aria-hidden
-                className="absolute inset-0 bg-[rgba(0,10,20,0.80)] backdrop-blur-[6px]"
-            />
 
             <div
-                className="relative z-10 flex w-full max-w-md animate-[roadmap-modal-in_180ms_cubic-bezier\(0.16\,1\,0.3\,1\)_both] flex-col overflow-hidden rounded-2xl"
+                className="relative z-10 flex w-full max-w-md animate-[roadmap-modal-in_180ms_cubic-bezier\(0.16\,1\,0.3\,1\)_both] flex-col overflow-hidden rounded-2xl pop"
                 style={{
                     background: isAllDone
                         ? "linear-gradient(160deg, #0d2137 0%, #0b2a1a 100%)"

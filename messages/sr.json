@@ -125,5 +125,11 @@
     "justNow" : "upravo sada",
     "viewCodeTitle" : "Kod",
     "codeLabel" : "Kod"
+  },
+
+  "CodeViewer" : {
+    "close" : "zatvori",
+    "copy" : "Copy",
+    "copied" : "Copied"
   }
 }

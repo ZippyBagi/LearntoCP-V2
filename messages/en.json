@@ -125,5 +125,11 @@
     "justNow" : "just now",
     "viewCodeTitle" : "Code",
     "codeLabel" : "Code"
+  },
+
+  "CodeViewer" : {
+    "close" : "close",
+    "copy" : "Copy",
+    "copied" : "Copied"
   }
 }

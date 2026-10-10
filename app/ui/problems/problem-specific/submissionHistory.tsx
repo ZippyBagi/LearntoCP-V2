@@ -4,8 +4,17 @@ import { PublicSubmission } from "@/app/scripts/submit/judging-types";
 import { CodeBracketIcon } from "@heroicons/react/24/outline";
 import { useTranslations } from "next-intl"
 import { Dispatch, SetStateAction, useState } from "react";
+import { verdictTone } from "./submitPanel";
 
-export default function SubmissionHistory({history, verdictTone, time_limit, memory_limit, locale, setViewing} : SubmissionHistoryProps){
+interface SubmissionHistoryProps{
+    history : PublicSubmission[];
+    time_limit : number;
+    memory_limit : number; 
+    locale : string;
+    setViewing : Dispatch<SetStateAction<PublicSubmission | null>>;
+}
+
+export default function SubmissionHistory({history, time_limit, memory_limit, locale, setViewing} : SubmissionHistoryProps){
 
     const t = useTranslations("SubmissionHistory")
 
@@ -34,8 +43,7 @@ export default function SubmissionHistory({history, verdictTone, time_limit, mem
 
                             return (
 
-                                <li key={s.submissionId} className={`flex items-center gap-4 rounded-[10px] border border-border-subtle bg-bg-surface px-[1.1rem] py-[0.9rem] 
-                                    `}>
+                                <li key={s.submissionId} className={`flex items-center gap-4 rounded-[10px] border border-border-subtle bg-bg-surface px-[1.1rem] py-[0.9rem] `}>
 
                                 <span className={`size-[9px] shrink-0 rounded-full ${tone === 'ok' ? "bg-success bg-success)" : tone === "bad" ? "bg-danger" : tone === "pending" ? "bg-warning bg-warning" : "bg-text-muted"}`} aria-hidden />
 
@@ -108,7 +116,7 @@ function formatMemory(kb: number | null | undefined, memory_limit? : number | nu
     return `${(kb / 1024).toFixed(1)} MB`;
 }
 
-const timeAgo = (iso: string, t : any, locale : string) => {
+export const timeAgo = (iso: string, t : any, locale : string) => {
 
 
     locale = locale === "sr" ? "sr-Latn" : locale;
@@ -144,13 +152,4 @@ const timeAgo = (iso: string, t : any, locale : string) => {
     }
 
     return new Date(iso).toLocaleDateString(locale);
-}
-
-interface SubmissionHistoryProps{
-    history : PublicSubmission[];
-    verdictTone : (verdict: string | null) => "ok" | "bad" | "pending";
-    time_limit : number;
-    memory_limit : number; 
-    locale : string;
-    setViewing : Dispatch<SetStateAction<PublicSubmission | null>>;
 }

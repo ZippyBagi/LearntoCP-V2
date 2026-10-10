@@ -6,7 +6,7 @@ import { Dispatch, SetStateAction, useEffect, useMemo, useRef, useState } from "
 
 let highlighterPromise: Promise<import("shiki").Highlighter> | null = null;
 
-function getHighlighter() {
+export function getHighlighter() {
     if (!highlighterPromise) {
         highlighterPromise = import("shiki").then((shiki) =>
             shiki.createHighlighter({ themes: ["dracula"], langs: ["cpp"] })
