@@ -1,7 +1,12 @@
 {
   "HomePage": {
-    "title": "Srspski title",
-    "description": "Srpski opis"
+    "mapLabel" : "MAPA",
+    "mapTitle" : "Road-mapa",
+    "mapDescription" : "Road-mapa za praćenje napredka",
+    "solveLabel" : "REŠAVAJ",
+    "solveTitle" : "Problemi",
+    "solveDescription" : "Pažljivo odabran skup problema, označenih po težini i oblasit",
+    "tagline" : "Nauči Takmičarsko Programiranje"
   },
 
   "Navbar": {

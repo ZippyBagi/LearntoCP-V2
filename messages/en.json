@@ -1,7 +1,12 @@
 {
   "HomePage": {
-    "title": "Welcome to our website!",
-    "description": "This is an internationalized application."
+    "mapLabel" : "MAP",
+    "mapTitle" : "Roadmap",
+    "mapDescription" : "A tailored rodamp that takes you from beginner to expert",
+    "solveLabel" : "SOLVE",
+    "solveTitle" : "Problems",
+    "solveDescription" : "A curated, difficulty-tagged practice set of problems",
+    "tagline" : "Learn To Competitively Program"
   },
 
   "Navbar": {

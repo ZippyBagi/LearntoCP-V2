@@ -1,11 +1,12 @@
 interface DefaultBGProps {
-  children: React.ReactNode;         
+    children: React.ReactNode;         
+    className? : string | null;
 }
 
-export default function DefaultBG( {children} : DefaultBGProps){
+export default function DefaultBG( {children, className} : DefaultBGProps){
 
     return (
-        <div className="relative -m-3 h-[calc(100%+1.5rem)] overflow-hidden">
+        <div className={className ? className : "relative -m-3 h-[calc(100%+1.5rem)] overflow-hidden"}>
             <div aria-hidden className="absolute inset-0"
                 style={{
                     background:
