@@ -127,7 +127,7 @@ export default function ProblemView({problem, statement, solution, solved, isAut
                                     {t('thOutput')}
                                 </th>
 
-                                <th className="px-4 py-[0.85rem] text-[0.7rem] font-semibold tracking-[0.12em] uppercase text-text-muted bg-bg-code-header text-center border-b border-border-subtle">
+                                <th className="max-sm:hidden px-4 py-[0.85rem] text-[0.7rem] font-semibold tracking-[0.12em] uppercase text-text-muted bg-bg-code-header text-center border-b border-border-subtle">
                                     {t('tags')}
                                 </th>
                             </tr>
@@ -138,7 +138,7 @@ export default function ProblemView({problem, statement, solution, solved, isAut
                                 <td className="p-4 text-center text-text-heading text-[0.95rem] border-r border-border-subtle">{problem.memoryLimit}</td>
                                 <td className="p-4 text-center text-text-heading text-[0.95rem] border-r border-border-subtle">{problem.inputSource}</td>
                                 <td className="p-4 text-center text-text-heading text-[0.95rem] border-r border-border-subtle">{problem.outputSource}</td>
-                                <td className="p-4 text-center text-text-heading text-[0.95rem] max-w-30 min-w-30">
+                                <td className="max-sm:hidden p-4 text-center text-text-heading text-[0.95rem] max-w-30 min-w-30">
                                     {problem.tags != null && (
                                         <TagsList problem={problem}></TagsList>
                                     )} 
