@@ -56,7 +56,7 @@ export default function OptimizedContent({htmlContent} : OptimizedContentProps){
                         width={parseInt(width, 10)}
                         height={parseInt(height, 10)}
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        className='rounded-sm ml-8'
+                        className='rounded-sm sm:ml-8'
                     />
                 );
 
