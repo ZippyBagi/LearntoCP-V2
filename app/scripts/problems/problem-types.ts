@@ -35,6 +35,7 @@ export interface Problem{
 	inputSource? : string;
 	outputSource? : string;
 	note? : string;
+	topic : string;
 }
 
 export interface Testcase {

@@ -1,8 +1,10 @@
 import { redirect } from '@/app/scripts/i18n/navigation';
 import { createClient } from '@/app/scripts/supabase/server';
 import DefaultBG from '@/app/ui/utils/defaultBG';
-import { getLocale } from 'next-intl/server';
+import { getLocale, getTranslations } from 'next-intl/server';
 import LoginPanel from '@/app/ui/login/loginPane';
+import { pageMetadata } from '@/app/scripts/seo/seoUtils';
+import { Metadata } from 'next';
 
 export default async function LoginPage({searchParams} : { searchParams: Promise<{ next?: string }>; }) {
 
@@ -25,4 +27,18 @@ export default async function LoginPage({searchParams} : { searchParams: Promise
 			</div>
 		</DefaultBG>
 	)
+}
+
+export async function generateMetadata() : Promise<Metadata> {
+
+	const locale = await getLocale();
+	const t = await getTranslations("Login");
+
+	return pageMetadata({
+		locale,
+		path:"login",
+		title:t('eyebrow'),
+		description:t('description'),
+		noindex:true
+	});
 }

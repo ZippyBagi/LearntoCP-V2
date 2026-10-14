@@ -10,7 +10,7 @@ const PROBLEMS_ROOT = path.join(process.cwd(), "content", "problems");
 const DEFAULT_TIME_LIMIT_S = 2.0;
 const DEFAULT_MEMORY_LIMIT_KB = 262144;
 
-export function getProblemSlugs() : string[] {
+export const getProblemSlugs = cache(() : string[] => {
 
     const problems = fs.readdirSync(PROBLEMS_ROOT, {withFileTypes:true}).filter((entry) => entry.isDirectory())
                                                                               .filter((entry) => (fs.existsSync(path.join(PROBLEMS_ROOT, entry.name, "problem.json"))))
@@ -18,7 +18,7 @@ export function getProblemSlugs() : string[] {
                                                                               .sort();
 
     return problems;
-}
+});
 
 export const getProblemsPageProblems = cache((locale : string, solved : Set<string>, problems : string[], acceptance : Map<string,AcceptanceStat>) : ProblemsPageProblem[] => {
    
@@ -78,8 +78,9 @@ export function getProblem(slug : string, locale : string) : Problem | null{
     const inputSource = meta.inputSource;
     const outputSource = meta.outputSource;
     const note = meta.note[locale];
+    const topic = meta.topic[locale];
     
-    return {title,timeLimit,memoryLimit,difficulty,number,tags,inputSource,outputSource,note};
+    return {title,timeLimit,memoryLimit,difficulty,number,tags,inputSource,outputSource,note, topic};
 }
 
 export function getProblemMd(slug : string, locale : string) : {statementMd : string | null, solutionMd : string | null}{

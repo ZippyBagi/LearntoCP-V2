@@ -15,11 +15,7 @@ export function localizedPath(locale: string, path = ""): string {
 
 /**
  * Build an expected configuration for Google seo
- * 
- * `locale` needs to be in the form of `en`
- * 
- * `path` needs to be in the form of `example/example/...` without locale
- */
+*/
 export function buildAlternates( locale: string, path = ""): NonNullable<Metadata["alternates"]> {
     const languages: Record<string, string> = {};
     

@@ -2,8 +2,10 @@ import { isAuthenticated } from "@/app/scripts/login/isAutheticated";
 import markdownToHTML from "@/app/scripts/markdown/mdToHTML";
 import { getProblem, getProblemMd } from "@/app/scripts/problems/getProblems";
 import { hasSolvedProblem } from "@/app/scripts/problems/getProgress";
+import { pageMetadata } from "@/app/scripts/seo/seoUtils";
 import ProblemView from "@/app/ui/problems/problem-specific/problemView";
-import { getLocale } from "next-intl/server";
+import { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "shiki"
 
@@ -43,3 +45,23 @@ export default async function ProblemPage({params} : ProblemPageProps){
     return <ProblemView problem={problem} statement={statementHTML} solution={solutionHTML} solved={solved} isAuthed={isAuthed} slug={slug} locale={locale}></ProblemView>
 }
 
+export async function generateMetadata({params} : {params: Promise<{id:string}>}) : Promise<Metadata> {
+
+    const {id} = await params;
+	const locale = await getLocale();
+	const t = await getTranslations("Problem");
+
+    const slug = safeDecode(id);
+    const problem = getProblem(slug,locale);
+
+    if (!problem) return { title: "Not Found"};
+
+    const description = t('description', {title:problem.title, descriptor:[problem.difficulty, problem.topic].filter(Boolean).join(" · ")});
+
+	return pageMetadata({
+		locale,
+		path:`Problems/${encodeURIComponent(slug)}`,
+		title:problem.title,
+		description: description
+	});
+}

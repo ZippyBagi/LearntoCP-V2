@@ -1,10 +1,11 @@
-'use client'
-
 import { useLocale, useTranslations } from "next-intl";
 import { ArrowUpRight, CodeIcon, MapIcon } from "../ui/utils/svgs";
 import DefaultBG from "../ui/utils/defaultBG";
 import { Link } from "../scripts/i18n/navigation";
 import CodeWindow from "../ui/home/codeWindow";
+import { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
+import { pageMetadata } from "../scripts/seo/seoUtils";
 
 export default function Home() {
   
@@ -111,4 +112,24 @@ export default function Home() {
 			</div>
 		</DefaultBG>
 	);
+}
+
+export async function generateMetadata() : Promise<Metadata>{
+
+	const locale = await getLocale();
+	const t = await getTranslations("HomePage");
+	const metaDataT = await getTranslations("MetaData");
+
+	const title = `LearnToCP - ${t('tagline')}`;
+
+	const base = pageMetadata({
+		locale,
+		path:"",
+		title,
+		ogTitle:title,
+		description: metaDataT("description")
+	});
+
+	return {...base, title:{absolute:title}};
+	
 }

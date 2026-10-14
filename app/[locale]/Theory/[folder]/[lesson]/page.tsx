@@ -2,11 +2,14 @@ import path from "path";
 import fs from "fs";
 import { stripOrderPrefix } from "@/app/scripts/sidebar/generateSidebarContainers";
 import { notFound } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import markdownToHTML from "@/app/scripts/markdown/mdToHTML"
 import OptimizedContent from "@/app/scripts/markdown/optimizeContent";
 import { Suspense } from "react";
 import LessonSkeleton from "@/app/ui/Lessons/lessonSkeleton";
+import { getLocale, getTranslations } from "next-intl/server";
+import { pageMetadata } from "@/app/scripts/seo/seoUtils";
+import { Metadata } from "next";
 
 
 interface LessonPageProps{
@@ -25,11 +28,11 @@ export default function LessonPage({params} : LessonPageProps){
 }
 
 function safeDecode(s: string): string {
-  try {
-    return decodeURIComponent(s);
-  } catch {
-    return s;
-  }
+	try {
+		return decodeURIComponent(s);
+	} catch {
+		return s;
+	}
 }
 
 interface LessonContentProps{
@@ -72,5 +75,21 @@ async function LessonContent({params, locale} : LessonContentProps){
     	<OptimizedContent htmlContent={htmlContent}></OptimizedContent>
     )
 
+}
 
+export async function generateMetadata({params, locale} : LessonContentProps) : Promise<Metadata> {
+
+	const {folder, lesson} = await params;
+
+	const lessonTitle = safeDecode(lesson);
+  	const folderTitle = safeDecode(folder);
+
+	const t = await getTranslations("Theory");
+
+	return pageMetadata({
+		locale,
+		path:`Theory/${encodeURIComponent(folderTitle)}/${encodeURIComponent(lessonTitle)}`,
+		title:`${lessonTitle} - ${folderTitle}`,
+		description:t('description', {lesson:lessonTitle, folder:folderTitle}),
+	});
 }

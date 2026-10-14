@@ -32,7 +32,7 @@
     "page_problems" : "problemima",
     "page_generic" : "ovoj stranici",
     "signInRequired" : "Da biste pristupili {page}, morate da se prijavite.",
-    "eyebrow" : "PRIJAVA",
+    "eyebrow" : "Prijava",
     "welcomePrefix" : "Dobrošli na",
     "description" : "Prijavite se kako bi pratili napredak na road-mapi i kako bi rešavali probleme!",
     "connecting" : "Povezivanje sa Google-om…",
@@ -81,7 +81,8 @@
       "editorialTitle" : "Rešenje - {title}",
       "noSolutionTitle" : "Rešenje još nije objavljeno",
       "noSolutionBody" : "Rešenje za ovaj zadatak još nije napisano. Pogledajte kasnije.",
-      "tags" : "TAGOVI"
+      "tags" : "TAGOVI",
+      "description" : "Reši {title} · {descriptor} - problem iz takmičarskog programiranja na LearnToCP."
     },
 
   "RevealSolution" : {
@@ -154,10 +155,20 @@
     "developerLabel" : "Autor",
     "developerName" : "Dušan Kovačević",
     "developerHandle" : "@ZippyBagi",
-    "developerNote" : "Ja sam Dušan Kovačević, imam 17 godina i napravio sam ovaj sajt iz dva razloga. Prvi je da zainteresujem više ljudi da se bave takmičarskim programiranjem. A drugi da vežbam teoriju i zadatke za buduća takmičenja. Moji ciljevi su da nastavim da unapređujem ovaj sajt, dođem do SIO-a (možda i dalje ako budem imao sreće) i da upišem MIT fakultet u Americi."
+    "developerNote" : "Ja sam Dušan Kovačević, imam 17 godina i napravio sam ovaj sajt iz dva razloga. Prvi je da zainteresujem više ljudi da se bave takmičarskim programiranjem. A drugi da vežbam teoriju i zadatke za buduća takmičenja. Moji ciljevi su da nastavim da unapređujem ovaj sajt, dođem do SIO-a (možda i dalje ako budem imao sreće) i da upišem MIT fakultet u Americi.",
+    "title_seo" : "O Nama"
   },
 
   "MetaData" : {
+    "description" : "Lekcije iz takmičarskog programiranja, zadaci, problemi i interaktivna road-mapa - od osnova do majstora. 100% besplatno."
+  },
 
+  "Roadmap":{
+    "title" : "Road-mapa",
+    "description" : "Road-mapa za praćenje napretka"
+  },
+
+  "Theory" : {
+    "description" : "Nauči {lesson} iz oblasti {folder} - takmičarsko programiranje na LearnToCP."
   }
 }

@@ -32,7 +32,7 @@
     "page_problems" : "the problems",
     "page_generic" : "this page",
     "signInRequired" : "To access {page}, you need to sign in first.",
-    "eyebrow" : "SIGN IN",
+    "eyebrow" : "Sign In",
     "welcomePrefix" : "Welcome to",
     "description" : "Sign in to track your progress through the roadmap, lectures, and problems.",
     "connecting" : "Connecting to Google…",
@@ -81,7 +81,8 @@
     "editorialTitle" : "Solution - {title}",
     "noSolutionTitle" : "No solution published yet",
     "noSolutionBody" : "The solution for this problem hasn't been written. Check back later.",
-    "tags" : "TAGS"
+    "tags" : "TAGS",
+    "description" : "Solve {title} · {descriptor} - a competitive-programming problem on LearnToCP."
   },
 
   "RevealSolution" : {
@@ -154,10 +155,20 @@
     "developerLabel" : "The Developer",
     "developerName" : "Dušan Kovačević",
     "developerHandle" : "@ZippyBagi",
-    "developerNote" : "My name is Dušan Kovačević and I'm a 17 year old high school student from Serbia. I built this website for two reasons. The first is to share my knowledge and inspire more people to get into competitive programming. And the second is to prepare for future competitions. My future goals are to improve this website, get to an Olympiad level competiton (SIO, maybe even IIO if I train hard enough), and get into MIT."
+    "developerNote" : "My name is Dušan Kovačević and I'm a 17 year old high school student from Serbia. I built this website for two reasons. The first is to share my knowledge and inspire more people to get into competitive programming. And the second is to prepare for future competitions. My future goals are to improve this website, get to an Olympiad level competiton (SIO, maybe even IIO if I train hard enough), and get into MIT.",
+    "title_seo" : "About us"
   },
 
   "MetaData" : {
+    "description" : "Structured competitive-programming lectures, problem sets, and an interactive roadmap - from fundamentals to mastery. 100% free."
+  },
 
+  "Roadmap":{
+    "title" : "Roadmap",
+    "description" : "A topic graph that tracks your progress node by node."
+  },
+
+  "Theory" : {
+    "description" : "Learn {lesson} in the {folder} track - a competitive-programming lecture on LearnToCP. "
   }
 } 

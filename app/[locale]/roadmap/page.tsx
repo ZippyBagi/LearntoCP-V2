@@ -1,4 +1,4 @@
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { getRoadmapMatrix } from "@/app/scripts/roadmap/getRoadmapMatrix";
 import { RoadmapCanvas } from "@/app/ui/roadmap/roadmapCanvas";
 import '@xyflow/react/dist/style.css'
@@ -6,6 +6,8 @@ import { isAuthenticated } from "@/app/scripts/login/isAutheticated";
 import getRoadmapProgress from "@/app/scripts/roadmap/getRoadmapProgress";
 import { ReactFlowProvider } from "@xyflow/react";
 import { getSolvedProblemSlugs } from "@/app/scripts/problems/getProgress";
+import { pageMetadata } from "@/app/scripts/seo/seoUtils";
+import { Metadata } from "next";
 
 export default async function Home() {
   
@@ -27,4 +29,17 @@ export default async function Home() {
 		</main>
 		
 	);
+}
+
+export async function generateMetadata() : Promise<Metadata> {
+
+	const locale = await getLocale();
+	const t = await getTranslations("Roadmap");
+
+	return pageMetadata({
+		locale,
+		path:"roadmap",
+		title:t('title'),
+		description:t('description'),
+	});
 }

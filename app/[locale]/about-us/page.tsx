@@ -1,6 +1,8 @@
+import { pageMetadata } from "@/app/scripts/seo/seoUtils";
 import { CodeForcesIcon, GithubIcon } from "@/app/ui/utils/svgs";
 import { Mail } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { Metadata } from "next";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 const linkPillClass = "flex items-center gap-2.5 rounded-lg border border-accent-border bg-accent/10 px-4 py-2.5 text-sm font-semibold text-accent transition-colors duration-150 hover:border-accent-border-hover hover:bg-accent/[0.18] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent";
@@ -106,4 +108,17 @@ export default async function Page() {
 			</nav>
 		</main>
     );
+}
+
+export async function generateMetadata() : Promise<Metadata> {
+
+	const locale = await getLocale();
+	const t = await getTranslations("AboutUs")
+
+	return pageMetadata({
+		locale,
+		path:"about-us",
+		title:t('title_seo'),
+		description:t('lede')
+	});
 }
