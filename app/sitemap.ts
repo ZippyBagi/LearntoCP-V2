@@ -74,7 +74,7 @@ function lessonEntries(): MetadataRoute.Sitemap {
                     //omit when doesn't exist
                 }
 
-                const images = ImagesInMd(filePath);
+                const images = ImagesInMd(filePath).map((image) => image.url);
 
                 entries.push({
                     url: abs(localizedPath(locale, routePath)),
