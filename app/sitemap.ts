@@ -6,7 +6,7 @@ import path from "path";
 import fs from 'fs';
 import { stripOrderPrefix } from "./scripts/sidebar/generateSidebarContainers";
 import { getProblemSlugs } from "./scripts/problems/getProblems";
-import ImagesInMd from "./scripts/markdown/imagesInMd";
+import ImagesInMd from "./scripts/seo/imagesInMd";
 
 const abs = (p: string) => `${SITE_URL}${p}`;
 
