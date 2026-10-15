@@ -170,5 +170,13 @@
 
   "Theory" : {
     "description" : "Nauči {lesson} iz oblasti {folder} - takmičarsko programiranje na LearnToCP."
+  },
+
+  "NotFound": {
+    "errorCode" : "// error_code: 404",
+    "heading" : "Stranica nije nađena",
+    "body1" : "/* Stranica koju tražite",
+    "body2": "ne postoji ili je premeštena */",
+    "returnHome" : "Početna"
   }
 }
