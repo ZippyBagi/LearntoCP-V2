@@ -63,8 +63,8 @@ export default async function RootLayout({ children,params }: LayoutProps) {
 	);
 }
 
-export async function generateMetadata(): Promise<Metadata> {
-    const locale = await getLocale();
+export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
+    const { locale } = await params;
     const t = await getTranslations("MetaData");
 
     return {
@@ -109,7 +109,7 @@ export async function generateMetadata(): Promise<Metadata> {
             description: t("description"),
             images: [
                 {
-                    url: "/opengraph-image.png",
+                    url: "/opengraph-image.png", 
                     width: 1200,
                     height: 630,
                     alt: "LearnToCP",
