@@ -107,29 +107,21 @@ export async function generateMetadata() : Promise<Metadata>{
 			locale: ogLocale(locale),
 			url: `${SITE_URL}/${locale}`,
 			title: "LearnToCP",
-			description:t('description'),
+			description: t("description"),
 			images: [
 				{
-					url: "/opengraph-image.png",
+					url: `${SITE_URL}/opengraph-image.png`,
 					width: 1200,
 					height: 630,
 					alt: "LearnToCP",
 				},
 			],
-			
 		},
 		twitter: {
 			card: "summary_large_image",
 			title: "LearnToCP",
-			description:t('description'),
-			images: [
-				{
-					url: "/opengraph-image.png",
-					width: 1200,
-					height: 630,
-					alt: "LearnToCP",
-				},
-			],
+			description: t("description"),
+			images: [`${SITE_URL}/opengraph-image.png`],
 		},
 		formatDetection: { telephone: false, email: false, address: false }
 	};
