@@ -1,14 +1,12 @@
-import type { Metadata, Viewport } from "next";
+import type { Viewport } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "@/app/globals.css";
 import LayoutShell from "./layoutShell";
-import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import {routing} from '@/app/scripts/i18n/routing';
 import { generateSidebarContainers } from "../scripts/sidebar/generateSidebarContainers";
 import "katex/dist/katex.min.css";
-import { SITE_NAME, SITE_URL } from "../scripts/seo/seo-constants";
-import { buildAlternates, ogLocale } from "../scripts/seo/seoUtils";
 
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -61,67 +59,4 @@ export default async function RootLayout({ children,params }: LayoutProps) {
 			</body>
 		</html>
 	);
-}
-
-export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
-    const { locale } = await params;
-    const t = await getTranslations("MetaData");
-
-    return {
-        metadataBase: new URL(SITE_URL),
-        title: {
-            default: "LearnToCP",
-            template: "%s · LearnToCP"
-        },
-        description: t('description'),
-        applicationName: SITE_NAME,
-        keywords: [
-            "competitive programming",
-            "algorithms",
-            "data structures",
-            "C++",
-            "coding problems",
-            "programming roadmap",
-            "LearnToCP",
-        ],
-        authors: [{ name: SITE_NAME }],
-        creator: SITE_NAME,
-        publisher: SITE_NAME,
-        category: "education",
-        robots: {
-            index: true,
-            follow: true,
-            googleBot: {
-                index: true,
-                follow: true,
-                "max-image-preview": "large",
-                "max-snippet": -1,
-                "max-video-preview": -1,
-            },
-        },
-        alternates: buildAlternates(locale, ""),
-        openGraph: {
-            type: "website",
-            siteName: SITE_NAME,
-            locale: ogLocale(locale),
-            url: `${SITE_URL}/${locale}`,
-            title: "LearnToCP",
-            description: t("description"),
-            images: [
-                {
-                    url: new URL("/opengraph-image.png", SITE_URL).toString(),
-                    width: 1200,
-                    height: 630,
-                    alt: "LearnToCP",
-                },
-            ],
-        },
-        twitter: {
-            card: "summary_large_image",
-            title: "LearnToCP",
-            description: t("description"),
-            images: [new URL("/opengraph-image.png", SITE_URL).toString()],
-        },
-        formatDetection: { telephone: false, email: false, address: false }
-    };
 }

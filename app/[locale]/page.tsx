@@ -5,7 +5,8 @@ import { Link } from "../scripts/i18n/navigation";
 import CodeWindow from "../ui/home/codeWindow";
 import { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
-import { pageMetadata } from "../scripts/seo/seoUtils";
+import { buildAlternates, ogLocale, pageMetadata } from "../scripts/seo/seoUtils";
+import { SITE_NAME, SITE_URL } from "../scripts/seo/seo-constants";
 
 export default function Home() {
   
@@ -114,22 +115,69 @@ export default function Home() {
 	);
 }
 
-export async function generateMetadata() : Promise<Metadata>{
+interface PageProps {
+    params: Promise<{ locale: string }>;
+}
 
-	const locale = await getLocale();
-	const t = await getTranslations("HomePage");
-	const metaDataT = await getTranslations("MetaData");
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations("MetaData");
 
-	const title = `LearnToCP - ${t('tagline')}`;
-
-	const base = pageMetadata({
-		locale,
-		path:"",
-		title,
-		ogTitle:title,
-		description: metaDataT("description")
-	});
-
-	return {...base, title:{absolute:title}};
-	
+    return {
+        metadataBase: new URL(SITE_URL),
+        title: {
+            default: "LearnToCP",
+            template: "%s · LearnToCP"
+        },
+        description: t('description'),
+        applicationName: SITE_NAME,
+        keywords: [
+            "competitive programming",
+            "algorithms",
+            "data structures",
+            "C++",
+            "coding problems",
+            "programming roadmap",
+            "LearnToCP",
+        ],
+        authors: [{ name: SITE_NAME }],
+        creator: SITE_NAME,
+        publisher: SITE_NAME,
+        category: "education",
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+                "max-video-preview": -1,
+            },
+        },
+        alternates: buildAlternates(locale, ""),
+        openGraph: {
+            type: "website",
+            siteName: SITE_NAME,
+            locale: ogLocale(locale),
+            url: `/${locale}`,
+            title: "LearnToCP",
+            description: t("description"),
+            images: [
+                {
+                    url: new URL("/opengraph-image.png", SITE_URL).toString(),
+                    width: 1200,
+                    height: 630,
+                    alt: "LearnToCP",
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "LearnToCP",
+            description: t("description"),
+            images: [new URL("/opengraph-image.png", SITE_URL).toString()],
+        },
+        formatDetection: { telephone: false, email: false, address: false }
+    };
 }
