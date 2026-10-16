@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "@/app/globals.css";
 import LayoutShell from "./layoutShell";
@@ -11,25 +11,31 @@ import { SITE_NAME, SITE_URL } from "../scripts/seo/seo-constants";
 import { buildAlternates, ogLocale } from "../scripts/seo/seoUtils";
 
 const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  display: "swap",
+	subsets: ["latin"],
+	variable: "--font-space-grotesk",
+	display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
-  display: "swap",
+	subsets: ["latin"],
+	variable: "--font-jetbrains-mono",
+	display: "swap",
 });
 
 export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
+	return routing.locales.map((locale) => ({locale}));
 }
 
-interface LayoutProps {
+export const viewport: Viewport = {
+	colorScheme: "dark",
+	themeColor: "#00131b",
+	width: "device-width",
+	initialScale: 1,
+};
 
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+interface LayoutProps {
+	children: React.ReactNode;
+	params: Promise<{ locale: string }>;
 }
 
 export default async function RootLayout({ children,params }: LayoutProps) {
