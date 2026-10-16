@@ -54,17 +54,6 @@ export default function ProblemExplorer({problems, isAuthed, solved} : ProblemEx
         setPage(0);
     }, [query, difficulty, status]);
 
-    useEffect(() => {
-        const handleBeforeUnload = () => {
-            
-            setPage(0);
-        };
-
-        window.addEventListener('beforeunload', handleBeforeUnload);
-        return () => {
-            window.removeEventListener('beforeunload', handleBeforeUnload);
-        };
-    }, [])
 
     const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
     const safePage = Math.min(page, pageCount - 1);
