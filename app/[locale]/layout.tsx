@@ -104,12 +104,12 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
             type: "website",
             siteName: SITE_NAME,
             locale: ogLocale(locale),
-            url: `/${locale}`,
+            url: `${SITE_URL}/${locale}`,
             title: "LearnToCP",
             description: t("description"),
             images: [
                 {
-                    url: "/opengraph-image.png", 
+                    url: new URL("/opengraph-image.png", SITE_URL).toString(),
                     width: 1200,
                     height: 630,
                     alt: "LearnToCP",
@@ -120,7 +120,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
             card: "summary_large_image",
             title: "LearnToCP",
             description: t("description"),
-            images: ["/opengraph-image.png"], 
+            images: [new URL("/opengraph-image.png", SITE_URL).toString()],
         },
         formatDetection: { telephone: false, email: false, address: false }
     };
