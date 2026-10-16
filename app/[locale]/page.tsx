@@ -126,7 +126,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {
         metadataBase: new URL(SITE_URL),
         title: {
-            default: "LearnToCP",
+            default: "LearnToCP - Learn To Competitively Programm",
             template: "%s · LearnToCP"
         },
         description: t('description'),
