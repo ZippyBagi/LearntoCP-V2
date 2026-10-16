@@ -10,6 +10,9 @@ import "katex/dist/katex.min.css";
 import { SITE_NAME, SITE_URL } from "../scripts/seo/seo-constants";
 import { buildAlternates, ogLocale } from "../scripts/seo/seoUtils";
 
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const spaceGrotesk = Space_Grotesk({
 	subsets: ["latin"],
 	variable: "--font-space-grotesk",
@@ -45,11 +48,17 @@ export default async function RootLayout({ children,params }: LayoutProps) {
 	const sidebarContainers = generateSidebarContainers(locale);
 
 	return (
-		<html
-		lang={locale}
-		className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
-		>
-		<body className="min-h-full flex flex-col"><NextIntlClientProvider messages={messages}><LayoutShell children={children} containers={sidebarContainers}></LayoutShell></NextIntlClientProvider></body>
+		<html lang={locale} className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}>
+			<body className="min-h-full flex flex-col">
+
+				<Analytics />
+        		<SpeedInsights/>
+
+				<NextIntlClientProvider messages={messages}>
+					<LayoutShell children={children} containers={sidebarContainers}></LayoutShell>
+				</NextIntlClientProvider>
+				
+			</body>
 		</html>
 	);
 }

@@ -10,7 +10,7 @@ import LessonSkeleton from "../ui/Lessons/lessonSkeleton"
 
 
 function isLessonHref(href: string): boolean {
-  return href.includes('/Theory/');
+    return href.includes('/Theory/');
 }
 
 interface LayoutShellProps{
