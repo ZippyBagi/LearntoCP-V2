@@ -57,7 +57,7 @@ export default async function RootLayout({ children,params }: LayoutProps) {
 				<NextIntlClientProvider messages={messages}>
 					<LayoutShell children={children} containers={sidebarContainers}></LayoutShell>
 				</NextIntlClientProvider>
-				
+
 			</body>
 		</html>
 	);
@@ -105,14 +105,16 @@ export async function generateMetadata() : Promise<Metadata>{
 			type: "website",
 			siteName: SITE_NAME,
 			locale: ogLocale(locale),
-			url: `/${locale}`,
+			url: `/opengraph-image.png`,
 			title: "LearnToCP",
 			description:t('description'),
+			
 		},
 		twitter: {
 			card: "summary_large_image",
 			title: "LearnToCP",
 			description:t('description'),
+			images: ["/opengraph-image.png"],
 		},
 		formatDetection: { telephone: false, email: false, address: false }
 	};
