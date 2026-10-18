@@ -8,7 +8,7 @@ export default function codeWindow(){
 
     return (
         <div className="pop [--pop-delay:240ms] relative hidden lg:block">
-            <span className="absolute -top-5 right-6 z-10 inline-flex items-center gap-2.5 rounded-full px-6 py-2.5 font-mono text-base font-bold"
+            <span className="absolute -top-5 right-6 z-3 inline-flex items-center gap-2.5 rounded-full px-6 py-2.5 font-mono text-base font-bold"
                 style={{
                     background: "linear-gradient(135deg, #0a2c1c 0%, #06231b 100%)",
                     color: "var(--color-success)",

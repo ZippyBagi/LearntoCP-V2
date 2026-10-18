@@ -31,7 +31,7 @@ export default function HomePageUI() {
 
     return (
 		<DefaultBG className="relative -m-3 flex min-h-[calc(100%+1.5rem)] overflow-hidden">
-			<div className="relative z-10 m-auto grid w-full max-w-7xl items-center gap-14 px-6 py-16 lg:grid-cols-[1fr_1.2fr] lg:gap-20 ">
+			<div className="relative z-2 m-auto grid w-full max-w-7xl items-center gap-14 px-6 py-16 lg:grid-cols-[1fr_1.2fr] lg:gap-20 ">
 				<div>
 
 					<div className="pop mb-6 flex gap-3 text-lg">

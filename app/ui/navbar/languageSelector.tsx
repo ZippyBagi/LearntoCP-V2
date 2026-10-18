@@ -37,7 +37,7 @@ export default function LanguageSelector(){
                 transition
                 anchor="bottom end"
                 className=" w-40 overflow-hidden rounded-md border border-border-blue bg-bg-page shadow-[0_8px_32px_rgba(0,0,0,0.5)]
-                                transition duration-100 ease-out data-[closed]:scale-95 data-[closed]:opacity-0 focus:outline-none [--anchor-gap:8px]
+                                transition duration-100 ease-out data-[closed]:scale-95 data-[closed]:opacity-0 focus:outline-none [--anchor-gap:8px] z-20
                 "
             >
 
