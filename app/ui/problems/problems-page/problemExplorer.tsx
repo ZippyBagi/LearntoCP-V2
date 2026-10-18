@@ -170,36 +170,34 @@ export default function ProblemExplorer({problems, isAuthed, solved} : ProblemEx
                 </div>
             )}
 
-            {filtered.length > 0 && (
-                <div className="pop [--pop-delay:220ms] mt-5 flex items-center justify-between">
-                    <span className="font-mono text-[13px] text-text-muted tabular-nums">
-                        {t('range', {start:start+1, end:Math.min(start + PAGE_SIZE, filtered.length), total:filtered.length})}
-                    </span>
+            <div className="pop [--pop-delay:220ms] mt-5 flex items-center justify-between">
+                <span className="font-mono text-[13px] text-text-muted tabular-nums">
+                    {t('range', {start:start+1, end:Math.min(start + PAGE_SIZE, filtered.length), total:filtered.length})}
+                </span>
 
-                    <div className="flex items-center gap-2.5">
-                        <PageButton
-                            disabled={safePage === 0}
-                            onClick={() => setPage((p) => Math.max(0, p - 1))}
-                        >       
-                            <ChevronLeftIcon className="size-4" />
-                            {t('prev')}
-                            
-                        </PageButton>
-
-                        <span className="min-w-[80px] text-center font-mono text-[13px] text-text-muted tabular-nums">
-                            {t('pageOf', {current:safePage + 1, total:pageCount})}
-                        </span>
+                <div className="flex items-center gap-2.5">
+                    <PageButton
+                        disabled={safePage === 0}
+                        onClick={() => setPage((p) => Math.max(0, p - 1))}
+                    >       
+                        <ChevronLeftIcon className="size-4" />
+                        {t('prev')}
                         
-                        <PageButton
-                            disabled={safePage >= pageCount - 1}
-                            onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
-                        >
-                            {t("next")}
-                            <ChevronRightIcon className="size-4" />
-                        </PageButton>
-                    </div>
+                    </PageButton>
+
+                    <span className="min-w-[80px] text-center font-mono text-[13px] text-text-muted tabular-nums">
+                        {t('pageOf', {current:safePage + 1, total:pageCount})}
+                    </span>
+                    
+                    <PageButton
+                        disabled={safePage >= pageCount - 1}
+                        onClick={() => setPage((p) => Math.min(pageCount - 1, p + 1))}
+                    >
+                        {t("next")}
+                        <ChevronRightIcon className="size-4" />
+                    </PageButton>
                 </div>
-            )}
+            </div>
 
         </div>
 
