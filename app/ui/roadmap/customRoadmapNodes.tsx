@@ -1,3 +1,5 @@
+"use client"
+
 import { NodeProps } from '@xyflow/react';
 import { Handle, Position } from '@xyflow/react';
 import { RoadmapNodeCard } from '@/app/ui/roadmap/rodampNodeCard'

@@ -1,3 +1,4 @@
+"use client"
 
 export function GoogleG({ size = 20 }: { size?: number }) {
   return (

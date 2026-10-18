@@ -1,3 +1,5 @@
+"use client"
+
 import { useTranslations } from "next-intl";
 import DefaultBG from "../utils/defaultBG";
 import { ArrowUpRight, CodeIcon, MapIcon } from "../utils/svgs";

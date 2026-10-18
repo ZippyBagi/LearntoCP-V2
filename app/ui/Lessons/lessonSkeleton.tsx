@@ -1,3 +1,4 @@
+"use client"
 
 export default function LessonSkeleton() {
     const textBlock = "rounded bg-[#0a1e2e]";
