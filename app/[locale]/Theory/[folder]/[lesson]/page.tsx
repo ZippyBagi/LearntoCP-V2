@@ -48,6 +48,7 @@ interface LessonContentProps{
 async function LessonContent({params, locale} : LessonContentProps){
 
     const {folder, lesson} = await params;
+    const t = await getTranslations("Theory");
     
     const folderDecoded = safeDecode(folder);
     const lessonDecoded = safeDecode(lesson);
@@ -70,7 +71,11 @@ async function LessonContent({params, locale} : LessonContentProps){
 
     const filePath = path.join(folderPath, actualFile);
 
-    const markdown = fs.readFileSync(filePath, "utf8");
+    let markdown = fs.readFileSync(filePath, "utf8");
+
+    if(markdown.trim() === ""){
+        markdown = "> " +  t('comingSoon');
+    }
 
     const htmlContent = await markdownToHTML({markdown,fileName:actualFile,includeTitle:true});
 

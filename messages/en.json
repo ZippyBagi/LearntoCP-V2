@@ -169,7 +169,8 @@
   },
 
   "Theory" : {
-    "description" : "Learn {lesson} in the {folder} track - a competitive-programming lecture on LearnToCP. "
+    "description" : "Learn {lesson} in the {folder} track - a competitive-programming lecture on LearnToCP. ",
+    "comingSoon" : "This lesson is yet to be written..."
   },
 
   "NotFound": {

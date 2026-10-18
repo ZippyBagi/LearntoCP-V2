@@ -169,7 +169,8 @@
   },
 
   "Theory" : {
-    "description" : "Nauči {lesson} iz oblasti {folder} - takmičarsko programiranje na LearnToCP."
+    "description" : "Nauči {lesson} iz oblasti {folder} - takmičarsko programiranje na LearnToCP.",
+    "comingSoon" : "Ova lekcija još uvek nije napisana..."
   },
 
   "NotFound": {
