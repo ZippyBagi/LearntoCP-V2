@@ -2,6 +2,7 @@
 
 This is the official open source repository of [learntocp.com](https://www.learntocp.com) - A 100% FREE website for learning competitive programming in English and Serbian!
 
+Made by Dušan Kovačević (aka. ZippyBagi)
 
 ### Description 
 
