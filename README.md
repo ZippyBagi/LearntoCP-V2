@@ -67,7 +67,7 @@ The code inside `/app` is split into 5 parts
 
 4. `/styles` for css that tailwind couldn't handle cleanly
 
-5. `/api` for api calls that are needed for code submissions to work
+5. `/api` for api endpoints that are needed for code submissions to work
 
 ### `/content`
 
