@@ -39,7 +39,7 @@ export async function generateMetadata() : Promise<Metadata> {
 	return pageMetadata({
 		locale,
 		path:"roadmap",
-		title:t('title'),
+		title:t('title') + " · LearnToCP",
 		description:t('description'),
 	});
 }

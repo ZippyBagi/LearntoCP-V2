@@ -31,7 +31,7 @@ export async function generateMetadata() : Promise<Metadata> {
 	return pageMetadata({
 		locale,
 		path:"Problems",
-		title:t('title'),
+		title:t('title') + " · LearnToCP",
 		description:t('subtitle', {problemCount:total}),
 	});
 }

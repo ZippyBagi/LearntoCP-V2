@@ -37,7 +37,7 @@ export async function generateMetadata() : Promise<Metadata> {
 	return pageMetadata({
 		locale,
 		path:"login",
-		title:t('eyebrow'),
+		title:t('eyebrow')  + " · LearnToCP",
 		description:t('description'),
 		noindex:true
 	});

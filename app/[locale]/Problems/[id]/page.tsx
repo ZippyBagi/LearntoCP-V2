@@ -61,7 +61,7 @@ export async function generateMetadata({params} : {params: Promise<{id:string}>}
 	return pageMetadata({
 		locale,
 		path:`Problems/${encodeURIComponent(slug)}`,
-		title:problem.title,
+		title:problem.title + " · LearnToCP",
 		description: description
 	});
 }

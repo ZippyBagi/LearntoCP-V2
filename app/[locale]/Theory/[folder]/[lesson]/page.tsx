@@ -102,7 +102,7 @@ export async function generateMetadata({params, locale} : LessonContentProps) : 
 	return pageMetadata({
 		locale,
 		path:`Theory/${encodeURIComponent(folderTitle)}/${encodeURIComponent(lessonTitle)}`,
-		title:`${lessonTitle} - ${folderTitle}`,
+		title:`${lessonTitle} - ${folderTitle}` + " · LearnToCP",
 		description:t('description', {lesson:lessonTitle, folder:folderTitle}),
 	});
 }

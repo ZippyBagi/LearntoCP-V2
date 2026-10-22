@@ -17,7 +17,7 @@ export async function generateMetadata() : Promise<Metadata> {
 	return pageMetadata({
 		locale,
 		path:"about-us",
-		title:t('title_seo'),
+		title:t('title_seo') + " · LearnToCP",
 		description:t('lede')
 	});
 }
