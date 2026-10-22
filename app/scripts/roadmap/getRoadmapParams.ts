@@ -3,6 +3,7 @@
 import { useCallback, useMemo, useState } from "react";
 import { RoadmapMatrix, RoadmapNode, RoadmapItem, itemKey} from "./roadmap-types";
 import { createClient } from "../supabase/client";
+import { useRouter } from "../i18n/navigation";
 
 interface ModalTarget{
     layerIndex : number;
@@ -17,6 +18,7 @@ export function getRoadmapParams(matrix : RoadmapMatrix, initialCompleted: strin
 
     const solved = useMemo(() => new Set(solvedSlugs), [solvedSlugs]);
     const [modal, setModal] = useState<ModalTarget | null>(null);
+    const router = useRouter();
 
     const isItemDone = useCallback(
         (node: RoadmapNode, item: RoadmapItem): boolean => item.isProblem ? !!item.slug && solved.has(item.slug) : completed.has(itemKey(node.id, item.id)),
@@ -70,7 +72,6 @@ export function getRoadmapParams(matrix : RoadmapMatrix, initialCompleted: strin
             });
 
             const op = checking ? supabase.from("roadmap_progress").insert({ item_id: key }) : supabase.from("roadmap_progress").delete().eq("item_id", key);
-
             op.then(({ error }) => {
             // 23505 = already inserted (double click / second tab)
             if (error && error.code !== "23505") {
@@ -82,6 +83,7 @@ export function getRoadmapParams(matrix : RoadmapMatrix, initialCompleted: strin
                     return reverted;
                 });
             }
+            router.refresh();
         });
     },[matrix, completed, supabase, loginUrl]);
 
