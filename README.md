@@ -26,7 +26,7 @@ The project is written in TypeScript with the [Next.js](https://nextjs.org/) fra
 
 In order to run the repository locally you need to set the environment variables and set up a database.  
 
-1. Open `database.txt`, and inside are all PostgreSQL functions needed to set-up the database, create a [Supabase](https://supabase.com/) account and set them up.
+1. Open `database.sql`, and inside are all PostgreSQL functions needed to set-up the database, create a [Supabase](https://supabase.com/) account and set them up.
 
 2. Create a `.env` file, and begin filling it out following `.example.env.local`.
 
