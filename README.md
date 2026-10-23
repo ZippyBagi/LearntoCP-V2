@@ -22,6 +22,8 @@ The project is written in TypeScript with the [Next.js](https://nextjs.org/) fra
 
 - For internationalization [i18n](https://www.i18next.com/)
 
+- For code highlighting [Shiki](https://shiki.style/) 
+
 ### Getting Started
 
 In order to run the repository locally you need to set the environment variables and set up a database.  
